@@ -10,8 +10,7 @@
 export const firebaseConfig = {
   apiKey: 'AIzaSyDd9n33hjuO_nSMxAdqEtgl11E2j_wbIVU',
   authDomain: 'duo-autodefinidos.firebaseapp.com',
-  // PENDIENTE: dirección de la Realtime Database (aparece arriba en su página de la consola)
-  databaseURL: '',
+  databaseURL: 'https://duo-autodefinidos-default-rtdb.europe-west1.firebasedatabase.app',
   projectId: 'duo-autodefinidos',
   storageBucket: 'duo-autodefinidos.firebasestorage.app',
   messagingSenderId: '315625334760',
