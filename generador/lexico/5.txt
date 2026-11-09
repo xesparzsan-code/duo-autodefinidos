@@ -1,0 +1,621 @@
+ABAJO: En la parte inferior
+ABEJA: Insecto que da miel
+ABRIL: Mes de las aguas mil
+ABRIR: Descorrer | Lo contrario de cerrar
+ABUSO: Exceso | Uso indebido
+ACABA: Termina
+ACASO: Quizá
+ACERA: Parte de la calle para peatones
+ACERO: Aleación de hierro y carbono
+ACIDO: Agrio
+ACTOR: Intérprete de cine
+ADIOS: Despedida
+ADORA: Venera
+AGUAS: Líquidos | Va con "mil" en abril
+AGUDO: Afilado | Sonido alto
+AHORA: En este momento
+AJENO: De otro
+ALADO: Con plumas para volar
+ALAMO: Árbol de ribera
+ALDEA: Pueblo pequeño
+ALETA: Extremidad del pez
+ALIAS: Apodo
+ALMAS: Espíritus
+ALTAR: Mesa de la misa
+AMADA: Querida
+AMADO: Querido
+AMIGA: Compañera
+AMIGO: Compañero | Colega
+AMPLIO: (no)
+ANCHO: Lo contrario de estrecho
+ANCLA: Sujeta el barco al fondo
+ANDAR: Caminar
+ANGEL: Ser celestial con alas
+ANIMO: Valor | ¡Adelante!
+ANTES: Con anterioridad
+APODO: Mote
+APOYO: Sostén | Ayuda
+ARADO: Herramienta para labrar
+ARAÑA: Teje telas | Lámpara de techo
+ARBOL: Planta con tronco
+ARENA: Cubre la playa
+AROMA: Olor agradable
+ARROZ: Cereal de la paella
+ASADO: Carne al horno
+ASEAR: Limpiar
+ASILO: Refugio | Residencia de ancianos
+ASOMA: Empieza a mostrarse
+ATAJO: Camino más corto
+ATLAS: Libro de mapas
+ATRAS: En la parte posterior
+AUDAZ: Atrevido
+AVENA: Cereal del desayuno
+AVION: Aparato que vuela
+AVISO: Advertencia
+AYUDA: Auxilio | Socorro
+AZOTE: Latigazo
+BAILE: Danza
+BAJAR: Descender
+BALON: Pelota grande
+BANCO: Asiento del parque | Guarda dinero
+BANDA: Grupo musical | Cinta ancha
+BARBA: Pelo de la cara
+BARCO: Embarcación
+BARRO: Lodo
+BELLA: Hermosa
+BELLO: Hermoso
+BESAR: Dar un ósculo
+BICHO: Animal pequeño
+BOLSA: Saco | Mercado de valores
+BOLSO: Complemento para llevar cosas
+BOMBA: Explosivo | Saca agua
+BORDE: Orilla | Extremo
+BOSQUE: (no)
+BRAVO: Valiente | ¡Muy bien!
+BRAZO: Extremidad superior
+BREVE: Corto
+BRISA: Viento suave
+BROMA: Chanza
+BRUJA: Vuela en escoba
+BUENO: Bondadoso
+BURRO: Asno
+CABLE: Cordón eléctrico
+CABRA: Tira al monte
+CAIDA: Desplome
+CALAR: Empapar
+CALDO: Líquido de la sopa
+CALMA: Tranquilidad | Sosiego
+CALOR: Temperatura alta
+CALVO: Sin pelo
+CAMPO: Terreno sin edificar
+CANAL: Cauce artificial | Cadena de televisión
+CANTO: Canción | Borde
+CARNE: La vende el carnicero
+CARTA: Misiva | Menú del restaurante
+CASAR: Unir en matrimonio
+CASCO: Protege la cabeza
+CAUSA: Motivo
+CAZAR: Perseguir animales
+CELDA: Cuarto de prisión
+CENAR: Tomar la última comida
+CERCA: A poca distancia | Valla
+CERDO: Animal del jamón
+CESTA: Canasta
+CHICO: Muchacho | Pequeño
+CHINA: País de la Gran Muralla
+CIELO: Firmamento
+CINCO: Dedos de una mano
+CINTA: Tira de tela
+CIRCO: Espectáculo con carpa
+CLARA: Parte blanca del huevo
+CLARO: Luminoso | Evidente
+CLASE: Lección | Categoría
+CLAVE: Contraseña
+CLAVO: Se golpea con el martillo
+CLIMA: Tiempo atmosférico habitual
+COBRA: Serpiente con capucha | Recibe dinero
+COCER: Hervir
+COCHE: Automóvil
+COLOR: Rojo o verde
+COMER: Alimentarse
+COMPRA: (no)
+CONDE: Título nobiliario
+COPIA: Duplicado | Reproducción
+CORAL: Joya del mar | Agrupación de cantantes
+CORTE: Tajo | Séquito del rey
+CORTO: Breve | De poca longitud
+COSER: Unir con hilo
+COSTA: Orilla del mar
+CREAR: Inventar
+CREER: Tener fe
+CREMA: Nata | Pomada
+CRUDO: Sin cocinar
+CUERO: Piel curtida
+CUEVA: Gruta
+CULPA: Responsabilidad de una falta
+CURAR: Sanar
+CURSO: Año escolar
+DANZA: Baile
+DEBER: Obligación
+DECIR: Hablar | Manifestar
+DEJAR: Abandonar | Permitir
+DENSO: Espeso
+DICHA: Felicidad
+DIETA: Régimen de comidas
+DIGNO: Merecedor
+DISCO: Vinilo
+DOBLE: Dos veces
+DOLOR: Sufrimiento
+DONDE: En qué lugar
+DORAR: Tostar ligeramente
+DUCHA: Lluvia de aseo
+DUEÑO: Propietario
+DULCE: Azucarado
+DURAR: Permanecer
+ELEVA: Sube
+EMITE: Lanza señales
+ENANO: Muy bajito
+ENERO: Primer mes
+ENOJO: Enfado
+ENTRA: Pasa adentro
+ENVIA: Manda
+EPOCA: Periodo histórico
+ERROR: Equivocación
+ESPIA: Agente secreto
+ESTAR: Hallarse
+ETAPA: Fase | Tramo de la vuelta ciclista
+EXITO: Triunfo
+FALDA: Prenda femenina
+FALSO: No verdadero
+FALTA: Carencia | Infracción deportiva
+FAROL: Linterna | Engaño en el póquer
+FAVOR: Ayuda que se pide
+FECHA: Día, mes y año
+FELIZ: Dichoso | Contento
+FERIA: Fiesta con casetas
+FIBRA: Filamento
+FICHA: Pieza de juego
+FIERA: Animal salvaje
+FINAL: Término | Último partido
+FIRMA: Rúbrica
+FLACO: Delgado
+FLOTA: Conjunto de barcos
+FONDO: Parte más baja
+FORMA: Figura
+FRASE: Oración
+FRENO: Detiene el coche
+FRESA: Fruta roja
+FRUTA: Manzana o pera
+FUEGO: Llamas
+FUERA: En el exterior
+GAFAS: Lentes
+GALLO: Canta al amanecer
+GAMBA: Marisco
+GANAR: Vencer
+GANSO: Oca
+GARRA: Zarpa
+GENIO: Sale de la lámpara
+GENTE: Personas
+GLOBO: Se hincha con aire
+GOLPE: Porrazo
+GORDO: Premio mayor | Grueso
+GORRA: Prenda con visera
+GRANO: Semilla del cereal
+GRASA: Sebo
+GRAVE: Serio | Sonido bajo
+GRIPE: Enfermedad invernal
+GRITO: Voz muy alta
+GRUPO: Conjunto
+GUAPO: Bien parecido
+GUION: Texto de una película
+GUSTO: Sentido del sabor
+HABLA: Dice | Idioma
+HACER: Fabricar | Realizar
+HACHA: Herramienta del leñador
+HASTA: Preposición de límite
+HELAR: Congelar
+HIELO: Agua congelada
+HIENA: Animal que ríe
+HOGAR: Casa | Chimenea
+HONOR: Honra
+HORNO: Cuece el pan
+HOTEL: Alojamiento con habitaciones
+HUECO: Vacío
+HUESO: Parte del esqueleto
+HUEVO: Lo pone la gallina
+HUMOR: Estado de ánimo
+IDEAL: Perfecto
+IGUAL: Idéntico
+ILESO: Sin daño
+INDIA: País del Ganges
+ISLAS: Baleares o Canarias
+JABON: Limpia con espuma
+JAMON: Pata curada del cerdo
+JARRA: Vasija para servir
+JAULA: Prisión del pájaro
+JOVEN: De poca edad
+JUEGO: Diversión
+JUGAR: Divertirse
+JUNIO: Sexto mes
+JUNTO: Unido
+LABIO: Borde de la boca
+LADRA: Lo hace el perro
+LAGOS: Masas de agua dulce
+LANZA: Arma arrojadiza | Tira
+LAPIZ: Escribe con grafito
+LARGO: De mucha longitud
+LATIR: Palpitar
+LAVAR: Limpiar con agua
+LECHE: La da la vaca
+LEGAL: Conforme a la ley
+LEJOS: A gran distancia
+LENTO: Pausado
+LETRA: Signo del abecedario
+LIBRE: Sin ataduras
+LIBRO: Tiene páginas
+LICOR: Bebida alcohólica dulce
+LIDER: Jefe | El primero
+LIMON: Cítrico amarillo
+LINCE: Felino ibérico
+LINEA: Raya
+LISTA: Enumeración | Inteligente
+LISTO: Inteligente | Preparado
+LLAMA: Lengua de fuego | Animal andino
+LLANO: Sin relieve
+LLAVE: Abre la cerradura
+LLENO: Completo
+LLORA: Derrama lágrimas
+LUCHA: Combate
+LUGAR: Sitio
+LUNAR: Mancha de la piel | De nuestro satélite
+LUNES: Primer día laborable
+MADRE: Progenitora
+MAGIA: Arte de los trucos
+MALTA: Isla del Mediterráneo
+MANGA: Parte de la camisa
+MANGO: Fruta tropical | Asa
+MANTA: Abriga en la cama
+MAREA: Sube y baja en el mar
+MARCA: Señal | Firma comercial
+MARCO: Rodea el cuadro
+MARTE: Planeta rojo
+MARZO: Tercer mes
+MASAS: Pastas de harina
+MATAR: Quitar la vida
+MAYOR: De más edad
+MEDIA: Mitad | Calcetín largo
+MEDIO: Mitad | Centro
+MEJOR: Superior
+MELON: Fruta veraniega
+MENOR: De menos edad
+MENTE: Intelecto
+MESES: Hay doce en el año
+METAL: Hierro o cobre
+METRO: Cien centímetros | Tren urbano
+MIEDO: Temor
+MIRAR: Observar
+MISMO: Idéntico
+MITAD: Uno de dos trozos iguales
+MOLAR: Muela
+MONTE: Elevación del terreno
+MORAL: Ética
+MOSCA: Insecto molesto
+MOTOR: Mueve el coche
+MOVER: Cambiar de sitio
+MUCHO: Abundante
+MUELA: Diente posterior
+MUJER: Señora
+MUNDO: La Tierra
+MUSEO: Expone cuadros
+NACER: Venir al mundo
+NADAR: Bracear en el agua
+NADIE: Ninguna persona
+NARIZ: Órgano del olfato
+NEGRO: Color del carbón
+NIETO: Hijo de tu hijo
+NIEVE: Copos blancos
+NIVEL: Altura | Grado
+NOBLE: Aristócrata
+NOCHE: Cuando sale la luna
+NORIA: Atracción de feria que gira
+NORMA: Regla
+NORTE: Punto cardinal
+NOTAS: Calificaciones
+NOVIA: Se casa de blanco
+NOVIO: Prometido
+NUBES: Cubren el cielo
+NUEVE: Tres por tres
+NUEVO: Recién hecho
+NUNCA: Jamás
+OASIS: Paraje con agua en el desierto
+OBESO: Muy grueso
+OCASO: Puesta de sol
+OCEANO: (no)
+OESTE: Punto cardinal | Por donde se pone el sol
+OLIVA: Aceituna
+OLIVO: Árbol de la aceituna
+OPERA: Obra cantada
+ORDEN: Mandato | Colocación
+OREJA: Pabellón auditivo
+ORINA: Líquido de los riñones
+OSTRA: Molusco con perla
+OTOÑO: Estación de las hojas secas
+OVEJA: Da lana
+PADRE: Progenitor
+PAGAR: Abonar
+PALMA: Parte de la mano | Hoja de palmera
+PARED: Muro
+PARTE: Porción | Trozo
+PASAR: Ocurrir | Cruzar
+PASEO: Caminata tranquila
+PASTA: Macarrones o espaguetis
+PATIO: Espacio descubierto de la casa
+PAUSA: Interrupción breve
+PECHO: Tórax
+PEDIR: Solicitar
+PEINE: Desenreda el pelo
+PELEA: Riña
+PERLA: Joya de la ostra
+PERRO: Mejor amigo del hombre
+PESAR: Tristeza
+PESCA: Captura de peces
+PIANO: Instrumento de teclas
+PIEZA: Trozo | Parte de un puzle
+PINTA: Aspecto | Da color
+PISAR: Poner el pie
+PISTA: Indicio | Lugar de aterrizaje
+PLATA: Medalla del segundo
+PLATO: Vajilla para comer
+PLAYA: Arenal junto al mar
+PLAZA: Lugar ancho en la ciudad
+PLOMO: Metal pesado
+PLUMA: Cubre al ave
+POBRE: Sin recursos
+PODER: Capacidad | Mando
+POEMA: Obra en verso
+POETA: Autor de versos
+POLEN: Polvo de las flores
+POLLO: Cría de la gallina
+POLVO: Suciedad fina
+PONER: Colocar
+PRADO: Campo de hierba | Museo madrileño
+PRIMO: Hijo de tu tío
+PRISA: Urgencia
+PUDOR: Recato
+PULPO: Tiene ocho tentáculos
+PUNTO: Signo ortográfico final
+QUESO: Derivado de la leche
+RADIO: Aparato de ondas | Hueso del brazo
+RAMAS: Brazos del árbol
+RAPAZ: Ave de presa
+RASGO: Característica
+RATON: Roedor | Mueve el cursor
+RAZON: Motivo
+REGLA: Norma | Sirve para trazar líneas
+REINA: Soberana
+REINO: Territorio del monarca
+RELOJ: Marca las horas
+RENTA: Ingreso periódico
+RESTA: Sustracción
+REZAR: Orar
+RIADA: Inundación
+RIEGO: Agua para las plantas
+RITMO: Compás
+RIVAL: Contrincante
+ROBAR: Hurtar
+ROBLE: Árbol de bellotas
+RODEO: Vuelta | Fiesta de vaqueros
+ROMAN: Nombre de varón
+ROMPE: Quiebra
+RONDA: Ciudad malagueña | Vuelta de vigilancia
+ROSAL: Arbusto con espinas
+ROSCA: Vuelta del tornillo
+RUBIA: De pelo claro
+RUBIO: De pelo claro
+RUEDA: Gira bajo el coche
+RUIDO: Sonido molesto
+RUMBO: Dirección
+RURAL: Del campo
+SABER: Conocer
+SABIO: Erudito
+SABOR: Lo percibe el gusto
+SALIR: Ir fuera
+SALSA: Baile caribeño | Aderezo
+SALTO: Brinco
+SALUD: Bienestar | Brindis
+SANTO: Canonizado
+SECAR: Quitar la humedad
+SELVA: Bosque tropical
+SEMANA: (no)
+SENDA: Camino estrecho
+SERIE: Sucesión | Se ve por capítulos
+SERIO: Formal | Grave
+SIETE: Días de la semana
+SIGLO: Cien años
+SIGNO: Señal | Aries o Tauro
+SILLA: Asiento con respaldo
+SITIO: Lugar
+SOBRE: Envoltorio de la carta | Encima de
+SOCIO: Miembro de un club
+SOLAR: Del astro rey | Terreno
+SONAR: Hacer ruido
+SOPLA: Echa aire
+SORDO: Que no oye
+SUAVE: Blando al tacto
+SUBIR: Ascender
+SUCIO: Manchado
+SUDOR: Transpiración
+SUELO: Piso
+SUEÑO: Ganas de dormir
+SUMAR: Añadir
+SUSTO: Sobresalto
+TABLA: Pieza plana de madera
+TALLA: Medida de la ropa
+TALLO: Sostiene la flor
+TANGO: Baile argentino
+TAPAR: Cubrir
+TARDE: Después del mediodía
+TAREA: Trabajo | Deberes
+TARTA: Pastel de cumpleaños
+TECHO: Parte alta de la habitación
+TECLA: Pieza del piano
+TEJER: Hacer punto
+TELAR: Máquina de tejidos
+TEMOR: Miedo
+TENER: Poseer
+TENIS: Deporte de raqueta
+TEXTO: Escrito
+TIBIA: Hueso de la pierna | Templada
+TIGRE: Felino rayado
+TIRAR: Lanzar
+TOCAR: Palpar | Tañer
+TONTO: Bobo
+TORRE: Pieza de ajedrez | Edificio alto
+TORTA: Bofetada | Masa plana
+TOTAL: Suma
+TRAJE: Vestido de chaqueta
+TRAMA: Argumento
+TRATO: Acuerdo
+TRECE: Número de la mala suerte
+TRIGO: Cereal del pan
+TROPA: Conjunto de soldados
+TROZO: Pedazo
+TRUCO: Lo hace el mago
+TUMBA: Sepultura
+TURNO: Vez
+UNICO: Solo en su especie
+UNION: Enlace
+USADO: Gastado
+USTED: Tratamiento de respeto
+UTERO: Matriz
+VACIO: Sin contenido
+VAGON: Coche del tren
+VALLE: Llanura entre montañas
+VALOR: Coraje | Precio
+VAPOR: Agua en estado gaseoso
+VECES: Ocasiones
+VELAR: Pasar la noche despierto
+VENIR: Llegar
+VENTA: Lo contrario de compra
+VERBO: Palabra que se conjuga
+VERDE: Color de la hierba
+VERSO: Línea de un poema
+VIAJE: Desplazamiento
+VIEJO: Anciano
+VILLA: Casa de recreo
+VIRUS: Causa la gripe
+VISTA: Sentido de los ojos
+VIUDA: Perdió a su marido
+VIVIR: Existir
+VOLAR: Surcar el aire
+VUELO: Viaje en avión
+YEGUA: Hembra del caballo
+YERNO: Marido de la hija
+ZARPA: Garra | Sale el barco
+ZORRO: Animal astuto
+ZURDO: Usa la mano izquierda
+AEREO: Del aire
+ALEAR: Mezclar metales
+AMARA: Quisiera
+AMASA: Trabaja la harina
+ANIMA: Alienta
+AÑADE: Suma
+ARAÑO: Rasguño
+ARDOR: Calor intenso
+ARMAS: Pistolas y espadas
+ASEAN: Limpian
+ATADO: Sujeto con cuerda
+ATAUD: Caja mortuoria
+ATOMO: Partícula mínima
+AUTOR: Escritor de la obra
+AZADA: Herramienta para cavar
+BALSA: Embarcación de troncos
+CAIRO: El..., capital de Egipto
+CANOA: Embarcación de remo
+CARAS: Rostros
+CAROS: Costosos
+CASAS: Viviendas
+CESAR: Emperador romano
+COSAS: Objetos
+DATOS: Informaciones
+DEDAL: Protege el dedo al coser
+DIANA: Blanco de los dardos
+DOSIS: Cantidad de medicina
+ELLAS: Pronombre femenino plural
+ELLOS: Pronombre masculino plural
+ENTES: Seres
+ESTAN: Se hallan
+ESTAS: Demostrativo femenino plural
+ESTOS: Demostrativo plural
+IDEAS: Ocurrencias
+IMITA: Copia
+IRENE: Nombre de mujer
+ISLAM: Religión de Mahoma
+ITALIA: (no)
+LADOS: Costados
+LASER: Rayo de luz concentrada
+LEONA: Reina de la selva
+LINDO: Bonito
+LIRIO: Flor morada
+LOCAL: Del lugar | Establecimiento
+LOSAS: Piedras planas
+MANOS: Se lavan antes de comer
+MARES: Océanos
+MASON: Miembro de una logia
+MEDIR: Tomar las dimensiones
+MESAS: Muebles para comer
+MONOS: Simios
+NADAS: Braceas en el agua
+NASAL: De la nariz
+NATAL: Del nacimiento
+NAVAL: De los barcos
+OLEAR: (no)
+OLERA: Percibirá aromas
+OREAR: Ventilar
+OSADO: Atrevido
+OSERA: Guarida de plantígrados
+PASOS: Movimientos de los pies
+PATAS: Tiene cuatro la mesa
+PENAL: Cárcel
+PESOS: Monedas mexicanas
+RAROS: Extraños
+RASAR: Igualar
+RATAS: Roedores de alcantarilla
+REDES: Mallas | Aparejos de pesca
+REMAR: Mover la barca con palas
+RENAL: Del riñón
+RESES: Animales de ganado
+RETAR: Desafiar
+RIMAR: Componer versos
+ROSAS: Flores con espinas
+SACAR: Extraer
+SALAR: Echar condimento
+SALAS: Habitaciones
+SALES: Vas fuera
+SALON: Cuarto de estar
+SANAR: Curar
+SEDAS: Telas finas
+SENOS: Pechos
+SERES: Entes
+SOLAS: Sin compañía
+SOLOS: Sin compañía
+SONES: Ritmos cubanos
+TALAR: Cortar árboles
+TASAR: Poner precio
+TEMAS: Asuntos
+TENOR: Voz masculina aguda
+TERSO: Liso, sin arrugas
+TESIS: Trabajo del doctorado
+TOMAR: Coger | Beber
+TONOS: Matices
+TOROS: Animales de lidia
+TOSER: Expulsar aire bruscamente
+TRAER: Acercar
+TRENA: Cárcel, coloquialmente
+TRIOS: Conjuntos de tres
+UNTAR: Extender mantequilla
+USARA: Empleara
+VASOS: Recipientes para beber
+VELAS: Se soplan en la tarta
+VERAS: Mirarás
+ZONAS: Áreas

@@ -1,0 +1,633 @@
+ABRE: Descorre el cerrojo
+ACTA: Documento de una reunión
+ACTO: Parte de una obra teatral | Hecho, acción
+AGUA: Líquido vital | H2O
+AIRE: Lo que respiramos | Viento
+AJOS: Dientes de cocina
+ALAS: Sirven para volar
+ALBA: Amanecer | Primera luz del día
+ALGA: Planta marina
+ALGO: Una cosa indeterminada
+ALMA: Espíritu | Parte inmaterial
+ALTA: Elevada | Fin de la baja
+ALTO: Elevado | ¡Deténgase!
+AMAR: Querer
+AMAS: Quieres | Dueñas
+AMEN: Así sea
+AMOR: Cariño profundo | Sentimiento de Cupido
+ANCA: Pata de rana
+ANDA: Camina
+ANIS: Licor dulce | Semilla aromática
+ANTE: Delante de | Piel curtida
+AÑOS: Se cumplen con velas
+APTO: Capacitado | Idóneo
+ARAR: Labrar la tierra
+ARCA: Baúl | Nave de Noé
+ARCO: Arma de flechas | Curva
+ARDE: Se quema
+AREA: Superficie | Zona
+ARMA: Pistola o espada | Monta
+ARNA: Rusiente (no)
+AROS: Anillos
+ARPA: Instrumento de cuerda
+ARTE: Pintura o escultura | Habilidad
+ASAR: Cocinar al fuego
+ASAS: Agarraderos
+ASCO: Repugnancia
+ASEO: Limpieza | Cuarto de baño
+ASNO: Burro
+ASTA: Cuerno | Palo de la bandera
+ATAR: Anudar
+ATAS: Anudas
+ATUN: Pescado azul en lata
+AULA: Sala de clase
+AUTO: Coche
+AVES: Pájaros
+AVIA: Prepara
+AYER: El día anterior
+AZAR: Casualidad | Suerte
+AZUL: Color del cielo
+BABA: Saliva
+BAJA: Desciende | De poca altura
+BAJO: De poca altura | Instrumento grave
+BALA: Proyectil
+BATA: Prenda de casa
+BEBE: Niño de pecho | Toma líquido
+BESO: Muestra de cariño con los labios
+BOCA: Abertura de la cara
+BODA: Enlace matrimonial
+BOLA: Esfera
+BOTA: Calzado alto | Recipiente de vino
+BOTE: Barca | Salto
+BUEY: Toro castrado
+BUHO: Ave nocturna
+CABO: Punta de tierra | Rango militar
+CACO: Ladrón
+CADA: Va con "uno"
+CAER: Desplomarse
+CAFE: Bebida estimulante
+CAJA: Recipiente con tapa
+CALA: Ensenada pequeña
+CALO: Lengua gitana
+CAMA: Mueble para dormir
+CANA: Pelo blanco
+CAÑA: Vaso de cerveza | Tallo hueco
+CAPA: Prenda sin mangas | Estrato
+CARA: Rostro | Costosa
+CARO: Costoso
+CASA: Vivienda | Hogar
+CASI: Por poco
+CASO: Suceso | Asunto
+CAVA: Espumoso catalán | Excava
+CAZA: Persecución de animales
+CEBO: Alimento del anzuelo
+CEJA: Pelo sobre el ojo
+CENA: Última comida del día
+CERA: Sustancia de las abejas
+CERO: Nada | Número sin valor
+CIEN: Diez decenas
+CINE: Séptimo arte
+CITA: Encuentro acordado
+CLAN: Familia, tribu
+COCO: Fruto de la palmera
+CODO: Articulación del brazo
+COLA: Rabo | Fila de espera
+COMA: Signo de puntuación | Sueño profundo
+COME: Se alimenta
+COMO: Me alimento | Igual que
+COPA: Vaso con pie | Trofeo
+CORO: Conjunto de cantantes
+COSA: Objeto
+CUBO: Recipiente | Hexaedro
+CUNA: Cama de bebé
+CURA: Sacerdote | Sana
+DADO: Cubo de juego
+DAMA: Señora | Reina del ajedrez
+DAÑO: Perjuicio
+DATO: Información
+DEDO: Hay cinco en la mano
+DEJA: Abandona | Permite
+DIAS: Jornadas
+DICE: Habla | Afirma
+DIEZ: Número de dos cifras
+DIME: Cuéntame
+DIOS: Deidad
+DOCE: Docena
+DOMA: Amansa
+DOTE: Bienes de la novia
+DUDA: Vacilación
+DUNA: Montaña de arena
+DURA: Resistente | Permanece
+DURO: Resistente | Cinco pesetas
+ECOS: Resonancias
+EDAD: Años vividos
+ELLA: Pronombre femenino
+ELLO: Pronombre neutro
+EMIR: Príncipe árabe
+ENEA: Planta de sillas
+ENTE: Ser | Organismo
+EPOCA: (no)
+ERAS: Épocas
+ERES: Segunda persona de ser
+ESOS: Demostrativo plural
+ESTA: Demostrativo femenino
+ESTE: Punto cardinal | Demostrativo
+ESTO: Demostrativo neutro
+ETNA: Volcán siciliano
+EURO: Moneda europea
+FACA: Cuchillo grande
+FAMA: Celebridad | Renombre
+FARO: Torre con luz en la costa
+FASE: Etapa
+FILA: Hilera
+FINO: Delgado | Vino andaluz
+FLOR: Rosa o clavel
+FOCA: Mamífero marino
+FOCO: Lámpara potente
+FOSA: Hoyo | Sepultura
+FOTO: Imagen de cámara
+FRIO: Baja temperatura
+GAFA: Lente con patillas
+GALA: Fiesta elegante
+GANA: Vence | Deseo
+GATA: Felina
+GATO: Felino doméstico | Eleva el coche
+GIRA: Da vueltas | Serie de conciertos
+GIRO: Vuelta
+GOMA: Borrador | Caucho
+GOTA: Partícula de líquido
+GRIS: Color de la ceniza
+GULA: Pecado del glotón
+HADA: Ser fantástico con varita
+HALO: Aureola
+HIJA: Descendiente femenina
+HIJO: Descendiente
+HILO: Hebra | Se enhebra en la aguja
+HOJA: Parte de la planta | Folio
+HOLA: Saludo
+HORA: Sesenta minutos
+HOYO: Agujero en la tierra
+HUIR: Escapar
+HUMO: Sale de la chimenea
+IDEA: Ocurrencia | Pensamiento
+IDEM: Lo mismo
+IMAN: Atrae el hierro
+IRAN: País persa | Marcharán
+IRAS: Marcharás | Enfados
+IRIS: Parte coloreada del ojo
+ISLA: Tierra rodeada de agua
+JEFE: Superior | El que manda
+JOTA: Baile aragonés | Letra J
+JOYA: Alhaja
+JUEZ: Dicta sentencia
+LADO: Costado
+LAGO: Masa de agua dulce
+LANA: Pelo de oveja
+LATA: Envase metálico | Fastidio
+LAVA: Sale del volcán | Limpia
+LAZO: Nudo con adorno
+LEAL: Fiel
+LEER: Pasar la vista por un texto
+LEMA: Consigna
+LEÑA: Madera para el fuego
+LEON: Rey de la selva
+LEVE: Ligero
+LILA: Color morado claro | Flor
+LIMA: Capital de Perú | Cítrico verde
+LISO: Sin arrugas
+LOBO: Aúlla a la luna
+LOCO: Chiflado
+LODO: Barro
+LOMA: Colina
+LOMO: Espalda del animal | Embutido
+LORO: Ave que habla
+LOSA: Piedra plana
+LOTE: Conjunto de cosas
+LUNA: Satélite de la Tierra
+LUPA: Lente de aumento
+MAGO: Hace trucos
+MALA: Malvada
+MALO: Malvado
+MAMA: Madre
+MANO: Extremidad con dedos
+MAPA: Representación geográfica
+MASA: Pasta de harina
+MATA: Arbusto | Asesina
+MAYO: Mes de las flores
+MAZO: Martillo de madera
+MESA: Mueble para comer
+META: Final de la carrera | Objetivo
+MIEL: Dulce de las abejas
+MINA: Yacimiento | Barra del lápiz
+MIRA: Observa
+MISA: Ceremonia católica
+MITO: Leyenda
+MODA: Lo que se lleva
+MODO: Manera
+MONO: Simio | Prenda de trabajo
+MORA: Fruto de la zarza
+MOTO: Vehículo de dos ruedas
+MUDA: Sin voz | Cambio de piel
+MUDO: Que no habla
+MULA: Hija de asno y yegua
+MURO: Pared
+MUSA: Inspiradora del poeta
+NABO: Hortaliza blanca
+NACE: Viene al mundo
+NADA: Ninguna cosa | Bracea en el agua
+NANA: Canción de cuna
+NATA: Crema de la leche
+NAVE: Barco | Va al espacio
+NENE: Niño pequeño
+NIDO: Hogar del pájaro
+NILO: Río de Egipto
+NIÑA: Pequeña
+NIÑO: Pequeño
+NOTA: Calificación | Apunte
+NUBE: Trae lluvia
+NUCA: Parte trasera del cuello
+NUDO: Lazo apretado
+OBRA: Trabajo | Edificio en construcción
+OCAS: Aves de corral
+OCIO: Tiempo libre
+ODIO: Aversión | Lo contrario de amor
+OESTE: (no)
+OJOS: Órganos de la vista
+OLAS: Ondas del mar
+OLER: Percibir aromas
+OLLA: Vasija para guisar
+OLMO: Árbol que no da peras
+OLOR: Aroma
+ONCE: Equipo de fútbol | Diez más uno
+ONDA: Ola | Curva del pelo
+OPTA: Elige
+ORAL: De palabra | Examen hablado
+ORAR: Rezar
+ORCA: Cetáceo blanco y negro
+OREO: Ventilación
+OROS: Palo de la baraja
+OSAR: Atreverse
+OSOS: Plantígrados
+OTRA: Distinta | Petición de bis
+OTRO: Distinto
+OVNI: Platillo volante
+PACO: Francisco, familiarmente
+PAGA: Sueldo | Abona
+PAGO: Abono
+PAIS: Nación
+PAJA: Tallo seco del cereal
+PALA: Herramienta para cavar
+PALO: Trozo de madera | Bastos u oros
+PAPA: Pontífice | Patata
+PARA: Detiene | Preposición
+PARO: Desempleo | Huelga
+PASA: Uva seca | Ocurre
+PASO: Movimiento del pie | Procesión
+PATA: Pierna de animal | Hembra del pato
+PATO: Ave de estanque
+PAVO: Ave de Navidad
+PECA: Mancha de la piel
+PELO: Cabello
+PENA: Tristeza | Castigo
+PERA: Fruta | No la da el olmo
+PESA: Pieza del gimnasio
+PESO: Moneda americana | Lo mide la báscula
+PICO: Boca de ave | Cima
+PIEL: Cubre el cuerpo
+PILA: Batería pequeña | Montón
+PINO: Árbol de piñas
+PIÑA: Fruta tropical
+PIPA: Semilla de girasol | Para fumar
+PISO: Apartamento | Suelo
+PLAN: Proyecto
+POCO: Escaso
+PODA: Corte de ramas
+POEMA: (no)
+POLO: Extremo de la Tierra | Helado con palo
+POMO: Tirador de la puerta
+POSO: Sedimento
+POZO: Hoyo con agua
+PURA: Sin mezcla
+PURO: Cigarro | Sin mezcla
+RABO: Cola
+RAMA: Brazo del árbol
+RAMO: Conjunto de flores
+RANA: Anfibio que croa
+RARO: Extraño | Poco común
+RATA: Roedor de alcantarilla
+RATO: Espacio corto de tiempo
+RAYA: Línea | Pez plano
+RAYO: Chispa de la tormenta
+RAZA: Casta | Estirpe
+REAL: Verdadero | Del rey
+REIR: Soltar carcajadas
+REMO: Pala de la barca
+RENO: Tira del trineo navideño
+RETO: Desafío
+REZA: Ora
+RICA: Adinerada | Sabrosa
+RICO: Adinerado | Sabroso
+RIMA: Coincidencia de sonidos en versos
+RIOS: Corrientes de agua
+RISA: Carcajada
+RITO: Ceremonia
+ROBO: Hurto
+ROCA: Piedra grande
+RODA: Giraba (no)
+ROJO: Color de la sangre
+ROMA: Ciudad eterna | Sin punta
+ROPA: Vestimenta
+ROSA: Flor con espinas | Color
+ROTO: Quebrado
+RUBI: Piedra preciosa roja
+RUDA: Tosca
+RUDO: Tosco
+RUGE: Brama el león
+RUTA: Itinerario | Camino
+SABE: Conoce | Tiene sabor
+SACO: Bolsa grande
+SALA: Habitación principal
+SANA: Saludable | Cura
+SANO: Saludable
+SAPO: Anfibio verrugoso
+SECA: Sin agua
+SECO: Sin agua
+SEDA: Tela del gusano
+SEIS: Media docena
+SELLO: (no)
+SENO: Pecho
+SETA: Hongo con sombrero
+SIGA: Continúe
+SIGO: Continúo
+SILO: Almacén de grano
+SODA: Bebida con gas
+SOFA: Asiento del salón
+SOGA: Cuerda gruesa
+SOLA: Sin compañía
+SOLO: Sin compañía | Café sin leche
+SOMA: Cuerpo (no)
+SOPA: Plato de cuchara
+SOTA: Carta número diez
+SUMA: Adición
+SUBE: Asciende
+SUDA: Transpira
+TACO: Comida mexicana | Palabrota
+TALA: Corte de árboles
+TAPA: Aperitivo de bar | Cubierta
+TARA: Defecto | Peso del envase
+TAXI: Coche de alquiler con conductor
+TAZA: Vasija con asa
+TECHO: (no)
+TELA: Tejido
+TEMA: Asunto | Materia
+TENER: (no)
+TESIS: (no)
+TIRA: Lanza | Cinta
+TODO: La totalidad
+TOMA: Coge | Bebe
+TONO: Matiz | Modo de hablar
+TOPO: Mamífero excavador | Espía infiltrado
+TORO: Animal de lidia
+TREN: Va sobre raíles
+TRES: Trío
+TRIO: Conjunto de tres
+TUBO: Cilindro hueco
+TUNA: Estudiantina
+TUYO: De tu propiedad
+UNAS: Artículo plural
+UNIR: Juntar
+UNOS: Artículo plural | Algunos
+UÑAS: Se pintan con esmalte
+URNA: Caja para votar
+USAR: Emplear
+USAS: Empleas
+UTIL: Que sirve
+UVAS: Frutos de la vid
+VACA: Da leche
+VASO: Recipiente para beber
+VELA: Cirio | Lona del barco
+VENA: Conduce la sangre
+VERA: Orilla
+VIDA: Existencia
+VINO: Bebida de uva | Llegó
+VISA: Permiso de entrada
+VIVA: Aclamación | Con vida
+VIVO: Con vida
+VOTO: Papeleta electoral | Promesa
+YATE: Barco de lujo
+YEMA: Parte amarilla del huevo
+YESO: Material de escayola
+YOGA: Disciplina hindú
+YUGO: Une a los bueyes
+ZETA: Última letra
+ZONA: Área | Territorio
+ZUMO: Jugo de fruta
+ACRE: Medida agraria | Áspero
+AFAN: Empeño
+AGIL: Ligero, rápido
+ALEA: Mezcla metales
+AMOS: Dueños
+AÑIL: Color del arco iris
+APIO: Hortaliza de tallos
+ARAS: Labras la tierra | Altares
+AREO: Ventilo (no)
+ASIA: Continente mayor
+ASES: Campeones | Cartas altas
+ATEA: Sin dios
+ATEO: Que no cree en Dios
+ATOS: Paquetes, líos
+AUNA: Junta
+AVAL: Garantía bancaria
+BAÑO: Aseo | Inmersión en agua
+BASE: Fundamento | Cimiento
+BIEN: Correctamente
+BOTA: Calzado alto
+CAOS: Desorden total
+CEDE: Da, traspasa
+CELO: Cinta adhesiva | Cuidado
+CESA: Termina | Dimite
+CIMA: Cumbre
+CLARO: (no)
+CREO: Opino | Invento
+CRIA: Animal recién nacido
+CRUZ: Símbolo cristiano
+DEBE: Adeuda
+DOLO: Engaño, fraude
+ECHA: Arroja
+ELLA: Pronombre femenino
+EMITE: (no)
+ERAL: Novillo joven
+ESAS: Demostrativo plural
+ETAPA: (no)
+FIEL: Leal
+GOZO: Alegría
+HIEL: Bilis
+IDOS: Chiflados
+ILESA: (no)
+INCA: Antiguo peruano
+IRIA: Marcharía
+ISLAS: (no)
+LEAS: Estudies un texto
+LIAR: Enredar | Envolver
+LIOS: Enredos
+LOAS: Alabanzas
+MAIZ: Cereal de las palomitas
+MARES: (no)
+MIAS: De mi propiedad
+MIOS: De mi propiedad
+NAOS: Naves antiguas
+NEON: Gas de los letreros
+NOEL: Papá navideño
+OASIS: (no)
+ODAS: Poemas líricos
+OIDO: Sentido auditivo
+OIGA: Escuche
+OLEO: Pintura al aceite
+OLES: Gritos taurinos
+OPERA: (no)
+ORAS: Rezas
+OSEA: Del hueso
+OSAS: Te atreves
+OTEA: Mira desde lo alto
+PEON: Obrero | Pieza de ajedrez
+PIAR: Cantar el pollito
+PIES: Extremidades inferiores
+POLEA: (no)
+RAER: Raspar
+REAS: Acusadas
+REOS: Condenados
+REUS: Ciudad de Tarragona
+RIEL: Carril del tren
+RIES: Sueltas carcajadas
+ROER: Mordisquear
+ROSA: Flor con espinas
+RUIN: Mezquino | Despreciable
+SACA: Extrae
+SAGA: Relato de una familia
+SALE: Va fuera
+SEAS: Existas
+SEDE: Domicilio de una entidad
+SENA: Río de París
+SEÑA: Gesto, indicio
+SERA: Existirá
+SIDA: Enfermedad del VIH
+SIEN: Lado de la frente
+SOIS: Segunda persona plural de ser
+SOLES: (no)
+SOMOS: (no)
+SUAVE: (no)
+SUEL: (no)
+TEAS: Antorchas
+TEMO: Tengo miedo
+TEME: Tiene miedo
+TIAS: Hermanas de tus padres
+TIOS: Hermanos de tus padres
+TIES: (no)
+TOSE: Expulsa aire bruscamente
+TRAE: Acerca
+UNEN: Juntan
+UNES: Juntas
+USEN: Empleen
+USOS: Costumbres
+VAIS: Marcháis
+VEIA: Observaba
+VEIS: Miráis
+VEAS: Mires
+VIAS: Carriles del tren
+OTAN: Alianza atlántica
+NASA: Agencia espacial
+URSS: Unión Soviética
+CLUB: Sociedad recreativa
+CLIC: Pulsación del ratón
+CHIP: Circuito integrado
+EDEN: Paraíso
+ELLOS: (no)
+ESTAR: (no)
+EVAS: (no)
+FEAS: Poco agraciadas
+FEOS: Poco agraciados
+IDAS: Marchas
+LEES: Pasas la vista por un texto
+LEIA: Pasaba la vista por un texto
+LIES: Enredes
+OREA: Ventila
+ORES: Reces
+OSEN: Se atrevan
+RAEN: Raspan
+REIA: Soltaba carcajadas
+ROEN: Mordisquean
+ROES: Mordisqueas
+SEAN: Existan
+SERE: Existiré
+TEAS: Antorchas
+UNIA: Juntaba
+USEN: Empleen
+AMAN: Quieren
+AMEN: Así sea
+ATAN: Anudan
+ATEN: Anuden
+ARAN: Labran la tierra
+ASAN: Cocinan a la brasa
+ASEN: Cocinen a la brasa
+OLIA: Percibía aromas
+ORAN: Rezan
+OREN: Recen
+USAN: Emplean
+ERAN: Existían
+ANDE: Camine
+ANDO: Camino
+ANOTE: (no)
+ARDO: Me quemo
+ARMO: Monto
+ASIR: Agarrar
+ASIA: Continente mayor
+ATAR: Anudar
+CAEN: Se desploman
+CAES: Te desplomas
+DABA: Entregaba
+DARA: Entregará
+DARE: Entregaré
+DEAN: Jefe del cabildo catedralicio
+DIRA: Hablará
+DOTA: Provee
+ECHE: Arroje
+ECHO: Arrojo
+ELEVA: (no)
+ENERO: (no)
+HACE: Fabrica | Realiza
+HAGA: Realice
+HAGO: Realizo
+IBAN: Marchaban
+IBAS: Marchabas
+IRAN: País persa
+IREMOS: (no)
+LEAN: Estudien un texto
+LEEN: Pasan la vista por un texto
+LIAN: Enredan
+LIEN: Enreden
+MIRE: Observe
+MIRO: Observo | Pintor catalán
+OIAN: Escuchaban
+OIAS: Escuchabas
+OIRA: Escuchará
+OIRE: Escucharé
+OLEA: (no)
+OLEN: (no)
+PASE: Entrada gratuita
+PONE: Coloca
+SABIA: (no)
+SALI: Fui fuera
+SALIO: (no)
+SEAIS: (no)
+TENIA: (no)
+TOCA: Palpa | Tañe
+TOME: Coja
+TOMO: Volumen de una obra | Cojo
+VEAN: Miren
+VEIAN: (no)
+VENDE: (no)
+VERA: Mirará
+VERE: Miraré
+VINE: Llegué
+VIRA: Gira el barco
+VOLO: Surcó el aire

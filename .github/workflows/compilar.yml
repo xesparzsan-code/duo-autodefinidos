@@ -1,0 +1,89 @@
+# Compila la app para Android (.apk) y para iPhone (.ipa sin firmar, para AltStore).
+# Se lanza a mano (pestaña Actions → "Compilar apps" → Run workflow) o al crear una etiqueta v*.
+name: Compilar apps
+
+on:
+  workflow_dispatch:
+  push:
+    tags: ['v*']
+
+permissions:
+  contents: write
+
+jobs:
+  android:
+    name: Android (.apk)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+      - run: npm ci
+      - name: Generar proyecto nativo
+        run: npx expo prebuild --platform android --no-install
+      - name: Compilar APK
+        working-directory: android
+        run: ./gradlew assembleRelease --no-daemon
+      - name: Renombrar
+        run: cp android/app/build/outputs/apk/release/app-release.apk Duo.apk
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Duo-android
+          path: Duo.apk
+
+  ios:
+    name: iPhone (.ipa sin firmar)
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Generar proyecto nativo
+        run: npx expo prebuild --platform ios
+      - name: Compilar sin firma
+        working-directory: ios
+        run: |
+          WORKSPACE=$(ls -d *.xcworkspace | head -1)
+          SCHEME="${WORKSPACE%.xcworkspace}"
+          xcodebuild \
+            -workspace "$WORKSPACE" \
+            -scheme "$SCHEME" \
+            -configuration Release \
+            -sdk iphoneos \
+            -derivedDataPath build \
+            CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
+            | tail -n 60
+      - name: Empaquetar .ipa
+        run: |
+          APP=$(ls -d ios/build/Build/Products/Release-iphoneos/*.app | head -1)
+          mkdir -p Payload
+          cp -R "$APP" Payload/
+          zip -qr Duo.ipa Payload
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Duo-iphone
+          path: Duo.ipa
+
+  publicar:
+    name: Publicar descargas
+    needs: [android, ios]
+    if: startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/download-artifact@v4
+        with:
+          merge-multiple: true
+      - uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            Duo.apk
+            Duo.ipa

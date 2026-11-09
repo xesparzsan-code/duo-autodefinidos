@@ -1,0 +1,337 @@
+# Formato: PALABRA: definición | definición alternativa
+# Sin tildes en la palabra (la Ñ sí se conserva). Definiciones cortas, estilo autodefinido.
+AL: Contracción | A más el
+DE: Preposición | Letra D
+EL: Artículo masculino
+EN: Preposición | Dentro de
+ES: Existe | Tercera persona de ser
+LA: Nota musical | Artículo femenino
+LO: Artículo neutro
+LE: Pronombre personal | A él
+ME: Pronombre personal | A mí
+TE: Infusión | Letra T
+SE: Pronombre reflexivo | Símbolo del selenio
+SI: Nota musical | Afirmación
+NO: Negación | Lo contrario de sí
+YA: Ahora mismo | En este momento
+YO: Primera persona | Pronombre personal
+TU: Posesivo | Segunda persona
+MI: Nota musical | Posesivo
+RE: Segunda nota musical
+DO: Primera nota musical
+FA: Cuarta nota musical
+UN: Artículo indeterminado
+SU: Posesivo | De él
+HA: Tercera persona de haber
+HE: Símbolo del helio | Primera persona de haber
+IR: Marchar | Acudir
+VA: Marcha | Se dirige
+VE: Mira | Observa
+DA: Entrega | Ofrece
+DI: Entregué | Imperativo de decir
+OS: Pronombre | A vosotros
+AS: Carta más alta | Campeón
+OH: Interjección de asombro
+AH: Interjección
+AY: Quejido | Interjección de dolor
+EH: Interjección para llamar
+UF: Interjección de cansancio
+OC: Lengua provenzal
+PI: Letra griega | 3,1416
+MU: Mugido | Letra griega
+NU: Letra griega
+XI: Letra griega
+RO: Letra griega
+AU: Símbolo del oro
+AG: Símbolo de la plata
+FE: Creencia | Símbolo del hierro
+CA: Símbolo del calcio
+NA: Símbolo del sodio
+NE: Símbolo del neón
+NI: Conjunción negativa | Símbolo del níquel
+CU: Símbolo del cobre | Letra Q
+AR: Símbolo del argón
+CO: Símbolo del cobalto
+LI: Símbolo del litio
+BA: Símbolo del bario
+TI: Símbolo del titanio | Pronombre tras "para"
+RA: Dios egipcio del sol | Símbolo del radio
+IO: Luna de Júpiter | Amada de Zeus
+EA: Interjección de ánimo
+OI: Escuché
+ID: Marchad
+UE: Unión Europea
+ON: Encendido, en inglés
+PO: Río italiano
+TV: Televisión
+CD: Disco compacto
+DJ: Pinchadiscos
+UR: Antigua ciudad caldea | Ciudad de Abraham
+EX: Antigua pareja | Que ya no es
+ÑU: Antílope africano
+IA: Inteligencia artificial
+SA: Sociedad anónima
+SL: Sociedad limitada
+SR: Señor, abreviado
+DR: Doctor, abreviado
+ET: Alien de Spielberg
+AM: Antes del mediodía | Onda de radio
+FM: Frecuencia modulada
+PM: Después del mediodía
+KO: Fuera de combate
+OK: De acuerdo
+JA: Risa escrita
+JE: Risa escrita
+JI: Risita escrita
+JO: Interjección de fastidio
+GE: Letra G | Símbolo del germanio
+BE: Letra B | Símbolo del berilio
+CE: Letra C
+PE: Letra P
+KA: Letra K
+AJO: Diente de cocina | Ahuyenta vampiros
+ALA: Extremidad de ave | Parte del avión
+AMA: Dueña | Quiere
+AMO: Dueño | Quiero
+ANA: Nombre de mujer | Madre de la Virgen
+ARA: Altar | Labra la tierra
+ARO: Anillo | Pendiente circular
+ASA: Agarradero | Cocina a la brasa
+ASO: Cocino a la brasa
+ATA: Anuda | Sujeta con cuerda
+ATO: Anudo
+AVE: Pájaro | Tren español veloz
+AYA: Niñera
+AYO: Preceptor
+AÑO: Doce meses | 365 días
+ERA: Época | Periodo histórico
+ERE: Despido colectivo
+ESA: Demostrativo femenino
+ESE: Demostrativo | Letra S
+ESO: Demostrativo neutro | Etapa de secundaria
+ETA: Letra griega
+EVA: Primera mujer | Compañera de Adán
+EJE: Línea de giro | Barra de las ruedas
+ELE: Letra L
+EME: Letra M
+ENE: Letra N
+EÑE: Letra muy española
+EFE: Letra F
+EGO: El yo | Exceso de autoestima
+ECO: Repetición del sonido | Resonancia
+EMU: Ave australiana
+IDA: Viaje sin vuelta | Marcha
+IRA: Cólera | Enfado grande
+ISA: Baile canario
+IBA: Marchaba | Se dirigía
+IRE: Marcharé
+IDO: Marchado | Chiflado
+ION: Átomo con carga
+OCA: Ave de corral | Juego de mesa
+ODA: Poema lírico | Composición de alabanza
+OJO: Órgano de la vista
+OLA: Onda del mar
+OLE: Grito taurino | ¡Bravo!
+ORA: Reza
+ORE: Rece
+ORO: Metal precioso | Medalla del campeón
+OSA: Hembra de plantígrado | Se atreve
+OSE: Se atreva
+OSO: Plantígrado | Animal que hiberna
+OIR: Escuchar | Percibir sonidos
+OIA: Escuchaba
+OIS: Escucháis
+OYE: Escucha
+ONU: Naciones Unidas
+OPA: Oferta de compra de acciones
+ONG: Entidad solidaria
+UNA: Artículo femenino | Primera hora de la tarde
+UNO: Número impar | El primero
+UNE: Junta | Enlaza
+USA: Emplea | Estados Unidos
+USE: Emplee
+USO: Empleo | Costumbre
+UVA: Fruto de la vid | Se toman doce en Nochevieja
+UVE: Letra V
+UÑA: Extremo del dedo
+URO: Bóvido extinguido
+UCI: Cuidados intensivos
+BAR: Local de copas | Taberna
+BAH: Interjección de desdén
+BIS: Repetición en un concierto
+BOA: Serpiente grande | Serpiente constrictora
+BOL: Tazón
+BOX: Taller en las carreras
+BUS: Autobús
+CAL: Blanquea paredes | Óxido de calcio
+CAN: Perro
+CAE: Se desploma
+CID: El Campeador
+CIA: Agencia de espías
+CHE: Interjección argentina
+COL: Repollo | Verdura
+CON: Preposición de compañía
+COZ: Patada de caballo
+DAD: Entregad
+DAN: Entregan | Grado de judo
+DAR: Entregar | Ofrecer
+DAS: Entregas
+DEL: Contracción
+DEN: Entreguen
+DES: Entregues
+DIA: Jornada | Veinticuatro horas
+DIO: Entregó
+DNI: Documento de identidad
+DON: Regalo | Talento
+DOS: Pareja | Número par
+DOY: Entrego
+DUO: Pareja musical | Dos cantantes
+ADN: Molécula de la herencia
+FAN: Admirador
+FAX: Antiguo envío de documentos
+FEA: Poco agraciada
+FEO: Poco agraciado
+FEZ: Gorro marroquí | Ciudad de Marruecos
+FIN: Final | Término
+FUE: Marchó
+FUI: Marché
+GAS: Fluido | Ni sólido ni líquido
+GEL: Jabón líquido
+GEN: Unidad de la herencia
+GOL: Tanto en fútbol
+GPS: Navegador
+HAY: Existe
+HAS: Segunda persona de haber
+HAN: Dinastía china
+HAZ: Manojo | Conjunto de rayos
+HEZ: Poso | Sedimento
+HIT: Éxito musical
+HOY: Este día | Ni ayer ni mañana
+HOZ: Herramienta para segar
+HUI: Escapé
+ICE: Subí la bandera
+INE: Instituto de estadística
+ITV: Inspección de vehículos
+IVA: Impuesto al consumo
+KIT: Conjunto de piezas
+LAR: Hogar
+LAS: Artículo plural
+LEE: Pasa la vista por un texto
+LEI: Pasé la vista por un texto
+LEO: Signo del zodiaco | León del zodiaco
+LES: Pronombre plural
+LEY: Norma | Regla jurídica
+LIA: Enreda | Enrolla
+LIO: Enredo | Embrollo
+LIS: Flor heráldica
+LOA: Alabanza
+LOS: Artículo plural
+LUZ: Claridad | Lo contrario de oscuridad
+MAL: Lo contrario del bien | Daño
+MAR: Masa de agua salada | Océano
+MAS: Signo de la suma | Pero
+MES: Treinta días | Enero, por ejemplo
+MIA: De mi propiedad
+MIL: Diez veces cien
+MIO: De mi propiedad
+MIS: Posesivo plural
+MUS: Juego de naipes | Juego de envites
+MUY: En alto grado | Adverbio de cantidad
+NAO: Nave antigua
+NEO: Nuevo, como prefijo
+NOE: Patriarca del arca
+NON: Impar
+NOS: Pronombre | A nosotros
+PAN: Alimento de horno | Se compra en barras
+PAR: Divisible por dos | Pareja
+PAZ: Lo contrario de guerra | Tranquilidad
+PEZ: Animal acuático | Vive en el agua
+PIA: Devota
+PIE: Extremidad inferior | Base
+PIN: Clave del móvil | Insignia de solapa
+PIO: Voz del pollito | Devoto
+POP: Música moderna
+POR: Signo de multiplicar | Preposición
+PRO: A favor
+PUA: Pincho | Para tocar la guitarra
+PUB: Bar inglés
+PUS: Humor de una herida
+PVC: Plástico de tuberías
+RAE: Academia de la lengua | Raspa
+RAP: Música recitada
+RAS: Nivel, igualdad
+REA: Acusada
+RED: Malla | Internet
+REM: Fase del sueño
+REO: Acusado | Condenado
+RES: Animal de ganado
+REY: Monarca | Pieza de ajedrez
+RIA: Entrante gallego del mar
+RIE: Suelta carcajadas
+RIO: Corriente de agua | Suelto carcajadas
+ROA: Mordisquee
+ROE: Mordisquea
+ROL: Papel, función | Juego de personajes
+RON: Licor de caña | Bebida de piratas
+RUA: Calle, en gallego
+SAL: Condimento | Cloruro sódico
+SAN: Apócope de santo
+SED: Ganas de beber
+SER: Existir | Ente
+SET: Parte de un partido de tenis
+SIC: Así, textualmente
+SIN: Preposición de carencia
+SOL: Astro rey | Estrella
+SON: Ritmo cubano | Sonido agradable
+SOS: Llamada de socorro
+SOY: Primera persona de ser
+SPA: Balneario moderno
+SUR: Punto cardinal | Opuesto al norte
+SUS: Posesivo plural
+TAC: Prueba médica de imagen
+TAL: Semejante
+TAN: Apócope de tanto
+TAU: Letra griega
+TEA: Antorcha
+TEN: Sujeta, agarra
+TES: Infusiones
+TIA: Hermana de tu madre
+TIC: Gesto nervioso
+TIO: Hermano de tu padre
+TNT: Explosivo
+TON: Va con "ni son"
+TOP: Prenda femenina corta
+TOS: Expulsión brusca de aire
+TUL: Tela fina de velos
+TUS: Posesivo plural
+VAN: Marchan | Se dirigen
+VAS: Marchas
+VEN: Acércate | Miran
+VEO: Observo | Miro
+VER: Mirar | Percibir con los ojos
+VES: Miras
+VEZ: Turno | Ocasión
+VIA: Camino | Carril del tren
+VID: Planta de la uva
+VIL: Despreciable | Infame
+VIO: Observó
+VIP: Persona muy importante
+VOY: Me dirijo
+VOZ: Sonido de la garganta
+WEB: Página de internet
+YAK: Bóvido del Tíbet
+YEN: Moneda japonesa
+ZAR: Emperador ruso
+ZAS: Onomatopeya de golpe
+ZEN: Budismo japonés
+ZOO: Parque de animales
+ACA: Aquí
+ACE: Saque directo en tenis
+AHI: En ese lugar
+ALI: Babá del cuento
+AME: Quiera
+ARE: Labre la tierra
+ASE: Cocine a la brasa
+ASI: De esta manera
+ATE: Anude
+AUN: Todavía | Incluso

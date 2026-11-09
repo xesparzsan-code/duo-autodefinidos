@@ -1,0 +1,223 @@
+ABANICO: Da aire en verano
+ACEITES: Grasas líquidas
+ACUARIO: Signo del zodiaco | Pecera grande
+ALEGRIA: Gozo
+ALMACEN: Depósito de mercancías
+ALMENDRA: Fruto seco del turrón
+ALMOHADA: Cojín de la cama
+AMARGOS: Nada dulces
+AMISTAD: Relación entre amigos
+ANIMALES: Seres del zoo
+ANTERIOR: Previo
+APETITO: Ganas de comer
+ARBITRO: Juez del partido
+ARMARIO: Mueble para la ropa
+ARTISTA: Pintor o escultor
+ASCENSOR: Sube y baja en el edificio
+ASIENTO: Lugar para sentarse
+ATENTOS: Que escuchan con cuidado
+AVENIDA: Calle ancha
+BALLENA: Mayor mamífero marino
+BANDERA: Insignia nacional
+BARRERA: Obstáculo
+BELLEZA: Hermosura
+BILLETE: Papel moneda | Pasaje
+BOLSILLO: Saquito de la ropa
+BOTELLA: Recipiente de vidrio
+CABALLO: Animal del jinete
+CALIDAD: Buena condición
+CAMARERO: Sirve en el bar
+CAMINAR: Andar
+CAMPANA: Suena en la iglesia
+CAMPEON: Vencedor
+CANCION: Letra con música
+CANTANTE: Vocalista
+CAPITAL: Ciudad principal
+CARACOL: Molusco con concha
+CARRERA: Competición de velocidad
+CASTILLO: Fortaleza medieval
+CENTRAL: Que está en el medio
+CEREALES: Trigo y avena
+CEREBRO: Órgano del pensamiento
+CIRUELA: Fruta de hueso
+COCINAR: Guisar
+COLEGIO: Escuela
+COMEDIA: Obra para reír
+COMPRAR: Adquirir
+CONEJO: (no)
+CONSEJO: Recomendación
+CORAZON: Late en el pecho
+CORTINA: Cubre la ventana
+COSECHA: Recolección
+CRISTAL: Vidrio
+CUADERNO: Libreta
+CUCHARA: Cubierto de la sopa
+CULTURA: Conjunto de conocimientos
+DEPORTE: Fútbol o tenis
+DERECHO: Recto | Lo estudia el abogado
+DESAYUNO: Primera comida
+DESEADO: Anhelado
+DESIERTO: Lugar árido
+DESTINO: Lugar de llegada
+DOMINGO: Día de descanso
+EDIFICIO: Construcción
+EJEMPLO: Caso que ilustra
+ELEFANTE: Animal con trompa
+EMPRESA: Sociedad mercantil
+ENERGIA: Fuerza | Vigor
+ENSALADA: Plato de lechuga
+ENTRADA: Billete del cine | Acceso
+ESCALERA: Serie de peldaños
+ESCRITOR: Autor de libros
+ESCUELA: Colegio
+ESPALDA: Parte posterior del tronco
+ESTRELLA: Astro con luz propia
+ESTRENO: Primera representación
+FAMILIA: Padres e hijos
+FEBRERO: Mes más corto
+FORTUNA: Suerte | Riqueza
+GALLETA: Dulce del desayuno
+GALLINA: Pone huevos
+GIGANTE: Enorme
+GUITARRA: Instrumento de seis cuerdas
+HERMANA: Hija de tus padres
+HERMANO: Hijo de tus padres
+HISTORIA: Relato | Estudio del pasado
+HORMIGA: Insecto trabajador
+HOSPITAL: Centro sanitario
+IGLESIA: Templo cristiano
+INVIERNO: Estación fría
+JARDINES: Terrenos con flores
+JORNADA: Día de trabajo
+LAMPARA: Da luz
+LECHUGA: Hoja de la ensalada
+LECTURA: Acción de leer
+LIBERTAD: Falta de ataduras
+LIMPIAR: Quitar la suciedad
+LLAMADA: Aviso por teléfono
+MADRINA: Acompaña al bautizado
+MAESTRO: Profesor
+MALETAS: Equipaje
+MANZANA: Fruta de Blancanieves
+MARIPOSA: Insecto de alas vistosas
+MARTILLO: Golpea los clavos
+MEMORIA: Capacidad de recordar
+MENSAJE: Recado
+MENTIRA: Lo contrario de verdad
+MERCADO: Plaza de abastos
+MIERCOLES: (no)
+MOCHILA: Bolsa a la espalda
+MOMENTO: Instante
+MONTAÑA: Gran elevación del terreno
+MOSTAZA: Salsa amarilla picante
+NARANJA: Cítrico | Color del butano
+NAVIDAD: Fiesta de diciembre
+NEVERAS: Frigoríficos
+NOTICIA: Novedad del telediario
+OCTUBRE: Décimo mes
+OFICINA: Lugar de trabajo
+ORACION: Rezo | Frase
+ORQUESTA: Conjunto de músicos
+PALABRA: Vocablo
+PANTALLA: Parte visible del televisor
+PARAGUAS: Protege de la lluvia
+PARAISO: Edén
+PASILLO: Corredor
+PASTORES: Cuidan ovejas
+PELIGRO: Riesgo
+PELOTAS: Balones pequeños
+PERSONA: Individuo
+PESCADO: Merluza o lubina
+PIMIENTA: Especia que hace estornudar
+PINTURA: Arte del pincel
+PISCINA: Estanque para nadar
+PLANETA: Marte o Venus
+PLATANO: Fruta canaria
+PRIMERO: Antes que el segundo
+PROBLEMA: Dificultad
+PROFESOR: Docente
+PROMESA: Palabra dada
+PUERTAS: Entradas
+RAQUETA: Pala del tenista
+RECREOS: Descansos escolares
+RECUERDO: Memoria de algo pasado
+REGALOS: Obsequios
+RELATOS: Cuentos
+REMEDIO: Solución
+RESPETO: Consideración
+RETRASO: Demora
+RETRATO: Pintura de una persona
+SALARIO: Sueldo
+SALUDAR: Decir hola
+SECRETO: Lo que se calla
+SEMANAS: Periodos de siete días
+SEMILLA: Germen de la planta
+SENDERO: Camino estrecho
+SENTADO: Sobre la silla
+SEÑALES: Indicaciones de tráfico
+SERVICIO: Aseo | Saque en tenis
+SILENCIO: Ausencia de ruido
+SOLDADO: Militar raso
+SOLTERO: Sin casar
+SOMBRERO: Prenda para la cabeza
+SONRISA: Gesto alegre de la boca
+SORPRESA: Algo inesperado
+TABERNA: Bar tradicional
+TARJETA: Plástico para pagar
+TEATROS: Salas de funciones
+TEJADOS: Cubiertas de las casas
+TELEFONO: Aparato para llamar
+TERNERA: Carne de res joven
+TERRAZA: Azotea | Mesas al aire libre
+TESOROS: Los buscan los piratas
+TIJERAS: Cortan papel
+TOMATES: Frutos rojos de la ensalada
+TORMENTA: Lluvia con rayos
+TORTILLA: Plato de huevos batidos
+TORTUGA: Reptil con caparazón
+TRABAJO: Empleo | Labor
+TRISTEZA: Pena
+TRIUNFO: Victoria
+UNIVERSO: Cosmos
+VACACION: Descanso del trabajo
+VENTANA: Abertura con cristales
+VERANOS: Estaciones calurosas
+VERDURA: Hortaliza
+VESTIDO: Prenda femenina entera
+VIAJERO: Turista
+VICTORIA: Triunfo
+VIERNES: Quinto día de la semana
+VINAGRE: Aliño ácido
+VIOLETA: Flor y color
+ZAPATOS: Calzado
+ZAPATERO: Arregla el calzado
+ARENALES: Extensiones de playa
+ASEADOS: Limpios
+ASESORA: Aconseja
+ENTERAS: Completas
+ESTERAS: Tejidos de esparto
+ORADORES: Dan discursos
+RATEROS: Ladrones de poca monta
+SERENAS: Tranquilas
+SALERO: (no)
+TESTERA: (no)
+TOALLAS: Secan tras la ducha
+SARTENES: Utensilios para freír
+ESTELAS: Rastros de los barcos
+ESPADAS: Palo de la baraja
+ESCENAS: Partes de un acto teatral
+ENLACES: Uniones
+ESPOSAS: Sujetan al detenido
+ESTADOS: Naciones
+RECETAS: Instrucciones de cocina
+RESACAS: Malestares tras la fiesta
+SALIDAS: Lo contrario de entradas
+SIRENAS: Mitad mujeres, mitad peces
+SIESTAS: Sueños tras la comida
+TETERAS: Vasijas para infusiones
+MESETAS: Llanuras elevadas
+MONEDAS: Piezas de dinero
+NOVELAS: Obras literarias largas
+PAREJAS: Dúos
+PATATAS: Tubérculos para freír
+PIRATAS: Bandidos del mar

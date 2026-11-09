@@ -1,0 +1,371 @@
+ABRAZO: Muestra de cariño con los brazos
+ABRIGO: Prenda de invierno
+ABUELA: Madre de tu madre
+ABUELO: Padre de tu padre
+ACEITE: Oro líquido de la cocina
+ACENTO: Tilde
+ACERCA: Aproxima
+ACTRIZ: Intérprete femenina
+ACUDIR: Ir, presentarse
+ADORNO: Decoración
+AGOSTO: Mes de vacaciones
+AGUILA: Reina de las aves
+ALARMA: Señal de peligro
+ALCOBA: Dormitorio
+ALEGRE: Contento
+ALERTA: Aviso de peligro
+ALMEJA: Molusco de la paella
+ALTURA: Elevación
+AMABLE: Cordial
+AMARGO: Lo contrario de dulce
+AMISTAD: (no)
+ANILLO: Sortija
+ANIMAL: Ser vivo no vegetal
+ANTENA: Capta señales
+APETITO: (no)
+ARCADA: Serie de arcos
+ARENAL: Extensión de playa
+ARMADA: Fuerzas navales
+ARMARIO: (no)
+AROMAS: Olores agradables
+ARROYO: Río pequeño
+ASALTO: Atraco | Parte del combate de boxeo
+ASIENTO: (no)
+ASTUTO: Zorro, sagaz
+ATENAS: Capital de Grecia
+ATLETA: Deportista
+ATRASO: Demora
+AURORA: Luz del amanecer
+AVISAR: Advertir
+AYUDAR: Socorrer
+AZUCAR: Endulza el café
+BALADA: Canción lenta
+BALCON: Mirador de la fachada
+BARATO: De poco precio
+BARCOS: Embarcaciones
+BARRIO: Zona de la ciudad
+BATIDO: Bebida de leche y fruta
+BELLEZA: (no)
+BIGOTE: Pelo sobre el labio
+BLANCO: Color de la nieve
+BODEGA: Almacén de vinos
+BOLERO: Canción romántica
+BONITO: Lindo | Pez parecido al atún
+BOSQUE: Terreno poblado de árboles
+BOTELLA: (no)
+BOTINES: Calzado hasta el tobillo
+BRILLO: Resplandor
+CABEZA: Parte superior del cuerpo
+CADENA: Serie de eslabones
+CADERA: Articulación de la pelvis
+CALADO: Empapado
+CALIDO: Templado
+CALLAR: Guardar silencio
+CAMARA: Hace fotos
+CAMINO: Sendero | Vía
+CAMISA: Prenda con botones
+CAMPEON: (no)
+CANELA: Especia del arroz con leche
+CANTAR: Entonar
+CARETA: Máscara
+CARINO: (no)
+CARIÑO: Afecto
+CARRIL: Vía de la carretera
+CARTAS: Naipes
+CASADO: Unido en matrimonio
+CASERO: Hecho en el hogar | Dueño del piso
+CASTOR: Roedor que hace presas
+CEBADA: Cereal de la cerveza
+CEREAL: Trigo o maíz
+CEREZA: Fruta roja con rabito
+CERRAR: Lo contrario de abrir
+CESTAS: Canastas
+CIUDAD: Urbe
+COCINA: Donde se guisa
+COLINA: Loma
+COMIDA: Almuerzo | Alimento
+COPLAS: Canciones populares
+CORONA: Adorno del rey
+CORRAL: Recinto de gallinas
+CORREO: Servicio postal
+CORRER: Ir deprisa
+CORTAR: Dividir con cuchillo
+COSTAR: Valer
+CREADO: Inventado
+CRIADA: Sirvienta
+CRISIS: Momento difícil
+CUADRO: Pintura enmarcada
+CUERDA: Soga
+CUERPO: Tronco y extremidades
+DANZAR: Bailar
+DEBATE: Discusión ordenada
+DEDICA: Destina
+DELITO: Infracción de la ley
+DEPORTE: (no)
+DESEAR: Anhelar
+DESTINO: (no)
+DIARIO: Periódico | Cuaderno íntimo
+DIBUJO: Trazo a lápiz
+DIENTE: Pieza de la boca
+DINERO: Monedas y billetes
+DOCENA: Doce unidades
+DOLORES: (no)
+DORADA: Pez de escamas brillantes
+DORADO: Del color del oro
+DORMIR: Descansar con sueño
+EDITOR: Publica libros
+ELEGIR: Escoger
+EMPATE: Igualdad de puntos
+ENCIMA: En la parte superior
+ENERGIA: (no)
+ENFADO: Enojo
+ENLACE: Unión | Boda
+ENSAYO: Prueba antes del estreno
+ENTERO: Completo
+ENTRAR: Pasar adentro
+ENVASE: Recipiente
+EQUIPO: Conjunto de jugadores
+ERRATA: Fallo de imprenta
+ESCENA: Parte de un acto teatral
+ESCUDO: Arma defensiva
+ESPADA: Arma blanca larga
+ESPEJO: Refleja la imagen
+ESPOSA: Mujer casada
+ESPOSO: Marido
+ESTADO: Situación | Nación
+ESTELA: Rastro del barco
+ESTILO: Manera, moda
+ESTRENO: (no)
+EUROPA: Viejo continente
+EXAMEN: Prueba escolar
+FABULA: Cuento con moraleja
+FAMOSO: Célebre
+FIESTA: Celebración
+FIGURA: Forma | Silueta
+FLORES: Rosas y claveles
+FRENAR: Detener el coche
+FRENTE: Parte alta de la cara
+FRESCO: Algo frío | Pintura mural
+FUENTE: Manantial | Plato grande
+FUERTE: Robusto
+FUERZA: Vigor
+GALLOS: Cantan al amanecer
+GANADO: Conjunto de reses
+GARAJE: Cochera
+GENERO: Clase | Tela
+GIGANTE: (no)
+GLORIA: Fama | Cielo
+GORILA: Simio enorme
+GRANDE: De gran tamaño
+GRANJA: Finca con animales
+GRIETA: Abertura alargada
+GUERRA: Conflicto armado
+HELADO: Postre veraniego
+HERIDA: Lesión
+HERMANO: (no)
+HEROES: Personajes valientes
+HIERBA: Cubre el prado
+HIERRO: Metal del imán
+HIGADO: Órgano que segrega bilis
+HOMBRE: Varón
+HOMBRO: Une el brazo al tronco
+HONRAR: Respetar
+HORMIGA: (no)
+HUERTA: Terreno de hortalizas
+HUERTO: Terreno de frutales
+HUMANO: Persona
+IDIOMA: Lengua
+IGLESIA: (no)
+IMAGEN: Figura | Lo que refleja el espejo
+ISLOTE: Isla pequeña
+JARDIN: Terreno con flores
+JINETE: Monta a caballo
+JUEVES: Cuarto día de la semana
+JUGADA: Lance del juego
+LADRON: Caco
+LAGUNA: Lago pequeño
+LATIDO: Golpe del corazón
+LAUREL: Hoja para guisos y coronas
+LECHES: (no)
+LENGUA: Órgano del gusto | Idioma
+LETRAS: Signos del abecedario
+LIEBRE: Corre más que el conejo
+LIMPIO: Sin manchas
+LLANTO: Efusión de lágrimas
+LLEGAR: Arribar
+LLENAR: Colmar
+LLORAR: Derramar lágrimas
+LLUVIA: Agua de las nubes
+MADERA: Material del árbol
+MADRID: Capital de España
+MAESTRO: (no)
+MANERA: Modo
+MANTEL: Cubre la mesa
+MAREAS: Suben y bajan en el mar
+MARIDO: Esposo
+MARTES: Segundo día de la semana
+MEDICO: Doctor
+MEJORA: Progreso
+MELENA: Cabello largo
+MENTIR: Faltar a la verdad
+MERCADO: (no)
+MESETA: Llanura elevada
+MEZCLA: Combinación
+MINUTO: Sesenta segundos
+MIRADA: Ojeada
+MODELO: Desfila en la pasarela
+MOLINO: Gigante de don Quijote
+MONEDA: Pieza de dinero
+MORADO: Color violeta
+MOSTAZA: (no)
+MUEBLE: Mesa o silla
+MUERTE: Fin de la vida
+MUSICA: Arte de los sonidos
+NACION: País
+NADADOR: (no)
+NARANJA: (no)
+NEVADA: Caída de copos
+NOVELA: Obra literaria larga
+NUMERO: Cifra
+OBJETO: Cosa
+OBRERO: Trabajador manual
+OCEANO: Atlántico o Pacífico
+OFERTA: Rebaja
+OFICIO: Profesión
+OLIVAR: Campo de aceitunas
+OPERAR: Intervenir en el quirófano
+ORILLA: Borde del río
+ORIGEN: Principio
+PAELLA: Arroz valenciano
+PAGINA: Cara de una hoja
+PAJARO: Ave pequeña
+PALOMA: Ave de la paz
+PARAISO: (no)
+PAREJA: Dos personas
+PARQUE: Jardín público
+PASADO: Tiempo anterior
+PASEAR: Andar por placer
+PASTEL: Dulce de pastelería
+PASTOR: Cuida ovejas
+PATATA: Tubérculo de la tortilla
+PECERA: Casa de cristal del pez
+PELOTA: Balón pequeño
+PERDON: Disculpa
+PERROS: Canes
+PESCAR: Capturar peces
+PIEDRA: Roca pequeña
+PIERNA: Extremidad inferior
+PILOTO: Conduce el avión
+PINTAR: Dar color
+PINTOR: Artista del pincel
+PIRATA: Bandido del mar
+PLANTA: Vegetal | Piso de un edificio
+PLATOS: Vajilla para comer
+PLAZOS: Partes de un pago
+POESIA: Arte de los versos
+POLLOS: Crías de la gallina
+POSTRE: Final dulce de la comida
+PRECIO: Lo que cuesta
+PREMIO: Galardón
+PRENSA: Periódicos
+PRIMOS: Hijos de tus tíos
+PUEBLO: Población pequeña
+PUENTE: Cruza el río
+PUERTA: Entrada
+PUERTO: Refugio de barcos
+RAPIDO: Veloz
+RASCAR: Frotar con las uñas
+RASTRO: Huella | Mercadillo madrileño
+REBAJA: Descuento
+RECETA: Instrucciones de cocina
+RECREO: Descanso escolar
+REGALO: Obsequio
+REGION: Comarca
+REMATE: Final | Tiro a puerta
+REMEDIO: (no)
+RESACA: Malestar tras la fiesta
+RESTAR: Sustraer
+RETRATO: (no)
+REUNIR: Juntar
+RINCON: Esquina interior
+RODEAR: Cercar
+ROMANO: De la ciudad eterna
+ROPERO: Armario
+RUBIES: Piedras preciosas rojas
+SABADO: Sexto día de la semana
+SABANA: Ropa de cama | Llanura africana
+SALADO: Con mucho condimento
+SALIDA: Lo contrario de entrada
+SALTAR: Brincar
+SALUDO: Hola
+SANDIA: Fruta de pepitas negras
+SARTEN: Utensilio para freír
+SECRETO: (no)
+SEGURO: Sin riesgo | Póliza
+SEMANA: Siete días
+SENTIR: Notar
+SEÑORA: Dama
+SERENO: Tranquilo | Vigilante nocturno
+SIERRA: Cordillera | Corta madera
+SIESTA: Sueño tras la comida
+SILBAR: Dar pitidos con los labios
+SIRENA: Mitad mujer, mitad pez
+SOLDADO: (no)
+SOMBRA: Proyección oscura
+SONIDO: Lo que capta el oído
+SOPLAR: Echar aire
+SUERTE: Fortuna
+TABACO: Planta del cigarro
+TALLER: Repara coches
+TAMAÑO: Dimensión
+TARDES: Siguen a las mañanas
+TEATRO: Arte escénico
+TEJADO: Cubierta de la casa
+TENDER: Colgar la ropa
+TERNERA: (no)
+TESORO: Lo busca el pirata
+TIERRA: Nuestro planeta
+TIJERA: Corta papel
+TOALLA: Seca tras la ducha
+TOMATE: Fruto rojo de la ensalada
+TORERO: Matador
+TORTUGA: (no)
+TRABAJO: (no)
+TRAMPA: Engaño | Cepo
+TRENES: Van sobre raíles
+TRENZA: Peinado entrelazado
+TRISTE: Apenado
+TRONCO: Tallo del árbol
+TROTAR: Correr sin prisa
+TUNEL: (no)
+ULTIMO: El que cierra la fila
+VACUNA: Previene enfermedades
+VALLAS: Cercas
+VECINO: Vive en tu portal
+VENADO: Ciervo
+VENDER: Lo contrario de comprar
+VENENO: Tóxico
+VERANO: Estación calurosa
+VERDAD: Lo contrario de mentira
+VIAJAR: Hacer turismo
+VIENTO: Aire en movimiento
+VISITA: Persona que viene a casa
+VOLCAN: Montaña con cráter
+ZAPATO: Calzado
+ARENAS: Cubren las playas
+ASADOR: Restaurante de carnes
+ASEADO: Limpio
+ATADOS: Sujetos con cuerda
+ENTERA: Completa
+ESTERA: Tejido de esparto
+ORADOR: Da discursos
+OSADIA: Atrevimiento
+RATERO: Ladrón de poca monta
+RESTOS: Sobras
+SERENA: Tranquila
+SOLERA: Antigüedad del vino
+TALADO: Cortado, hablando de un árbol
+TEATROS: (no)
+TERESA: Santa de Ávila
+TETERA: Vasija para infusiones
+TOSTAR: Dorar el pan
