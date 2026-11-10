@@ -28,7 +28,7 @@ export function ArchiveScreen() {
         const c = await cachedProgress(profile.room, d);
         if (c && Object.keys(c.cells).length) {
           const p = puzzleForDate(d);
-          res[d] = derive(p, c.cells).confirmed.size / p.whiteCount;
+          res[d] = derive(p, c.cells).filled / p.whiteCount;
         }
       }
       if (alive) setProgress(res);

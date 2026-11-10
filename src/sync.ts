@@ -234,7 +234,7 @@ export interface GameState {
   loaded: boolean;
 }
 
-type PendingOp = { cell: CellEntry | null };
+type PendingOp = { cell: CellEntry | null; t: number };
 
 interface Cache {
   cells: Cells;
@@ -261,6 +261,8 @@ export class GameSession {
     private readonly room: string | null,
     readonly date: string,
     private readonly uid: string,
+    /** Solo lectura (portada): no guarda en disco ni reenvía pendientes. */
+    private readonly readOnly = false,
   ) {
     this.cacheKey = `game:${room ?? 'solo'}:${date}`;
     this.path = room && firebaseEnabled ? `rooms/${room}/games/${date}` : null;
@@ -286,12 +288,27 @@ export class GameSession {
     this.emit();
     const d = database();
     if (d && this.path) {
-      // reenviar lo que quedó pendiente de una sesión anterior sin conexión
-      for (const [k, op] of Object.entries(this.pending)) this.push(k, op);
-      for (const [id, h] of Object.entries(this.pendingHints)) this.pushHint(id, h);
-      if (this.state.startedAt) this.pushStart(this.state.startedAt);
+      if (this.readOnly) {
+        this.pending = {};
+        this.pendingHints = {};
+      } else {
+        for (const [id, h] of Object.entries(this.pendingHints)) this.pushHint(id, h);
+        if (this.state.startedAt) this.pushStart(this.state.startedAt);
+      }
+      let first = true;
       this.off = onValue(ref(d, this.path), (snap) => {
         const v = (snap.val() ?? {}) as Partial<Cache>;
+        if (first) {
+          first = false;
+          // Reenviar lo que quedó pendiente de una sesión anterior sin conexión,
+          // salvo que alguien haya escrito después en esa casilla.
+          const remotas = (v.cells ?? {}) as Cells;
+          for (const [k, op] of Object.entries(this.pending)) {
+            const r = remotas[k];
+            if (r && r.t >= (op.t ?? 0)) delete this.pending[k];
+            else this.push(k, op);
+          }
+        }
         this.remote = {
           cells: (v.cells ?? {}) as Cells,
           hints: (v.hints ?? {}) as Record<string, HintEntry>,
@@ -330,6 +347,7 @@ export class GameSession {
   }
 
   private persist() {
+    if (this.readOnly) return;
     const c: Cache = {
       cells: this.state.cells,
       hints: this.state.hints,
@@ -385,7 +403,17 @@ export class GameSession {
   }
 
   setCell(k: string, letter: string | null, hint = false) {
-    const entry: CellEntry | null = letter ? { l: letter, by: this.uid, t: now(), ...(hint ? { h: true } : {}) } : null;
+    const entry: CellEntry | null = letter ? { l: letter, by: this.uid, t: now(), ...(hint ? { h: true, ok: true } : {}) } : null;
+    this.putCell(k, entry);
+  }
+
+  /** Marca una casilla como comprobada (correcta y fija) sin cambiar quién la puso. */
+  markOk(k: string) {
+    const e = this.state.cells[k];
+    if (e && !e.ok) this.putCell(k, { ...e, ok: true });
+  }
+
+  private putCell(k: string, entry: CellEntry | null) {
     const cells = { ...this.state.cells };
     if (entry) cells[k] = entry;
     else delete cells[k];
@@ -396,7 +424,7 @@ export class GameSession {
     }
     this.state = { ...this.state, cells, startedAt };
     if (this.path) {
-      const op: PendingOp = { cell: entry };
+      const op: PendingOp = { cell: entry, t: now() };
       this.pending[k] = op;
       this.push(k, op);
     }

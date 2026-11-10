@@ -59,7 +59,7 @@ export function GameScreen({ date }: { date: string }) {
   // --- selección inicial: primera palabra sin terminar
   useEffect(() => {
     if (state.loaded && !sel) {
-      const w = puzzle.words.find((x) => !derived.doneWords.has(x.id)) ?? puzzle.words[0];
+      const w = puzzle.words.find((x) => !derived.filledWords.has(x.id)) ?? puzzle.words[0];
       const k = w.cells.find((c) => !state.cells[c]) ?? w.cells[0];
       setSel({ k, dir: w.dir });
     }
@@ -150,14 +150,14 @@ export function GameScreen({ date }: { date: string }) {
     let id = active ?? 0;
     for (let i = 0; i < n; i++) {
       id = (id + delta + n) % n;
-      if (!derived.doneWords.has(id)) break;
+      if (!derived.filledWords.has(id)) break;
     }
     selectWord(id);
   };
 
   const typeLetter = (letter: string) => {
     const s = sessionRef.current;
-    if (!s || !sel || active === null) return;
+    if (!s || !sel || active === null || derived.complete) return;
     tap(profile.haptics);
     const w = puzzle.words[active];
     const idx = w.cells.indexOf(sel.k);
@@ -166,28 +166,34 @@ export function GameScreen({ date }: { date: string }) {
       s.setCell(sel.k, letter);
       if (first) notifyStart();
     }
-    // avanzar a la siguiente casilla libre de la palabra
     const cells = s.current.cells;
     const d = derive(puzzle, cells, state.hints);
-    let next = w.cells.slice(idx + 1).find((c) => !cells[c]) ?? w.cells.slice(idx + 1).find((c) => !d.confirmed.has(c));
-    if (!next && d.doneWords.has(w.id)) {
-      // palabra terminada: saltar a la siguiente sin resolver
+    if (d.filled === puzzle.whiteCount && !d.complete && derived.filled < puzzle.whiteCount) {
+      app.toast('Está todo escrito, pero hay alguna letra incorrecta');
+    }
+    // avanzar: siguiente casilla vacía de la palabra o, si no hay, la siguiente sin fijar
+    const rest = w.cells.slice(idx + 1);
+    const next = rest.find((c) => !cells[c]) ?? rest.find((c) => !d.confirmed.has(c));
+    if (next) {
+      setSel({ k: next, dir: w.dir });
+      return;
+    }
+    // final de la palabra: si ya está escrita entera, saltar a la siguiente con huecos
+    if (d.filledWords.has(w.id)) {
       const n = puzzle.words.length;
-      for (let i = 1; i <= n; i++) {
+      for (let i = 1; i < n; i++) {
         const cand = puzzle.words[(w.id + i) % n];
-        if (!d.doneWords.has(cand.id)) {
+        if (!d.filledWords.has(cand.id)) {
           setSel({ k: cand.cells.find((c) => !cells[c]) ?? cand.cells[0], dir: cand.dir });
           return;
         }
       }
-      return;
     }
-    if (next) setSel({ k: next, dir: w.dir });
   };
 
   const backspace = () => {
     const s = sessionRef.current;
-    if (!s || !sel || active === null) return;
+    if (!s || !sel || active === null || derived.complete) return;
     tap(profile.haptics);
     const w = puzzle.words[active];
     const idx = w.cells.indexOf(sel.k);
@@ -205,8 +211,8 @@ export function GameScreen({ date }: { date: string }) {
   const hintLetter = () => {
     const s = sessionRef.current;
     if (!s || !sel) return;
-    if (derived.confirmed.has(sel.k) || state.cells[sel.k]?.l === puzzle.solution[sel.k]) {
-      app.toast('Esa casilla ya está bien');
+    if (derived.confirmed.has(sel.k)) {
+      app.toast('Esa casilla ya está comprobada');
       return;
     }
     s.setCell(sel.k, puzzle.solution[sel.k], true);
@@ -218,20 +224,27 @@ export function GameScreen({ date }: { date: string }) {
     const s = sessionRef.current;
     if (!s || active === null) return;
     const w = puzzle.words[active];
-    const filledCells = w.cells.filter((c) => state.cells[c]);
-    if (filledCells.length === 0) {
-      app.toast('Escribe alguna letra primero');
+    const pend = w.cells.filter((c) => state.cells[c] && !derived.confirmed.has(c));
+    if (pend.length === 0) {
+      app.toast(w.cells.some((c) => !state.cells[c]) ? 'Escribe alguna letra primero' : 'Esa palabra ya está comprobada');
       return;
     }
-    const wrong = filledCells.filter((c) => state.cells[c].l !== puzzle.solution[c]);
+    const wrong = pend.filter((c) => state.cells[c].l !== puzzle.solution[c]);
+    const right = pend.filter((c) => state.cells[c].l === puzzle.solution[c]);
     s.addHint(POINTS.checkWord);
+    // las letras correctas quedan fijas; las incorrectas se borran
+    right.forEach((c) => s.markOk(c));
     if (wrong.length === 0) {
-      app.toast(`Todo bien por ahora (${POINTS.checkWord} puntos)`);
+      app.toast(`Todas las letras escritas son correctas (${POINTS.checkWord} puntos)`);
       return;
     }
     setFlash(new Set(wrong));
     setTimeout(() => {
-      wrong.forEach((c) => sessionRef.current?.setCell(c, null));
+      wrong.forEach((c) => {
+        const cur = sessionRef.current?.current.cells[c];
+        // solo se borra si nadie la ha cambiado mientras tanto
+        if (cur && cur.l !== puzzle.solution[c]) sessionRef.current?.setCell(c, null);
+      });
       setFlash(new Set());
     }, 650);
     app.toast(`${wrong.length} ${wrong.length === 1 ? 'letra incorrecta' : 'letras incorrectas'} (${POINTS.checkWord} puntos)`);
@@ -273,8 +286,10 @@ export function GameScreen({ date }: { date: string }) {
   const cell = Math.min(byWidth, Math.max(Math.floor(availH / puzzle.h), 34));
   const keyW = Math.min((Math.min(dims.width, 520) - 8) / 10, 52);
 
-  const myScore = derived.scores[profile.uid] ?? 0;
-  const partnerScore = partner ? (derived.scores[partner.uid] ?? 0) : 0;
+  const board = derived.complete ? derived.scores : derived.placed;
+  const unit = derived.complete ? 'puntos' : 'letras';
+  const myScore = board[profile.uid] ?? 0;
+  const partnerScore = partner ? (board[partner.uid] ?? 0) : 0;
   const activeWord = active !== null ? puzzle.words[active] : null;
   const pattern = activeWord ? activeWord.cells.map((c) => state.cells[c]?.l ?? '·').join(' ') : '';
 
@@ -285,7 +300,7 @@ export function GameScreen({ date }: { date: string }) {
         <Pressable onPress={() => app.go({ name: 'home' })} hitSlop={12} accessibilityRole="button" accessibilityLabel="Volver">
           <Text style={{ fontFamily: fonts.medium, fontSize: 28, color: theme.ink, marginTop: -4, paddingRight: 4 }}>‹</Text>
         </Pressable>
-        <ScoreChip name={profile.name} color={profile.color} score={myScore} />
+        <ScoreChip name={profile.name} color={profile.color} score={myScore} unit={unit} />
         <View style={{ flex: 1, alignItems: 'center' }}>
           <Text style={{ fontFamily: fonts.bold, fontSize: 15, color: theme.ink, fontVariant: ['tabular-nums'] }}>{formatTime(secs)}</Text>
           <Text style={{ fontFamily: fonts.body, fontSize: 10.5, color: theme.inkFaint }}>
@@ -293,7 +308,7 @@ export function GameScreen({ date }: { date: string }) {
           </Text>
         </View>
         {partner ? (
-          <ScoreChip name={partner.name} color={partner.color} score={partnerScore} right live={!!partnerCursor} />
+          <ScoreChip name={partner.name} color={partner.color} score={partnerScore} unit={unit} right live={!!partnerCursor} />
         ) : (
           <View style={{ width: 70 }} />
         )}
@@ -386,7 +401,7 @@ export function GameScreen({ date }: { date: string }) {
   );
 }
 
-function ScoreChip({ name, color, score, right, live }: { name: string; color: string; score: number; right?: boolean; live?: boolean }) {
+function ScoreChip({ name, color, score, unit, right, live }: { name: string; color: string; score: number; unit: string; right?: boolean; live?: boolean }) {
   const { theme } = useApp();
   return (
     <View style={{ flexDirection: right ? 'row-reverse' : 'row', alignItems: 'center', gap: 6, minWidth: 70 }}>
@@ -395,7 +410,10 @@ function ScoreChip({ name, color, score, right, live }: { name: string; color: s
         <Text numberOfLines={1} style={{ fontFamily: fonts.body, fontSize: 10.5, color: theme.inkFaint, maxWidth: 64 }}>
           {name}
         </Text>
-        <Text style={{ fontFamily: fonts.bold, fontSize: 16, color: colorHex(color), fontVariant: ['tabular-nums'] }}>{score}</Text>
+        <Text style={{ fontFamily: fonts.bold, fontSize: 16, color: colorHex(color), fontVariant: ['tabular-nums'] }}>
+          {score}
+          <Text style={{ fontFamily: fonts.body, fontSize: 10, color: theme.inkFaint }}> {unit}</Text>
+        </Text>
       </View>
     </View>
   );

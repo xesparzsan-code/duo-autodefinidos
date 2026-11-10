@@ -190,7 +190,7 @@ export function Grid(p: GridProps) {
             k={k}
             s={s}
             theme={theme}
-            clues={ids.map((id) => ({ id, text: puzzle.words[id].clue, active: id === p.activeWord, done: p.derived.doneWords.has(id) }))}
+            clues={ids.map((id) => ({ id, text: puzzle.words[id].clue, active: id === p.activeWord, done: p.derived.filledWords.has(id) }))}
             onPress={p.onPressClue}
           />,
         );

@@ -6,6 +6,7 @@ export interface CellEntry {
   by: string; // uid de quien la puso
   t: number; // marca de tiempo
   h?: boolean; // puesta con una pista
+  ok?: boolean; // comprobada: se sabe que es correcta y queda fija
 }
 
 export interface HintEntry {
@@ -16,13 +17,17 @@ export interface HintEntry {
 export type Cells = Record<string, CellEntry>;
 
 export interface Derived {
-  /** Casillas confirmadas: pertenecen a alguna palabra completa y correcta. */
+  /** Casillas fijas: comprobadas con una pista o, al terminar, todas. */
   confirmed: Set<string>;
-  /** Palabras completas y correctas. */
+  /** Palabras con todas sus casillas fijas. */
   doneWords: Set<number>;
+  /** Palabras con todas las casillas escritas (acertadas o no). */
+  filledWords: Set<number>;
   scores: Record<string, number>;
   letters: Record<string, number>;
   wordsBy: Record<string, number>;
+  /** Letras escritas ahora mismo por cada jugador (sin saber si son correctas). */
+  placed: Record<string, number>;
   filled: number;
   complete: boolean;
 }
@@ -31,34 +36,49 @@ export interface Derived {
  * Calcula el estado del juego a partir de las letras escritas.
  * Es una función pura: los dos móviles llegan siempre al mismo marcador.
  *
- * - Una palabra se confirma cuando todas sus letras son correctas.
- * - Cada letra confirmada da puntos a quien la puso (salvo las de pista).
- * - Quien pone la última letra de una palabra se lleva un extra.
+ * - Mientras se juega NO se indica si una palabra está bien: solo quedan fijas las
+ *   letras comprobadas con «Comprobar» o reveladas con una pista.
+ * - Cuando todo el autodefinido es correcto, se reparten los puntos: cada letra
+ *   puntúa para quien la puso (salvo las de pista) y quien puso la última letra
+ *   de cada palabra se lleva un extra.
  */
 export function derive(puzzle: Puzzle, cells: Cells, hints: Record<string, HintEntry> = {}): Derived {
   const confirmed = new Set<string>();
   const doneWords = new Set<number>();
+  const filledWords = new Set<number>();
   const scores: Record<string, number> = {};
   const letters: Record<string, number> = {};
   const wordsBy: Record<string, number> = {};
+  const placed: Record<string, number> = {};
   const add = (o: Record<string, number>, uid: string, n: number) => {
     o[uid] = (o[uid] ?? 0) + n;
   };
 
+  let filled = 0;
+  let correct = 0;
+  for (const k of Object.keys(puzzle.solution)) {
+    const e = cells[k];
+    if (!e) continue;
+    filled++;
+    add(placed, e.by, 1);
+    if (e.l === puzzle.solution[k]) correct++;
+  }
+  const complete = correct === puzzle.whiteCount;
+
+  for (const k of Object.keys(puzzle.solution)) {
+    const e = cells[k];
+    if (e && e.l === puzzle.solution[k] && (complete || e.ok)) confirmed.add(k);
+  }
+
   for (const w of puzzle.words) {
-    let ok = true;
+    if (w.cells.every((k) => cells[k])) filledWords.add(w.id);
+    if (!w.cells.every((k) => confirmed.has(k))) continue;
+    doneWords.add(w.id);
     let last: CellEntry | undefined;
     for (const k of w.cells) {
       const e = cells[k];
-      if (!e || e.l !== puzzle.solution[k]) {
-        ok = false;
-        break;
-      }
       if (!last || e.t > last.t) last = e;
     }
-    if (!ok) continue;
-    doneWords.add(w.id);
-    for (const k of w.cells) confirmed.add(k);
     if (last && !last.h) {
       add(scores, last.by, POINTS.wordBonus);
       add(wordsBy, last.by, 1);
@@ -75,25 +95,7 @@ export function derive(puzzle: Puzzle, cells: Cells, hints: Record<string, HintE
 
   for (const h of Object.values(hints)) add(scores, h.by, h.cost);
 
-  let filled = 0;
-  let correct = 0;
-  for (const k of Object.keys(puzzle.solution)) {
-    const e = cells[k];
-    if (e) {
-      filled++;
-      if (e.l === puzzle.solution[k]) correct++;
-    }
-  }
-
-  return {
-    confirmed,
-    doneWords,
-    scores,
-    letters,
-    wordsBy,
-    filled,
-    complete: correct === puzzle.whiteCount,
-  };
+  return { confirmed, doneWords, filledWords, scores, letters, wordsBy, placed, filled, complete };
 }
 
 export function formatTime(secs: number): string {

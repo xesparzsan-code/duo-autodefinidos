@@ -10,7 +10,8 @@ dos personas lo resuelven a la vez, cada una desde su móvil, viendo en directo 
   larga no vuelve a salir hasta pasados 30-40 días.
 - **Tiempo real para dos**: letras al instante, cursor de la otra persona en su color, y
   funcionamiento sin conexión (lo escrito se guarda y se envía al volver la cobertura).
-- **Puntuación**: 10 puntos por letra de cada palabra acertada, +20 para quien la remata.
+- **Puntuación**: no se sabe si una palabra está bien hasta comprobarla o terminar. Al completar el
+  autodefinido, 10 puntos por letra para quien la puso y +20 para quien remató cada palabra.
 - **Extras**: racha diaria, pistas con coste (letra −15, comprobar palabra −10), archivo de días
   anteriores, temporizador, reacciones con emojis, «dar un toque» y estadísticas.
 - **Avisos**: recordatorio diario local y avisos entre jugadores a través de la app gratuita ntfy.

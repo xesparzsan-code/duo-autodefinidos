@@ -19,7 +19,7 @@ export function HomeScreen() {
   const [poked, setPoked] = useState(false);
 
   useEffect(() => {
-    const s = new GameSession(profile.room, date, profile.uid);
+    const s = new GameSession(profile.room, date, profile.uid, true);
     const off = s.subscribe(setState);
     return () => {
       off();
@@ -29,7 +29,7 @@ export function HomeScreen() {
 
   const d = useMemo(() => (state ? derive(puzzle, state.cells, state.hints) : null), [state, puzzle]);
   const stats = useMemo(() => computeStats(app.results, date, (x) => addDays(x, -1)), [app.results, date]);
-  const progress = d ? d.confirmed.size / puzzle.whiteCount : 0;
+  const progress = d ? d.filled / puzzle.whiteCount : 0;
   const started = !!state && Object.keys(state.cells).length > 0;
   const done = !!d?.complete;
   const partnerPresence = partner ? app.presence[partner.uid] : undefined;
@@ -88,8 +88,10 @@ export function HomeScreen() {
 
           {(started || done) && d && (
             <View style={{ flexDirection: 'row', gap: space.lg }}>
-              <ScoreLine name={profile.name} color={profile.color} score={d.scores[profile.uid] ?? 0} />
-              {partner && <ScoreLine name={partner.name} color={partner.color} score={d.scores[partner.uid] ?? 0} />}
+              <ScoreLine name={profile.name} color={profile.color} score={(done ? d.scores : d.placed)[profile.uid] ?? 0} unit={done ? 'puntos' : 'letras'} />
+              {partner && (
+                <ScoreLine name={partner.name} color={partner.color} score={(done ? d.scores : d.placed)[partner.uid] ?? 0} unit={done ? 'puntos' : 'letras'} />
+              )}
             </View>
           )}
 
@@ -133,13 +135,14 @@ export function HomeScreen() {
   );
 }
 
-function ScoreLine({ name, color, score }: { name: string; color: string; score: number }) {
+function ScoreLine({ name, color, score, unit }: { name: string; color: string; score: number; unit: string }) {
   const { theme } = useApp();
   return (
     <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
       <View style={{ width: 10, height: 10, borderRadius: 5, backgroundColor: colorHex(color) }} />
       <Text style={{ fontFamily: fonts.body, fontSize: 14, color: theme.inkSoft }}>{name}</Text>
       <Text style={{ fontFamily: fonts.bold, fontSize: 16, color: theme.ink }}>{score}</Text>
+      <Text style={{ fontFamily: fonts.body, fontSize: 12, color: theme.inkFaint, marginLeft: -4 }}>{unit}</Text>
     </View>
   );
 }
