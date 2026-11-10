@@ -10,7 +10,7 @@ import { BarlowSemiCondensed_400Regular, BarlowSemiCondensed_500Medium, BarlowSe
 import { PatrickHand_400Regular } from '@expo-google-fonts/patrick-hand';
 
 import { loadProfile, saveProfile, type Profile } from './src/storage';
-import { colorHex, fonts, useTheme } from './src/theme';
+import { PLAYER_COLORS, colorHex, fonts, useTheme } from './src/theme';
 import { Ctx, type AppContext, type Screen } from './src/ui';
 import {
   clearPresence,
@@ -21,6 +21,7 @@ import {
   subscribePresence,
   subscribeResults,
   subscribeSignals,
+  updatePlayer,
   type Player,
   type Presence,
 } from './src/sync';
@@ -47,6 +48,7 @@ function Root() {
   const [presence, setPresenceMap] = useState<Record<string, Presence>>({});
   const [results, setResults] = useState<Record<string, DayResult>>({});
   const [online, setOnline] = useState(false);
+  const [, setWake] = useState(0);
   const [toastText, setToastText] = useState<string | null>(null);
   const [bigEmoji, setBigEmoji] = useState<{ text: string; color: string } | null>(null);
   const emojiAnim = useRef(new Animated.Value(0)).current;
@@ -121,6 +123,29 @@ function Root() {
       clearPresence(room, uid);
     };
   }, [room, uid]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // al volver a la app se repinta todo: si ha cambiado el día, aparece el autodefinido nuevo
+  useEffect(() => {
+    const sub = AppState.addEventListener('change', (st) => {
+      if (st === 'active') setWake((n) => n + 1);
+    });
+    return () => sub.remove();
+  }, []);
+
+  // si los dos eligieron el mismo color de boli, uno de ellos cambia solo (el de uid mayor)
+  useEffect(() => {
+    if (!profile) return;
+    const other = Object.values(players).find((p) => p.uid !== profile.uid);
+    if (other && other.color === profile.color && profile.uid > other.uid) {
+      const free = PLAYER_COLORS.find((c) => c.id !== other.color);
+      if (free) {
+        const p = { ...profile, color: free.id };
+        setProfile(p);
+        updatePlayer(p);
+        toast(`Teníais el mismo color: ahora tu boli es ${free.name.toLowerCase()}`);
+      }
+    }
+  }, [players, profile?.color]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // enlace de invitación: duoautodef://unir/CODIGO
   useEffect(() => {

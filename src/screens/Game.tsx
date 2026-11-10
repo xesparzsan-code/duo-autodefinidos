@@ -161,14 +161,16 @@ export function GameScreen({ date }: { date: string }) {
     tap(profile.haptics);
     const w = puzzle.words[active];
     const idx = w.cells.indexOf(sel.k);
+    let changed = false;
     if (!derived.confirmed.has(sel.k) && state.cells[sel.k]?.l !== letter) {
       const first = !Object.values(state.cells).some((c) => c.by === profile.uid);
       s.setCell(sel.k, letter);
+      changed = true;
       if (first) notifyStart();
     }
     const cells = s.current.cells;
     const d = derive(puzzle, cells, state.hints);
-    if (d.filled === puzzle.whiteCount && !d.complete && derived.filled < puzzle.whiteCount) {
+    if (changed && d.filled === puzzle.whiteCount && !d.complete) {
       app.toast('Está todo escrito, pero hay alguna letra incorrecta');
     }
     // avanzar: siguiente casilla vacía de la palabra o, si no hay, la siguiente sin fijar
