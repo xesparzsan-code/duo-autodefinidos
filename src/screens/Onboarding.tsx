@@ -45,14 +45,14 @@ export function Onboarding({ onDone }: { onDone: (p: Profile) => void }) {
     >
       <View style={{ flex: 1, justifyContent: 'center', gap: space.xl, maxWidth: 440, width: '100%', alignSelf: 'center' }}>
         <View style={{ gap: space.sm }}>
-          <Text style={{ fontFamily: fonts.titleBold, fontSize: 44, color: theme.ink, letterSpacing: -1 }}>Dúo</Text>
+          <Text style={{ fontFamily: fonts.titleBold, fontSize: 72, lineHeight: 76, color: theme.ink, letterSpacing: -4 }}>Dúo</Text>
           <Text style={{ fontFamily: fonts.body, fontSize: 17, lineHeight: 24, color: theme.inkSoft }}>
             Un autodefinido nuevo cada día, para resolverlo entre dos.
           </Text>
         </View>
 
         <View style={{ gap: space.sm }}>
-          <Text style={{ fontFamily: fonts.bold, fontSize: 12, letterSpacing: 1.2, color: theme.inkFaint }}>¿CÓMO TE LLAMAS?</Text>
+          <Text style={{ fontFamily: fonts.bold, fontSize: 17, color: theme.ink }}>¿Cómo te llamas?</Text>
           <TextInput
             value={name}
             onChangeText={setName}
@@ -62,21 +62,21 @@ export function Onboarding({ onDone }: { onDone: (p: Profile) => void }) {
             autoCapitalize="words"
             autoCorrect={false}
             style={{
-              fontFamily: fonts.medium,
-              fontSize: 20,
+              fontFamily: fonts.hand,
+              fontSize: 26,
               color: theme.ink,
               backgroundColor: theme.card,
               borderRadius: radius.md,
               paddingHorizontal: space.lg,
               paddingVertical: 14,
-              borderWidth: 1,
-              borderColor: theme.line,
+              borderWidth: 1.5,
+              borderColor: theme.ink,
             }}
           />
         </View>
 
         <View style={{ gap: space.md }}>
-          <Text style={{ fontFamily: fonts.bold, fontSize: 12, letterSpacing: 1.2, color: theme.inkFaint }}>TU COLOR EN LA REJILLA</Text>
+          <Text style={{ fontFamily: fonts.bold, fontSize: 17, color: theme.ink }}>Elige el color de tu boli</Text>
           <ColorPicker value={color} onChange={setColor} />
         </View>
 
@@ -85,13 +85,13 @@ export function Onboarding({ onDone }: { onDone: (p: Profile) => void }) {
           onPress={() => onDone(newProfile(name.trim(), color))}
           style={({ pressed }) => ({
             backgroundColor: theme.accent,
-            borderRadius: 999,
+            borderRadius: 4,
             paddingVertical: 16,
             alignItems: 'center',
             opacity: !ok ? 0.35 : pressed ? 0.8 : 1,
           })}
         >
-          <Text style={{ fontFamily: fonts.bold, fontSize: 17, color: theme.onAccent }}>Empezar</Text>
+          <Text style={{ fontFamily: fonts.titleBold, fontSize: 19, color: theme.onAccent, letterSpacing: -0.5 }}>Empezar</Text>
         </Pressable>
       </View>
     </KeyboardAvoidingView>

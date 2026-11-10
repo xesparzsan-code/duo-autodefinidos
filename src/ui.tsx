@@ -38,21 +38,17 @@ export function tap(enabled = true) {
 
 export function Title({ children, style }: { children: React.ReactNode; style?: StyleProp<TextStyle> }) {
   const { theme } = useApp();
-  return <Text style={[{ fontFamily: fonts.title, fontSize: 28, color: theme.ink, letterSpacing: -0.3 }, style]}>{children}</Text>;
+  return <Text style={[{ fontFamily: fonts.title, fontSize: 28, color: theme.ink, letterSpacing: -1 }, style]}>{children}</Text>;
 }
 
 export function Body({ children, style, soft }: { children: React.ReactNode; style?: StyleProp<TextStyle>; soft?: boolean }) {
   const { theme } = useApp();
-  return <Text style={[{ fontFamily: fonts.body, fontSize: 15, lineHeight: 21, color: soft ? theme.inkSoft : theme.ink }, style]}>{children}</Text>;
+  return <Text style={[{ fontFamily: fonts.body, fontSize: 16, lineHeight: 22, color: soft ? theme.inkSoft : theme.ink }, style]}>{children}</Text>;
 }
 
 export function Label({ children, style }: { children: React.ReactNode; style?: StyleProp<TextStyle> }) {
   const { theme } = useApp();
-  return (
-    <Text style={[{ fontFamily: fonts.bold, fontSize: 11, letterSpacing: 1.2, color: theme.inkFaint, textTransform: 'uppercase' }, style]}>
-      {children}
-    </Text>
-  );
+  return <Text style={[{ fontFamily: fonts.bold, fontSize: 15, color: theme.inkSoft }, style]}>{children}</Text>;
 }
 
 export function Card({ children, style }: { children: React.ReactNode; style?: StyleProp<ViewStyle> }) {
@@ -60,7 +56,7 @@ export function Card({ children, style }: { children: React.ReactNode; style?: S
   return (
     <View
       style={[
-        { backgroundColor: theme.card, borderRadius: radius.lg, padding: space.lg, borderWidth: StyleSheet.hairlineWidth, borderColor: theme.line },
+        { backgroundColor: theme.card, borderRadius: radius.lg, padding: space.lg, borderWidth: 1.5, borderColor: theme.ink },
         style,
       ]}
     >
@@ -98,19 +94,19 @@ export function Button({
       style={({ pressed }) => [
         {
           backgroundColor: bg,
-          borderRadius: 999,
+          borderRadius: radius.sm,
           paddingVertical: small ? 9 : 14,
           paddingHorizontal: small ? 14 : 22,
           alignItems: 'center',
           justifyContent: 'center',
           opacity: disabled ? 0.4 : pressed ? 0.75 : 1,
-          borderWidth: kind === 'primary' ? 0 : StyleSheet.hairlineWidth * 2,
-          borderColor: theme.line,
+          borderWidth: kind === 'primary' ? 0 : 1.5,
+          borderColor: theme.ink,
         },
         style,
       ]}
     >
-      <Text style={{ fontFamily: fonts.bold, fontSize: small ? 13 : 16, color: fg }}>{label}</Text>
+      <Text style={{ fontFamily: fonts.bold, fontSize: small ? 15 : 18, color: fg }}>{label}</Text>
     </Pressable>
   );
 }
@@ -130,7 +126,7 @@ export function Avatar({ name, color, size = 36, ring }: { name: string; color: 
         borderColor: theme.good,
       }}
     >
-      <Text style={{ fontFamily: fonts.bold, color: '#fff', fontSize: size * 0.42 }}>{(name.trim()[0] ?? '?').toUpperCase()}</Text>
+      <Text style={{ fontFamily: fonts.hand, color: '#fff', fontSize: size * 0.56, lineHeight: size * 0.7 }}>{(name.trim()[0] ?? '?').toUpperCase()}</Text>
     </View>
   );
 }
@@ -144,7 +140,7 @@ export function Header({ title, onBack, right }: { title: string; onBack?: () =>
           <Text style={{ fontFamily: fonts.medium, fontSize: 26, color: theme.ink, marginTop: -3 }}>‹</Text>
         </Pressable>
       )}
-      <Text style={{ flex: 1, fontFamily: fonts.title, fontSize: 22, color: theme.ink }} numberOfLines={1}>
+      <Text style={{ flex: 1, fontFamily: fonts.title, fontSize: 26, color: theme.ink, letterSpacing: -1 }} numberOfLines={1}>
         {title}
       </Text>
       {right}

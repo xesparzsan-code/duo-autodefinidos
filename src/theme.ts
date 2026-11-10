@@ -1,12 +1,12 @@
 import { useColorScheme } from 'react-native';
 
 export const PLAYER_COLORS = [
-  { id: 'coral', name: 'Coral', hex: '#D9583B' },
-  { id: 'teal', name: 'Turquesa', hex: '#1F8A8A' },
-  { id: 'violet', name: 'Violeta', hex: '#7A5AC7' },
-  { id: 'ocre', name: 'Ocre', hex: '#C28A17' },
-  { id: 'blue', name: 'Azul', hex: '#2F6FCB' },
-  { id: 'pink', name: 'Rosa', hex: '#CC4E86' },
+  { id: 'coral', name: 'Rojo', hex: '#E0412F' },
+  { id: 'blue', name: 'Azul', hex: '#2456D6' },
+  { id: 'teal', name: 'Verde', hex: '#0E8F6E' },
+  { id: 'violet', name: 'Violeta', hex: '#7B4FD0' },
+  { id: 'ocre', name: 'Naranja', hex: '#D97706' },
+  { id: 'pink', name: 'Rosa', hex: '#D6367F' },
 ] as const;
 
 export function colorHex(id: string | undefined): string {
@@ -19,46 +19,57 @@ export function alpha(hex: string, a: number): string {
   return `rgba(${(n >> 16) & 255},${(n >> 8) & 255},${n & 255},${a})`;
 }
 
+// Aspecto de «revista de pasatiempos»: papel claro, tinta azul marino de imprenta,
+// colores planos de cartel y letras escritas a mano con el boli de cada jugador.
 const light = {
   dark: false,
-  bg: '#FBF7EE',
+  bg: '#F3F4EE',
   card: '#FFFFFF',
-  ink: '#22303C',
-  inkSoft: '#5F6B76',
-  inkFaint: '#9AA3AB',
-  line: '#DDD3C0',
-  gridLine: '#BFB39C',
-  cell: '#FFFDF8',
-  clueCell: '#EBE2D0',
-  clueText: '#3B4650',
-  active: '#FFE9A8',
-  activeWord: '#FFF6D9',
-  key: '#FFFDF8',
-  keyText: '#22303C',
-  accent: '#4F46E5',
+  ink: '#1C2140',
+  inkSoft: '#555B7A',
+  inkFaint: '#8E93AD',
+  line: '#D6D9E2',
+  gridLine: '#9BA0BC',
+  cell: '#FFFFFF',
+  clueCell: '#FFEDAA',
+  clueText: '#1C2140',
+  active: '#A9E5CD',
+  activeWord: '#DDF4EA',
+  key: '#FFFFFF',
+  keyText: '#1C2140',
+  accent: '#2D46B9',
   onAccent: '#FFFFFF',
-  good: '#2E8B57',
+  good: '#19A47E',
+  // colores de cartel
+  yellow: '#FFC53D',
+  tomato: '#F0483E',
+  mint: '#19A47E',
+  cobalt: '#2D46B9',
 };
 
 const dark: typeof light = {
   dark: true,
-  bg: '#151B21',
-  card: '#1E262E',
-  ink: '#F1EADB',
-  inkSoft: '#B3BAC0',
-  inkFaint: '#7C858D',
-  line: '#313B45',
-  gridLine: '#3C4752',
-  cell: '#222B34',
-  clueCell: '#2E3944',
-  clueText: '#D8D2C4',
-  active: '#6B5A1E',
-  activeWord: '#3A3620',
-  key: '#2A343E',
-  keyText: '#F1EADB',
-  accent: '#7C74FF',
+  bg: '#14172B',
+  card: '#1E2240',
+  ink: '#EEF0F8',
+  inkSoft: '#B4B9D3',
+  inkFaint: '#7F84A3',
+  line: '#30355A',
+  gridLine: '#454B78',
+  cell: '#1E2240',
+  clueCell: '#4D4420',
+  clueText: '#FFEDAA',
+  active: '#1E6B55',
+  activeWord: '#1F3F3D',
+  key: '#262B4F',
+  keyText: '#EEF0F8',
+  accent: '#5C74EA',
   onAccent: '#FFFFFF',
-  good: '#5FC58C',
+  good: '#3CCB9F',
+  yellow: '#FFC53D',
+  tomato: '#F0483E',
+  mint: '#19A47E',
+  cobalt: '#3F58CC',
 };
 
 export type Theme = typeof light;
@@ -70,12 +81,14 @@ export function useTheme(pref: 'auto' | 'light' | 'dark' = 'auto'): Theme {
 }
 
 export const fonts = {
-  title: 'Fraunces_600SemiBold',
-  titleBold: 'Fraunces_700Bold',
-  body: 'DMSans_400Regular',
-  medium: 'DMSans_500Medium',
-  bold: 'DMSans_700Bold',
+  title: 'Syne_700Bold',
+  titleBold: 'Syne_800ExtraBold',
+  body: 'BarlowSemiCondensed_400Regular',
+  medium: 'BarlowSemiCondensed_500Medium',
+  bold: 'BarlowSemiCondensed_600SemiBold',
+  /** Letra manuscrita: lo que escriben los jugadores. */
+  hand: 'PatrickHand_400Regular',
 };
 
-export const radius = { sm: 10, md: 16, lg: 24 };
+export const radius = { sm: 4, md: 6, lg: 8 };
 export const space = { xs: 4, sm: 8, md: 12, lg: 16, xl: 24, xxl: 32 };

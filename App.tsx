@@ -5,11 +5,12 @@ import { StatusBar } from 'expo-status-bar';
 import * as ExpoLinking from 'expo-linking';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useFonts } from 'expo-font';
-import { Fraunces_600SemiBold, Fraunces_700Bold } from '@expo-google-fonts/fraunces';
-import { DMSans_400Regular, DMSans_500Medium, DMSans_700Bold } from '@expo-google-fonts/dm-sans';
+import { Syne_700Bold, Syne_800ExtraBold } from '@expo-google-fonts/syne';
+import { BarlowSemiCondensed_400Regular, BarlowSemiCondensed_500Medium, BarlowSemiCondensed_600SemiBold } from '@expo-google-fonts/barlow-semi-condensed';
+import { PatrickHand_400Regular } from '@expo-google-fonts/patrick-hand';
 
 import { loadProfile, saveProfile, type Profile } from './src/storage';
-import { fonts, useTheme } from './src/theme';
+import { colorHex, fonts, useTheme } from './src/theme';
 import { Ctx, type AppContext, type Screen } from './src/ui';
 import {
   clearPresence,
@@ -32,7 +33,14 @@ import { PairScreen } from './src/screens/Pair';
 import { ArchiveScreen, SettingsScreen, StatsScreen } from './src/screens/More';
 
 function Root() {
-  const [fontsLoaded] = useFonts({ Fraunces_600SemiBold, Fraunces_700Bold, DMSans_400Regular, DMSans_500Medium, DMSans_700Bold });
+  const [fontsLoaded] = useFonts({
+    Syne_700Bold,
+    Syne_800ExtraBold,
+    BarlowSemiCondensed_400Regular,
+    BarlowSemiCondensed_500Medium,
+    BarlowSemiCondensed_600SemiBold,
+    PatrickHand_400Regular,
+  });
   const [profile, setProfileState] = useState<Profile | null | undefined>(undefined);
   const [screen, setScreen] = useState<Screen>({ name: 'home' });
   const [players, setPlayers] = useState<Record<string, Player>>({});
@@ -40,10 +48,10 @@ function Root() {
   const [results, setResults] = useState<Record<string, DayResult>>({});
   const [online, setOnline] = useState(false);
   const [toastText, setToastText] = useState<string | null>(null);
-  const [bigEmoji, setBigEmoji] = useState<string | null>(null);
+  const [bigEmoji, setBigEmoji] = useState<{ text: string; color: string } | null>(null);
   const emojiAnim = useRef(new Animated.Value(0)).current;
   const toastTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
-  const theme = useTheme(profile?.theme ?? 'auto');
+  const theme = useTheme(profile?.theme ?? 'light');
   const insets = useSafeAreaInsets();
   const url = ExpoLinking.useURL();
 
@@ -88,9 +96,9 @@ function Root() {
     const offPresence = subscribePresence(room, setPresenceMap);
     const offSignals = subscribeSignals(room, uid, (s) => {
       const who = playersRef.current[s.by]?.name ?? 'Tu pareja';
-      if (s.kind === 'poke') toast(`👋 ${who} te da un toque`);
+      if (s.kind === 'poke') toast(`${who} te da un toque`);
       else if (s.emoji) {
-        setBigEmoji(s.emoji);
+        setBigEmoji({ text: s.emoji, color: colorHex(playersRef.current[s.by]?.color) });
         emojiAnim.setValue(0);
         Animated.sequence([
           Animated.spring(emojiAnim, { toValue: 1, useNativeDriver: true, friction: 5 }),
@@ -196,17 +204,17 @@ function Root() {
             top: '30%',
             alignItems: 'center',
             opacity: emojiAnim,
-            transform: [{ scale: emojiAnim.interpolate({ inputRange: [0, 1], outputRange: [0.4, 1] }) }],
+            transform: [{ scale: emojiAnim.interpolate({ inputRange: [0, 1], outputRange: [0.4, 1] }) }, { rotate: '-7deg' }],
           }}
         >
-          <Text style={{ fontSize: 96 }}>{bigEmoji}</Text>
+          <Text style={{ fontFamily: fonts.hand, fontSize: 76, color: bigEmoji.color }}>{bigEmoji.text}</Text>
         </Animated.View>
       )}
 
       {toastText && (
         <View pointerEvents="none" style={{ position: 'absolute', left: 16, right: 16, top: insets.top + 56, alignItems: 'center' }}>
-          <View style={{ backgroundColor: theme.accent, borderRadius: 999, paddingHorizontal: 18, paddingVertical: 10, maxWidth: 420 }}>
-            <Text style={{ fontFamily: fonts.medium, fontSize: 14, color: theme.onAccent, textAlign: 'center' }}>{toastText}</Text>
+          <View style={{ backgroundColor: theme.ink, borderRadius: 4, paddingHorizontal: 16, paddingVertical: 10, maxWidth: 420 }}>
+            <Text style={{ fontFamily: fonts.medium, fontSize: 16, color: theme.bg, textAlign: 'center' }}>{toastText}</Text>
           </View>
         </View>
       )}

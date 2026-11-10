@@ -62,7 +62,7 @@ export function PairScreen() {
           <>
             <Card style={{ alignItems: 'center', gap: space.md }}>
               <Label>Código de vuestra sala</Label>
-              <Text selectable style={{ fontFamily: fonts.titleBold, fontSize: 36, letterSpacing: 4, color: theme.ink }}>
+              <Text selectable style={{ fontFamily: fonts.title, fontSize: 36, letterSpacing: 4, color: theme.ink }}>
                 {profile.room}
               </Text>
               {partner ? (

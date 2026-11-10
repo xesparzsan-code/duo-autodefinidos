@@ -13,7 +13,7 @@ import { alpha, colorHex, fonts, radius, space } from '../theme';
 import { Avatar, Button, tap, useApp } from '../ui';
 
 const ROWS = ['QWERTYUIOP', 'ASDFGHJKLÑ', 'ZXCVBNM'];
-const EMOJIS = ['👏', '😂', '🔥', '🤔', '😱', '❤️'];
+const SHOUTS = ['¡Bravo!', 'Jajaja', '¡Olé!', 'Mmm…', '¡Uf!', '¡Vamos!'];
 
 type Sel = { k: string; dir: 'A' | 'D' };
 
@@ -302,9 +302,9 @@ export function GameScreen({ date }: { date: string }) {
         </Pressable>
         <ScoreChip name={profile.name} color={profile.color} score={myScore} unit={unit} />
         <View style={{ flex: 1, alignItems: 'center' }}>
-          <Text style={{ fontFamily: fonts.bold, fontSize: 15, color: theme.ink, fontVariant: ['tabular-nums'] }}>{formatTime(secs)}</Text>
+          <Text style={{ fontFamily: fonts.bold, fontSize: 19, color: theme.ink, fontVariant: ['tabular-nums'] }}>{formatTime(secs)}</Text>
           <Text style={{ fontFamily: fonts.body, fontSize: 10.5, color: theme.inkFaint }}>
-            {app.online || !profile.room ? `N.º ${puzzle.n}` : 'Sin conexión · se guardará'}
+            {app.online || !profile.room ? `N.º ${puzzle.n}` : 'Sin conexión, se guardará'}
           </Text>
         </View>
         {partner ? (
@@ -338,10 +338,10 @@ export function GameScreen({ date }: { date: string }) {
           <Text style={{ fontSize: 24, color: theme.inkSoft, fontFamily: fonts.medium }}>‹</Text>
         </Pressable>
         <Pressable style={{ flex: 1, alignItems: 'center' }} onPress={() => sel && moveTo(sel.k)}>
-          <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontFamily: fonts.title, fontSize: 18, color: theme.ink }}>
+          <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontFamily: fonts.bold, fontSize: 22, color: theme.ink }}>
             {activeWord?.clue ?? ''}
           </Text>
-          <Text style={{ fontFamily: fonts.medium, fontSize: 12, color: theme.inkFaint, letterSpacing: 1 }}>
+          <Text style={{ fontFamily: fonts.hand, fontSize: 16, color: theme.inkSoft, letterSpacing: 1.5 }}>
             {activeWord ? `${activeWord.dir === 'A' ? '→' : '↓'}  ${pattern}` : ''}
           </Text>
         </Pressable>
@@ -352,10 +352,10 @@ export function GameScreen({ date }: { date: string }) {
 
       {/* acciones */}
       <View style={{ height: 40, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: space.sm, paddingHorizontal: space.sm }}>
-        <Action label={`Letra ${POINTS.hintLetter}`} icon="💡" onPress={hintLetter} disabled={derived.complete} />
-        <Action label={`Comprobar ${POINTS.checkWord}`} icon="✓" onPress={checkWord} disabled={derived.complete} />
-        {partner && <Action label="Reacción" icon="😊" onPress={() => setShowEmojis((v) => !v)} />}
-        {derived.complete && <Action label="Resumen" icon="🏁" onPress={() => setShowResult(true)} />}
+        <Action label={`Revelar letra ${POINTS.hintLetter}`} onPress={hintLetter} disabled={derived.complete} />
+        <Action label={`Comprobar ${POINTS.checkWord}`} onPress={checkWord} disabled={derived.complete} />
+        {partner && <Action label="Decir algo" onPress={() => setShowEmojis((v) => !v)} />}
+        {derived.complete && <Action label="Resumen" onPress={() => setShowResult(true)} />}
       </View>
 
       {/* teclado */}
@@ -365,24 +365,24 @@ export function GameScreen({ date }: { date: string }) {
             {row.split('').map((ch) => (
               <Key key={ch} label={ch} w={keyW} onPress={() => typeLetter(ch)} />
             ))}
-            {i === 2 && <Key label="⌫" w={keyW * 1.6} onPress={backspace} />}
+            {i === 2 && <Key label="⌫" w={keyW * 2} onPress={backspace} />}
           </View>
         ))}
       </View>
 
       {showEmojis && (
-        <View style={{ position: 'absolute', bottom: insets.bottom + 3 * 46 + 60, alignSelf: 'center', flexDirection: 'row', backgroundColor: theme.card, borderRadius: 999, padding: 6, gap: 2, borderWidth: 1, borderColor: theme.line, elevation: 6, shadowColor: '#000', shadowOpacity: 0.15, shadowRadius: 10, shadowOffset: { width: 0, height: 4 } }}>
-          {EMOJIS.map((e) => (
+        <View style={{ position: 'absolute', bottom: insets.bottom + 3 * 46 + 60, alignSelf: 'center', flexDirection: 'row', flexWrap: 'wrap', justifyContent: 'center', maxWidth: 340, backgroundColor: theme.card, borderRadius: 6, padding: 6, gap: 2, borderWidth: 1.5, borderColor: theme.ink, elevation: 6, shadowColor: '#000', shadowOpacity: 0.15, shadowRadius: 10, shadowOffset: { width: 0, height: 4 } }}>
+          {SHOUTS.map((e) => (
             <Pressable
               key={e}
               onPress={() => {
                 sendSignal(profile.room, { by: profile.uid, kind: 'emoji', emoji: e });
                 setShowEmojis(false);
-                app.toast(`${e} enviado`);
+                app.toast(`Enviado: ${e}`);
               }}
-              style={{ padding: 8 }}
+              style={{ paddingHorizontal: 10, paddingVertical: 8 }}
             >
-              <Text style={{ fontSize: 24 }}>{e}</Text>
+              <Text style={{ fontFamily: fonts.hand, fontSize: 22, color: colorHex(profile.color) }}>{e}</Text>
             </Pressable>
           ))}
         </View>
@@ -419,7 +419,7 @@ function ScoreChip({ name, color, score, unit, right, live }: { name: string; co
   );
 }
 
-function Action({ label, icon, onPress, disabled }: { label: string; icon: string; onPress: () => void; disabled?: boolean }) {
+function Action({ label, onPress, disabled }: { label: string; onPress: () => void; disabled?: boolean }) {
   const { theme } = useApp();
   return (
     <Pressable
@@ -428,18 +428,16 @@ function Action({ label, icon, onPress, disabled }: { label: string; icon: strin
       style={({ pressed }) => ({
         flexDirection: 'row',
         alignItems: 'center',
-        gap: 5,
-        paddingHorizontal: 11,
+        paddingHorizontal: 12,
         height: 30,
-        borderRadius: 999,
-        borderWidth: 1,
-        borderColor: theme.line,
+        borderRadius: 4,
+        borderWidth: 1.5,
+        borderColor: theme.ink,
         backgroundColor: theme.card,
         opacity: disabled ? 0.35 : pressed ? 0.6 : 1,
       })}
     >
-      <Text style={{ fontSize: 12, color: theme.ink }}>{icon}</Text>
-      <Text style={{ fontFamily: fonts.medium, fontSize: 12, color: theme.ink }}>{label}</Text>
+      <Text style={{ fontFamily: fonts.bold, fontSize: 15, color: theme.ink }}>{label}</Text>
     </Pressable>
   );
 }
@@ -452,7 +450,7 @@ function Key({ label, w, onPress }: { label: string; w: number; onPress: () => v
         <View
           style={{
             flex: 1,
-            borderRadius: 7,
+            borderRadius: 4,
             backgroundColor: pressed ? theme.active : theme.key,
             alignItems: 'center',
             justifyContent: 'center',
@@ -460,7 +458,7 @@ function Key({ label, w, onPress }: { label: string; w: number; onPress: () => v
             borderColor: theme.line,
           }}
         >
-          <Text style={{ fontFamily: fonts.medium, fontSize: 18, color: theme.keyText }}>{label}</Text>
+          <Text style={{ fontFamily: fonts.bold, fontSize: 21, color: theme.keyText }}>{label === '⌫' ? 'Borrar' : label}</Text>
         </View>
       )}
     </Pressable>
@@ -481,10 +479,9 @@ function ResultModal({ onClose, date, n, secs, derived }: { onClose: () => void;
     <View style={{ position: 'absolute', left: 0, right: 0, top: 0, bottom: 0, backgroundColor: alpha('#0E1318', 0.55), alignItems: 'center', justifyContent: 'center', padding: space.xl }}>
       <View style={{ width: '100%', maxWidth: 380, backgroundColor: theme.card, borderRadius: radius.lg, padding: space.xl, gap: space.lg }}>
         <View style={{ alignItems: 'center', gap: 4 }}>
-          <Text style={{ fontSize: 40 }}>🏁</Text>
-          <Text style={{ fontFamily: fonts.titleBold, fontSize: 26, color: theme.ink, textAlign: 'center' }}>{title}</Text>
+          <Text style={{ fontFamily: fonts.title, fontSize: 26, color: theme.ink, textAlign: 'center' }}>{title}</Text>
           <Text style={{ fontFamily: fonts.body, fontSize: 13, color: theme.inkSoft }}>
-            N.º {n} · {prettyDate(date, false)} · {formatTime(secs)}
+            N.º {n}, {prettyDate(date, false)}. Tiempo: {formatTime(secs)}
           </Text>
         </View>
         {rows.map(({ p, score }) => (
@@ -493,10 +490,10 @@ function ResultModal({ onClose, date, n, secs, derived }: { onClose: () => void;
             <View style={{ flex: 1 }}>
               <Text style={{ fontFamily: fonts.bold, fontSize: 16, color: theme.ink }}>{p.name}</Text>
               <Text style={{ fontFamily: fonts.body, fontSize: 12.5, color: theme.inkSoft }}>
-                {derived.letters[p.uid] ?? 0} letras · {derived.wordsBy[p.uid] ?? 0} palabras rematadas
+                {derived.letters[p.uid] ?? 0} letras y {derived.wordsBy[p.uid] ?? 0} palabras rematadas
               </Text>
             </View>
-            <Text style={{ fontFamily: fonts.titleBold, fontSize: 26, color: colorHex(p.color) }}>{score}</Text>
+            <Text style={{ fontFamily: fonts.title, fontSize: 26, color: colorHex(p.color) }}>{score}</Text>
           </View>
         ))}
         <Button label="Cerrar" onPress={onClose} />

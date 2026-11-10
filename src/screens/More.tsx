@@ -62,14 +62,14 @@ export function ArchiveScreen() {
               })}
             >
               <View style={{ width: 44, height: 44, borderRadius: 10, backgroundColor: theme.clueCell, alignItems: 'center', justifyContent: 'center' }}>
-                <Text style={{ fontFamily: fonts.bold, fontSize: 13, color: theme.ink }}>{puzzleNumber(d)}</Text>
+                <Text style={{ fontFamily: fonts.title, fontSize: 15, color: theme.ink }}>{puzzleNumber(d)}</Text>
               </View>
               <View style={{ flex: 1 }}>
                 <Text style={{ fontFamily: fonts.medium, fontSize: 15, color: theme.ink }}>
                   {d === today() ? 'Hoy' : prettyDate(d)}
                 </Text>
                 <Text style={{ fontFamily: fonts.body, fontSize: 12.5, color: r ? theme.good : theme.inkFaint }}>
-                  {r ? `Completado en ${formatTime(r.secs)}` : pr !== undefined ? `A medias · ${Math.round(pr * 100)} %` : 'Sin empezar'}
+                  {r ? `Completado en ${formatTime(r.secs)}` : pr !== undefined ? `A medias, ${Math.round(pr * 100)} %` : 'Sin empezar'}
                 </Text>
               </View>
               {r && (
@@ -81,7 +81,7 @@ export function ArchiveScreen() {
                   ))}
                 </View>
               )}
-              <Text style={{ color: theme.inkFaint, fontSize: 20 }}>›</Text>
+              
             </Pressable>
           );
         })}
@@ -105,13 +105,13 @@ export function StatsScreen() {
       <Header title="Marcador" onBack={() => app.go({ name: 'home' })} />
       <ScrollView contentContainerStyle={{ padding: space.lg, gap: space.lg, paddingBottom: insets.bottom + space.xl, maxWidth: 520, width: '100%', alignSelf: 'center' }}>
         <View style={{ flexDirection: 'row', gap: space.md }}>
-          <Stat big={`${st.streak}`} label="Racha actual" icon="🔥" />
-          <Stat big={`${st.bestStreak}`} label="Mejor racha" icon="🏆" />
-          <Stat big={st.bestSecs !== null ? formatTime(st.bestSecs) : '—'} label="Mejor tiempo" icon="⏱" />
+          <Stat big={`${st.streak}`} label="Racha actual" color={theme.tomato} />
+          <Stat big={`${st.bestStreak}`} label="Mejor racha" color={theme.mint} />
+          <Stat big={st.bestSecs !== null ? formatTime(st.bestSecs) : '—'} label="Mejor tiempo" color={theme.cobalt} />
         </View>
 
         <Card style={{ gap: space.lg }}>
-          <Label>Cara a cara · {st.played} completados</Label>
+          <Label>Cara a cara en {st.played} completados</Label>
           {people.map((p) => {
             const wins = st.wins[p.uid] ?? 0;
             const total = Math.max(1, st.played);
@@ -123,7 +123,7 @@ export function StatsScreen() {
                     <Text style={{ fontFamily: fonts.bold, fontSize: 16, color: theme.ink }}>{p.name}</Text>
                     <Text style={{ fontFamily: fonts.body, fontSize: 12.5, color: theme.inkSoft }}>{st.points[p.uid] ?? 0} puntos en total</Text>
                   </View>
-                  <Text style={{ fontFamily: fonts.titleBold, fontSize: 24, color: colorHex(p.color) }}>{wins}</Text>
+                  <Text style={{ fontFamily: fonts.title, fontSize: 24, color: colorHex(p.color) }}>{wins}</Text>
                   <Text style={{ fontFamily: fonts.body, fontSize: 12, color: theme.inkFaint }}>{wins === 1 ? 'victoria' : 'victorias'}</Text>
                 </View>
                 {partner && (
@@ -162,13 +162,13 @@ export function StatsScreen() {
   );
 }
 
-function Stat({ big, label, icon }: { big: string; label: string; icon: string }) {
+function Stat({ big, label, color }: { big: string; label: string; color: string }) {
   const { theme } = useApp();
   return (
     <View style={{ flex: 1, backgroundColor: theme.card, borderRadius: radius.md, padding: space.md, borderWidth: 1, borderColor: theme.line, gap: 2 }}>
-      <Text style={{ fontSize: 16 }}>{icon}</Text>
-      <Text style={{ fontFamily: fonts.titleBold, fontSize: 24, color: theme.ink }}>{big}</Text>
-      <Text style={{ fontFamily: fonts.body, fontSize: 11.5, color: theme.inkFaint }}>{label}</Text>
+      <View style={{ width: 22, height: 6, borderRadius: 1, backgroundColor: color }} />
+      <Text style={{ fontFamily: fonts.title, fontSize: 26, color: theme.ink, letterSpacing: -1 }}>{big}</Text>
+      <Text style={{ fontFamily: fonts.medium, fontSize: 14, color: theme.inkSoft }}>{label}</Text>
     </View>
   );
 }
@@ -281,7 +281,7 @@ export function SettingsScreen() {
 
         <Card style={{ gap: space.md }}>
           <Label>Sala</Label>
-          <Body soft>{profile.room ? `Código: ${profile.room}${partner ? ` · con ${partner.name}` : ''}` : 'Todavía no compartes sala.'}</Body>
+          <Body soft>{profile.room ? `Código: ${profile.room}${partner ? `, con ${partner.name}` : ''}` : 'Todavía no compartes sala.'}</Body>
           <Button small kind="soft" label={profile.room ? 'Ver invitación' : 'Jugar en pareja'} onPress={() => app.go({ name: 'pair' })} />
         </Card>
 

@@ -53,6 +53,7 @@ interface LetterProps {
   s: number;
   theme: Theme;
   letter: string;
+  ink: string | null;
   arrows: ArrowKind[] | undefined;
   selected: boolean;
   inWord: boolean;
@@ -72,17 +73,18 @@ const LetterCell = memo(function LetterCell(p: LetterProps) {
   if (p.inWord) bg = theme.activeWord;
   if (p.selected) bg = theme.active;
   if (p.flash) bg = alpha('#D0342C', 0.35);
-  const color = p.confirmedColor ? (p.hinted ? theme.inkFaint : p.confirmedColor) : theme.ink;
+  const color = p.hinted ? theme.inkFaint : (p.ink ?? theme.ink);
   return (
     <Pressable
       onPress={() => p.onPress(p.k)}
       accessibilityLabel={p.letter ? `Casilla con ${p.letter}` : 'Casilla vacía'}
       style={{ width: s, height: s, backgroundColor: bg, borderRightWidth: 1, borderBottomWidth: 1, borderColor: theme.gridLine, alignItems: 'center', justifyContent: 'center' }}
     >
-      <Text style={{ fontFamily: fonts.bold, fontSize: s * 0.52, color, includeFontPadding: false }}>{p.letter}</Text>
+      <Text style={{ fontFamily: fonts.hand, fontSize: s * 0.7, lineHeight: s * 0.86, color, includeFontPadding: false }}>{p.letter}</Text>
       {p.arrows?.map((a) => <Arrow key={a} kind={a} s={s} color={theme.inkSoft} />)}
+      {p.selected && <View pointerEvents="none" style={{ position: 'absolute', left: 0, top: 0, right: 0, bottom: 0, borderWidth: 2.5, borderColor: theme.ink }} />}
       {p.partnerColor && (
-        <View pointerEvents="none" style={{ position: 'absolute', left: 0, top: 0, right: 0, bottom: 0, borderWidth: 2.5, borderColor: p.partnerColor, borderRadius: 3 }} />
+        <View pointerEvents="none" style={{ position: 'absolute', left: 0, top: 0, right: 0, bottom: 0, borderWidth: 2.5, borderColor: p.partnerColor, borderStyle: 'dashed' }} />
       )}
     </Pressable>
   );
@@ -91,7 +93,7 @@ const LetterCell = memo(function LetterCell(p: LetterProps) {
 /** Mayor tamaño de letra con el que la definición cabe en su hueco sin partir palabras. */
 function fitText(text: string, w: number, h: number, max: number): number {
   const words = text.split(' ');
-  const CH = 0.56; // ancho medio de un carácter respecto al tamaño de letra
+  const CH = 0.46; // ancho medio de un carácter respecto al tamaño de letra
   for (let size = max; size > 4; size -= 0.25) {
     const perLine = Math.floor(w / (size * CH));
     if (words.some((x) => x.length > perLine)) continue;
@@ -123,7 +125,7 @@ const ClueCell = memo(function ClueCell({ s, theme, clues, onPress }: ClueProps)
   return (
     <View style={{ width: s, height: s, backgroundColor: theme.clueCell, borderRightWidth: 1, borderBottomWidth: 1, borderColor: theme.gridLine }}>
       {clues.map((c, i) => {
-        const size = fitText(c.text, s - 3, (two ? s / 2 : s) - 2, s * (two ? 0.17 : 0.2));
+        const size = fitText(c.text, s - 3, (two ? s / 2 : s) - 2, s * (two ? 0.2 : 0.24));
         return (
           <Pressable
             key={c.id}
@@ -204,6 +206,7 @@ export function Grid(p: GridProps) {
             s={s}
             theme={theme}
             letter={e?.l ?? ''}
+            ink={e ? (p.colors[e.by] ?? null) : null}
             arrows={puzzle.arrowsAt[k]}
             selected={p.selected === k}
             inWord={activeCells.has(k)}
@@ -224,7 +227,7 @@ export function Grid(p: GridProps) {
     );
   }
   return (
-    <View style={{ borderLeftWidth: 1, borderTopWidth: 1, borderColor: theme.gridLine, borderRadius: 6, overflow: 'hidden', alignSelf: 'center' }}>
+    <View style={{ borderLeftWidth: 1, borderTopWidth: 1, borderColor: theme.gridLine, alignSelf: 'center' }}>
       {rows}
     </View>
   );
