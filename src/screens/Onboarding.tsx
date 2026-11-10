@@ -5,7 +5,7 @@ import { PLAYER_COLORS, fonts, radius, space, useTheme } from '../theme';
 import { newProfile, type Profile } from '../storage';
 
 export function ColorPicker({ value, onChange, taken }: { value: string; onChange: (id: string) => void; taken?: string }) {
-  const theme = useTheme();
+  const theme = useTheme('light');
   return (
     <View style={{ flexDirection: 'row', gap: space.md, flexWrap: 'wrap' }}>
       {PLAYER_COLORS.map((c) => {
@@ -33,7 +33,7 @@ export function ColorPicker({ value, onChange, taken }: { value: string; onChang
 }
 
 export function Onboarding({ onDone }: { onDone: (p: Profile) => void }) {
-  const theme = useTheme();
+  const theme = useTheme('light');
   const insets = useSafeAreaInsets();
   const [name, setName] = useState('');
   const [color, setColor] = useState<string>(PLAYER_COLORS[0].id);

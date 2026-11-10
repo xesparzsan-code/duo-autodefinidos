@@ -63,27 +63,29 @@ export function HomeScreen() {
         </View>
 
         {/* autodefinido de hoy */}
-        <Card style={{ gap: space.md, padding: space.xl }}>
+        <View style={{ backgroundColor: theme.accent, borderRadius: radius.lg, padding: space.xl, gap: space.md }}>
           <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-            <Label>Autodefinido de hoy</Label>
+            <Text style={{ fontFamily: fonts.bold, fontSize: 11, letterSpacing: 1.2, color: alpha('#FFFFFF', 0.75) }}>AUTODEFINIDO DE HOY</Text>
             {stats.streak > 0 && (
-              <View style={{ backgroundColor: alpha('#E08A1E', 0.16), borderRadius: 999, paddingHorizontal: 10, paddingVertical: 4 }}>
-                <Text style={{ fontFamily: fonts.bold, fontSize: 12, color: theme.dark ? '#F3B45B' : '#A9610A' }}>
+              <View style={{ backgroundColor: '#FFFFFF', borderRadius: 999, paddingHorizontal: 10, paddingVertical: 4 }}>
+                <Text style={{ fontFamily: fonts.bold, fontSize: 12, color: '#C2410C' }}>
                   🔥 {stats.streak} {stats.streak === 1 ? 'día' : 'días'}
                 </Text>
               </View>
             )}
           </View>
           <View>
-            <Text style={{ fontFamily: fonts.title, fontSize: 26, color: theme.ink }}>{prettyDate(date)}</Text>
-            <Body soft>
+            <Text numberOfLines={1} adjustsFontSizeToFit style={{ fontFamily: fonts.title, fontSize: 25, color: '#FFFFFF' }}>
+              {prettyDate(date)}
+            </Text>
+            <Text style={{ fontFamily: fonts.body, fontSize: 15, color: alpha('#FFFFFF', 0.8) }}>
               N.º {puzzle.n} · {puzzle.words.length} palabras
               {state?.startedAt && state.finishedAt ? ` · ${formatTime((state.finishedAt - state.startedAt) / 1000)}` : ''}
-            </Body>
+            </Text>
           </View>
 
-          <View style={{ height: 8, borderRadius: 4, backgroundColor: theme.line, overflow: 'hidden' }}>
-            <View style={{ width: `${Math.round(progress * 100)}%`, height: '100%', backgroundColor: done ? theme.good : theme.ink }} />
+          <View style={{ height: 10, borderRadius: 5, backgroundColor: alpha('#FFFFFF', 0.25), overflow: 'hidden' }}>
+            <View style={{ width: `${Math.round(progress * 100)}%`, height: '100%', backgroundColor: done ? '#86EFAC' : '#FFFFFF' }} />
           </View>
 
           {(started || done) && d && (
@@ -96,12 +98,29 @@ export function HomeScreen() {
           )}
 
           {partnerPlaying && !done && (
-            <Body style={{ color: colorHex(partner!.color), fontFamily: fonts.medium }}>● {partner!.name} está jugando ahora</Body>
+            <Text style={{ fontFamily: fonts.medium, fontSize: 15, color: '#FFFFFF' }}>● {partner!.name} está jugando ahora</Text>
           )}
 
-          <Button label={done ? 'Ver resultado' : started ? 'Continuar' : 'Jugar'} onPress={() => app.go({ name: 'game', date })} />
-          {partner && !done && <Button label={poked ? 'Toque enviado' : `Dar un toque a ${partner.name}`} kind="soft" onPress={poke} disabled={poked} />}
-        </Card>
+          <Pressable
+            onPress={() => app.go({ name: 'game', date })}
+            accessibilityRole="button"
+            style={({ pressed }) => ({ backgroundColor: '#FFFFFF', borderRadius: 999, paddingVertical: 15, alignItems: 'center', opacity: pressed ? 0.85 : 1 })}
+          >
+            <Text style={{ fontFamily: fonts.bold, fontSize: 17, color: theme.dark ? '#4F46E5' : theme.accent }}>
+              {done ? 'Ver resultado' : started ? 'Continuar' : 'Jugar'}
+            </Text>
+          </Pressable>
+          {partner && !done && (
+            <Pressable
+              onPress={poke}
+              disabled={poked}
+              accessibilityRole="button"
+              style={({ pressed }) => ({ borderRadius: 999, paddingVertical: 12, alignItems: 'center', borderWidth: 1.5, borderColor: alpha('#FFFFFF', 0.6), opacity: poked ? 0.5 : pressed ? 0.7 : 1 })}
+            >
+              <Text style={{ fontFamily: fonts.bold, fontSize: 15, color: '#FFFFFF' }}>{poked ? 'Toque enviado' : `👋 Dar un toque a ${partner.name}`}</Text>
+            </Pressable>
+          )}
+        </View>
 
         {/* emparejamiento */}
         {!profile.room && (
@@ -126,9 +145,12 @@ export function HomeScreen() {
         )}
 
         <View style={{ flexDirection: 'row', gap: space.md }}>
-          <Tile icon="🗓" title="Archivo" sub="Días anteriores" onPress={() => app.go({ name: 'archive' })} />
-          <Tile icon="📊" title="Marcador" sub={`${stats.played} completados`} onPress={() => app.go({ name: 'stats' })} />
-          <Tile icon="⚙️" title="Ajustes" sub="Avisos y perfil" onPress={() => app.go({ name: 'settings' })} />
+          <Tile icon="🗓️" color="#F59E0B" title="Archivo" sub="Días anteriores" onPress={() => app.go({ name: 'archive' })} />
+          <Tile icon="🏆" color="#10B981" title="Marcador" sub={`${stats.played} completados`} onPress={() => app.go({ name: 'stats' })} />
+        </View>
+        <View style={{ flexDirection: 'row', gap: space.md }}>
+          <Tile icon="🤝" color="#EC4899" title="Pareja" sub={partner ? `Con ${partner.name}` : 'Invitar'} onPress={() => app.go({ name: 'pair' })} />
+          <Tile icon="⚙️" color="#6366F1" title="Ajustes" sub="Avisos y perfil" onPress={() => app.go({ name: 'settings' })} />
         </View>
       </ScrollView>
     </View>
@@ -136,18 +158,17 @@ export function HomeScreen() {
 }
 
 function ScoreLine({ name, color, score, unit }: { name: string; color: string; score: number; unit: string }) {
-  const { theme } = useApp();
   return (
-    <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
-      <View style={{ width: 10, height: 10, borderRadius: 5, backgroundColor: colorHex(color) }} />
-      <Text style={{ fontFamily: fonts.body, fontSize: 14, color: theme.inkSoft }}>{name}</Text>
-      <Text style={{ fontFamily: fonts.bold, fontSize: 16, color: theme.ink }}>{score}</Text>
-      <Text style={{ fontFamily: fonts.body, fontSize: 12, color: theme.inkFaint, marginLeft: -4 }}>{unit}</Text>
+    <View style={{ flexDirection: 'row', alignItems: 'center', gap: 7 }}>
+      <View style={{ width: 12, height: 12, borderRadius: 6, backgroundColor: colorHex(color), borderWidth: 1.5, borderColor: '#FFFFFF' }} />
+      <Text style={{ fontFamily: fonts.body, fontSize: 14, color: alpha('#FFFFFF', 0.85) }}>{name}</Text>
+      <Text style={{ fontFamily: fonts.bold, fontSize: 16, color: '#FFFFFF' }}>{score}</Text>
+      <Text style={{ fontFamily: fonts.body, fontSize: 12, color: alpha('#FFFFFF', 0.7), marginLeft: -3 }}>{unit}</Text>
     </View>
   );
 }
 
-function Tile({ icon, title, sub, onPress }: { icon: string; title: string; sub: string; onPress: () => void }) {
+function Tile({ icon, color, title, sub, onPress }: { icon: string; color: string; title: string; sub: string; onPress: () => void }) {
   const { theme } = useApp();
   return (
     <Pressable
@@ -155,18 +176,20 @@ function Tile({ icon, title, sub, onPress }: { icon: string; title: string; sub:
       accessibilityRole="button"
       style={({ pressed }) => ({
         flex: 1,
-        backgroundColor: theme.card,
-        borderRadius: radius.md,
-        padding: space.md,
-        gap: 4,
-        borderWidth: 1,
-        borderColor: theme.line,
-        opacity: pressed ? 0.7 : 1,
+        backgroundColor: alpha(color, theme.dark ? 0.22 : 0.14),
+        borderRadius: radius.lg,
+        padding: space.lg,
+        gap: 8,
+        borderWidth: 1.5,
+        borderColor: alpha(color, 0.35),
+        opacity: pressed ? 0.75 : 1,
       })}
     >
-      <Text style={{ fontSize: 22 }}>{icon}</Text>
-      <Text style={{ fontFamily: fonts.bold, fontSize: 14, color: theme.ink }}>{title}</Text>
-      <Text style={{ fontFamily: fonts.body, fontSize: 11.5, color: theme.inkFaint }} numberOfLines={1}>
+      <View style={{ width: 64, height: 64, borderRadius: 20, backgroundColor: color, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ fontSize: 34 }}>{icon}</Text>
+      </View>
+      <Text style={{ fontFamily: fonts.bold, fontSize: 18, color: theme.ink }}>{title}</Text>
+      <Text style={{ fontFamily: fonts.body, fontSize: 13, color: theme.inkSoft }} numberOfLines={1}>
         {sub}
       </Text>
     </Pressable>

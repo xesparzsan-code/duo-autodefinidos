@@ -21,8 +21,8 @@ export function alpha(hex: string, a: number): string {
 
 const light = {
   dark: false,
-  bg: '#F7F2E8',
-  card: '#FFFDF8',
+  bg: '#FBF7EE',
+  card: '#FFFFFF',
   ink: '#22303C',
   inkSoft: '#5F6B76',
   inkFaint: '#9AA3AB',
@@ -35,8 +35,8 @@ const light = {
   activeWord: '#FFF6D9',
   key: '#FFFDF8',
   keyText: '#22303C',
-  accent: '#22303C',
-  onAccent: '#FFFDF8',
+  accent: '#4F46E5',
+  onAccent: '#FFFFFF',
   good: '#2E8B57',
 };
 
@@ -56,8 +56,8 @@ const dark: typeof light = {
   activeWord: '#3A3620',
   key: '#2A343E',
   keyText: '#F1EADB',
-  accent: '#F1EADB',
-  onAccent: '#151B21',
+  accent: '#7C74FF',
+  onAccent: '#FFFFFF',
   good: '#5FC58C',
 };
 
