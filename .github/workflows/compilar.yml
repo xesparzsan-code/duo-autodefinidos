@@ -41,7 +41,7 @@ jobs:
 
   ios:
     name: iPhone (.ipa sin firmar)
-    runs-on: macos-15
+    runs-on: macos-26
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
@@ -56,6 +56,7 @@ jobs:
       - name: Compilar sin firma
         working-directory: ios
         run: |
+          set -o pipefail
           WORKSPACE=$(ls -d *.xcworkspace | head -1)
           SCHEME="${WORKSPACE%.xcworkspace}"
           xcodebuild \
@@ -65,7 +66,7 @@ jobs:
             -sdk iphoneos \
             -derivedDataPath build \
             CODE_SIGNING_ALLOWED=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY="" \
-            | tail -n 60
+            | tail -n 120
       - name: Empaquetar .ipa
         run: |
           APP=$(ls -d ios/build/Build/Products/Release-iphoneos/*.app | head -1)
