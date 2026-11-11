@@ -232,6 +232,8 @@ export interface GameState {
   startedAt: number | null;
   finishedAt: number | null;
   loaded: boolean;
+  /** Autodefinido (JSON) con el que se juega esta partida; lo fija quien escribe primero. */
+  puzzle: string | null;
 }
 
 type PendingOp = { cell: CellEntry | null; t: number };
@@ -243,11 +245,12 @@ interface Cache {
   finishedAt: number | null;
   pending: Record<string, PendingOp>;
   pendingHints: Record<string, HintEntry>;
+  puzzle?: string | null;
 }
 
 export class GameSession {
-  private state: GameState = { cells: {}, hints: {}, startedAt: null, finishedAt: null, loaded: false };
-  private remote: { cells: Cells; hints: Record<string, HintEntry>; startedAt: number | null; finishedAt: number | null } | null = null;
+  private state: GameState = { cells: {}, hints: {}, startedAt: null, finishedAt: null, loaded: false, puzzle: null };
+  private remote: { cells: Cells; hints: Record<string, HintEntry>; startedAt: number | null; finishedAt: number | null; puzzle: string | null } | null = null;
   private pending: Record<string, PendingOp> = {};
   private pendingHints: Record<string, HintEntry> = {};
   private listeners = new Set<(s: GameState) => void>();
@@ -281,6 +284,7 @@ export class GameSession {
         startedAt: cache.startedAt ?? null,
         finishedAt: cache.finishedAt ?? null,
         loaded: true,
+        puzzle: cache.puzzle ?? null,
       };
     } else {
       this.state = { ...this.state, loaded: true };
@@ -314,6 +318,7 @@ export class GameSession {
           hints: (v.hints ?? {}) as Record<string, HintEntry>,
           startedAt: v.startedAt ?? null,
           finishedAt: v.finishedAt ?? null,
+          puzzle: typeof v.puzzle === 'string' ? v.puzzle : null,
         };
         this.rebuild();
       });
@@ -334,6 +339,7 @@ export class GameSession {
         startedAt: this.remote.startedAt ?? this.state.startedAt,
         finishedAt: this.remote.finishedAt ?? this.state.finishedAt,
         loaded: true,
+        puzzle: this.remote.puzzle ?? this.state.puzzle,
       };
     }
     this.emit();
@@ -355,6 +361,7 @@ export class GameSession {
       finishedAt: this.state.finishedAt,
       pending: this.pending,
       pendingHints: this.pendingHints,
+      puzzle: this.state.puzzle,
     };
     saveJSON(this.cacheKey, c);
   }
@@ -405,6 +412,18 @@ export class GameSession {
   setCell(k: string, letter: string | null, hint = false) {
     const entry: CellEntry | null = letter ? { l: letter, by: this.uid, t: now(), ...(hint ? { h: true, ok: true } : {}) } : null;
     this.putCell(k, entry);
+  }
+
+  /**
+   * Fija el autodefinido de esta partida (solo la primera vez). Así los dos móviles juegan
+   * siempre con la misma rejilla, aunque después se edite en GitHub.
+   */
+  sharePuzzle(json: string) {
+    if (this.state.puzzle || this.readOnly) return;
+    this.state = { ...this.state, puzzle: json };
+    const d = database();
+    if (d && this.path) runTransaction(ref(d, `${this.path}/puzzle`), (cur) => cur ?? json).catch(() => {});
+    this.emit();
   }
 
   /** Marca una casilla como comprobada (correcta y fija) sin cambiar quién la puso. */
@@ -463,7 +482,7 @@ export class GameSession {
 }
 
 /** Progreso guardado en el móvil de una fecha (para la portada y el archivo). */
-export async function cachedProgress(room: string | null, date: string): Promise<{ cells: Cells; finishedAt: number | null } | null> {
+export async function cachedProgress(room: string | null, date: string): Promise<{ cells: Cells; finishedAt: number | null; puzzle: string | null } | null> {
   const c = await loadJSON<Cache>(`game:${room ?? 'solo'}:${date}`);
-  return c ? { cells: c.cells ?? {}, finishedAt: c.finishedAt ?? null } : null;
+  return c ? { cells: c.cells ?? {}, finishedAt: c.finishedAt ?? null, puzzle: c.puzzle ?? null } : null;
 }

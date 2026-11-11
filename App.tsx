@@ -27,6 +27,7 @@ import {
 } from './src/sync';
 import type { DayResult } from './src/logic';
 import { scheduleDailyReminder } from './src/notify';
+import { loadRemoteCache } from './src/puzzles';
 import { Onboarding } from './src/screens/Onboarding';
 import { HomeScreen } from './src/screens/Home';
 import { GameScreen } from './src/screens/Game';
@@ -58,7 +59,10 @@ function Root() {
   const url = ExpoLinking.useURL();
 
   useEffect(() => {
-    loadProfile().then((p) => setProfileState(p));
+    loadRemoteCache()
+      .catch(() => {})
+      .then(() => loadProfile())
+      .then((p) => setProfileState(p));
   }, []);
 
   const setProfile = useCallback((p: Profile) => {

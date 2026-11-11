@@ -20,6 +20,12 @@ export const firebaseConfig = {
 /** Día en que se publica el autodefinido n.º 1 (AAAA-MM-DD). */
 export const START_DATE = '2026-11-09';
 
+/**
+ * Carpeta de GitHub de donde la app descarga los autodefinidos (un archivo NNNN.json por día).
+ * Solo funciona si el repositorio es público; si no, la app usa los que lleva dentro.
+ */
+export const PUZZLES_URL = 'https://raw.githubusercontent.com/xesparzsan-code/duo-autodefinidos/main/autodefinidos';
+
 /** Servidor de ntfy para los avisos entre los dos móviles. */
 export const NTFY_SERVER = 'https://ntfy.sh';
 

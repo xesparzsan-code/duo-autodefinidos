@@ -1,0 +1,18 @@
+# Revisa los autodefinidos cada vez que se edita alguno. Si hay un error (una palabra que no
+# coincide con la rejilla, un JSON mal escrito…) la revisión sale en rojo y explica cuál es.
+name: Revisar autodefinidos
+
+on:
+  push:
+    paths: ['autodefinidos/**', 'generador/**']
+  workflow_dispatch:
+
+jobs:
+  revisar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: python3 generador/validar.py

@@ -1,0 +1,613 @@
+ABAJO: Grito contra el tirano
+ABEJA: La reina manda en la colmena
+ABRIL: Mes de la feria sevillana
+ABRIR: Inaugurar
+ABUSO: Atropello
+ACABA: Remata
+ACASO: Por si...
+ACERA: Bordillo adentro
+ACERO: Toledo forjaba el mejor
+ACIDO: El sulfúrico corroe
+ACTOR: Vive de papeles
+ADIOS: Hasta nunca
+ADORA: Idolatra
+AEREO: Como el correo por avión
+AGUAS: Mayores o menores
+AGUDO: Con tilde si acaba en vocal
+AHORA: Ya mismo
+AJENO: Lo que roba el caco
+ALADO: Como Pegaso
+ALAMO: Fuerte texano asediado
+ALDEA: La gala de Astérix
+ALEAR: Fundir cobre con estaño
+ALETA: Delata al tiburón
+ALIAS: Nombre de guerra
+ALMAS: Las cuenta el censo del pueblo
+ALTAR: Hasta él lleva el novio
+AMADA: Dulcinea, para don Quijote
+AMADO: Nervo, poeta mexicano
+AMARA: Adorara
+AMASA: Hace fortuna
+AMIGA: Confidente
+AMIGO: Sancho, para el hidalgo
+ANCHO: Holgado
+ANCLA: Tatuaje de marinero
+ANDAR: Ir tirando
+ANGEL: Gabriel o Miguel
+ANIMA: Alma en pena
+ANIMO: Moral
+ANTES: Primero
+APODO: Sobrenombre
+APOYO: Respaldo
+ARADO: Lo arrastra la yunta
+ARAÑA: Viuda negra
+ARAÑO: Marca de gato
+ARBOL: El genealógico tiene ramas
+ARDOR: Entusiasmo
+ARENA: Ruedo
+ARMAS: Blasón
+AROMA: Buqué
+ARROZ: Con leche, de postre
+ASADO: Fiesta argentina de la carne
+ASEAN: Adecentan
+ASEAR: Adecentar
+ASILO: Lo pide el refugiado
+ASOMA: Apunta el día
+ATADO: Manojo
+ATAJO: Trocha
+ATAUD: Féretro
+ATLAS: Titán que sostiene el cielo
+ATOMO: Se parte en la fisión
+ATRAS: Marcha de retroceso
+AUDAZ: Con arrojo
+AUTOR: Cobra derechos
+AVENA: Va en el muesli
+AVION: Pájaro pariente de la golondrina
+AVISO: Tarjeta amarilla, casi
+AYUDA: Subvención
+AZADA: Pariente de la pala
+AZOTE: Plaga
+AÑADE: Agrega
+BAILE: El de san Vito no es danza
+BAJAR: Descargar de internet
+BALON: El de oro es un trofeo
+BALSA: La de la Medusa, en el Louvre
+BANCO: Cardumen
+BANDA: La lleva el presidente al pecho
+BARBA: La azul es de cuento
+BARCO: El Titanic
+BARRO: Materia del alfarero
+BELLA: La despertó un beso
+BELLO: Vello, para el oído
+BESAR: Rozar con los labios
+BICHO: Sabandija
+BOLSA: Sube y baja en Wall Street
+BOLSO: Bandolera
+BOMBA: Noticia inesperada
+BORDE: Antipático
+BRAVO: Río fronterizo
+BRAZO: El de gitano es un dulce
+BREVE: Lo bueno, si lo es, dos veces
+BRISA: Céfiro
+BROMA: La pesada no hace gracia
+BRUJA: Arde en Zugarramurdi
+BUENO: Para contestar al teléfono
+BURRO: Juego de naipes
+CABLE: Ayuda oportuna
+CABRA: Amaltea lo era
+CAIDA: La de Roma cerró una era
+CAIRO: Capital junto a las pirámides
+CALAR: Pararse el motor
+CALDO: Consomé
+CALMA: Chicha, sin viento
+CALOR: Bochorno
+CALVO: Como una bola de billar
+CAMPO: Santo, cementerio
+CANAL: El de Panamá
+CANOA: Piragua india
+CANTO: Guijarro
+CARAS: Dos tiene Jano
+CARNE: Débil, según el dicho
+CAROS: De lujo
+CARTA: La magna es la constitución
+CASAR: Encajar
+CASAS: Las colgadas están en Cuenca
+CASCO: Envase vacío
+CAUSA: Proceso judicial
+CAZAR: Pillar
+CELDA: Hueco del panal
+CENAR: Yantar tardío
+CERCA: Empalizada
+CERDO: Gorrino
+CESAR: Cruzó el Rubicón
+CESTA: Dos puntos en baloncesto
+CHICO: Charlot adoptó uno
+CHINA: Porcelana
+CIELO: Gloria
+CINCO: Lobitos tiene la loba
+CINTA: Película
+CIRCO: El Máximo, en Roma
+CLARA: Cerveza con gaseosa
+CLARO: Calvero del bosque
+CLASE: Distinción
+CLAVE: La de sol abre el pentagrama
+CLAVO: Especia olorosa
+CLIMA: Ambiente
+COBRA: Baila con la flauta
+COCER: Hacer ladrillos al horno
+COCHE: Berlina
+COLOR: Añil, por ejemplo
+COMER: En damas, capturar
+CONDE: Drácula o Montecristo
+COPIA: Calco
+CORAL: Atolón lo forma
+CORTE: Apagón
+CORTO: Maltés, marino de cómic
+COSAS: Bártulos
+COSER: Y cantar, lo fácil
+COSTA: La de Marfil es un país
+CREAR: Sacar de la nada
+CREER: Dar por cierto
+CREMA: Flor y nata
+CRUDO: Petróleo sin refinar
+CUERO: Pellejo de vino
+CUEVA: Altamira
+CULPA: Pesa en la conciencia
+CURAR: Ahumar el jamón
+CURSO: Rumbo
+DANZA: La de los siete velos
+DATOS: Los protege una ley
+DEBER: Tarea para casa
+DECIR: Refrán
+DEDAL: Va con la aguja
+DEJAR: Legar
+DENSO: Como la niebla londinense
+DIANA: Toque de cuartel
+DICHA: Nunca es tarde si es buena
+DIETA: Asamblea alemana
+DIGNO: Decoroso
+DISCO: Lo lanza el atleta
+DOBLE: Especialista de riesgo
+DOLOR: Lo calma el analgésico
+DONDE: Adverbio de lugar
+DORAR: Bañar en metal precioso
+DOSIS: Toma
+DUCHA: La escocesa alterna frío y calor
+DUEÑO: Amo
+DULCE: Lamín
+DURAR: Aguantar
+ELEVA: Iza
+ELLAS: Las aludidas
+ELLOS: Los aludidos
+EMITE: Radia
+ENANO: Gruñón o Mudito
+ENERO: Su cuesta es larga
+ENOJO: Cabreo
+ENTES: Organismos públicos
+ENTRA: Ingresa
+ENVIA: Remite
+EPOCA: La belle, antes de la guerra
+ERROR: Gazapo
+ESPIA: Mata Hari
+ESTAN: Se encuentran
+ESTAR: Sala de la tele
+ESTAS: Las de aquí
+ESTOS: Los de aquí
+ETAPA: Jornada del Tour
+EXITO: Superventas
+FALDA: Ladera | Kilt
+FALSO: Como un billete de tres euros
+FALTA: Directa o indirecta
+FAROL: Lance de póquer
+FAVOR: Gracia
+FECHA: Data
+FELIZ: Como unas pascuas
+FERIA: La del libro
+FIBRA: La óptica trae internet
+FICHA: Contrata a un jugador
+FIERA: La doma Shakespeare
+FINAL: Desenlace
+FIRMA: Autógrafo
+FLACO: El compañero del Gordo
+FLOTA: No se hunde
+FONDO: Carrera de resistencia
+FORMA: Hostia sin consagrar
+FRASE: La hecha es un tópico
+FRENO: Bocado del caballo
+FRESA: Torno del dentista
+FRUTA: La prohibida, en el Edén
+FUEGO: Lo robó Prometeo
+FUERA: Grito al árbitro
+GAFAS: Quevedos
+GALLO: Nota falsa del cantante
+GAMBA: Pierna, en italiano
+GANAR: Cobrar un sueldo
+GANSO: Graciosillo
+GARRA: Empuje
+GENIO: Mal carácter
+GENTE: Público
+GLOBO: Terráqueo, en el aula
+GOLPE: De Estado, a veces
+GORDO: Cae el 22 de diciembre
+GORRA: De ella vive el gorrón
+GRANO: Espinilla
+GRASA: Lubricante
+GRAVE: Llana, por el acento
+GRIPE: Trancazo
+GRITO: Cuadro de Munch
+GRUPO: Sanguíneo, A o B
+GUAPO: Chulo
+GUION: Raya corta
+GUSTO: Placer
+HABLA: Charla
+HACER: Obrar
+HACHA: As, figura
+HASTA: Incluso
+HELAR: Dejar de piedra
+HIELO: Va en el cubata
+HIENA: Carroñera de la sabana
+HOGAR: Dulce, en el felpudo
+HONOR: Palabra de caballero
+HORNO: El de leña hace mejor pizza
+HOTEL: Lo puntúan las estrellas
+HUECO: Vano
+HUESO: Lo roe el perro
+HUEVO: El de Colón se sostuvo
+HUMOR: El negro no es para todos
+IDEAL: Utopía
+IDEAS: Las platónicas
+IGUAL: Signo con dos rayas
+ILESO: Sin un rasguño
+IMITA: Remeda
+INDIA: Cuna de Gandhi
+IRENE: Paz, en griego
+ISLAM: Fe del Corán
+ISLAS: Forman un archipiélago
+JABON: El de Marsella
+JAMON: De Jabugo
+JARRA: En ella se sirve la sangría
+JAULA: Gayola
+JOVEN: Mozo
+JUEGO: Parte del set
+JUGAR: Apostar
+JUNIO: Trae el solsticio de verano
+JUNTO: Al lado
+LABIO: Belfo, en el caballo
+LADOS: Cuatro tiene el cuadrado
+LADRA: Luego no muerde
+LAGOS: Mayor ciudad de Nigeria
+LANZA: La rompe quien defiende
+LAPIZ: Va con el papel
+LARGO: ¡Fuera de aquí!
+LASER: Espada de jedi
+LATIR: Hacer tictac el corazón
+LAVAR: Blanquear dinero
+LECHE: Suerte, vulgarmente
+LEGAL: Lícito
+LEJOS: Donde Cristo perdió la sandalia
+LENTO: Tempo pausado
+LEONA: Reina sin melena
+LETRA: Pago aplazado
+LIBRE: Estilo de natación
+LIBRO: Incunable, si es muy viejo
+LICOR: Pacharán
+LIDER: Va de amarillo en el Tour
+LIMON: Agrio
+LINCE: Persona muy sagaz
+LINDO: Don Diego, galán presumido
+LINEA: Bingo menor
+LIRIO: Flor de lis
+LISTA: La de la compra
+LISTO: Avispado
+LLAMA: Pariente andina del camello
+LLANO: Sencillo en el trato
+LLAVE: Presa de judo
+LLENO: Cartel de no hay entradas
+LLORA: Gimotea
+LOCAL: Equipo de casa
+LOSAS: Lápidas
+LUCHA: La libre es mexicana
+LUGAR: El de la Mancha
+LUNAR: Topo del vestido flamenco
+LUNES: Día odiado
+MADRE: Teresa, en Calcuta
+MAGIA: La potagia de Tamariz
+MALTA: Cebada germinada
+MANGA: Cómic japonés
+MANGO: Empuñadura
+MANOS: Arriba, dice el atracador
+MANTA: Zamorana o eléctrica
+MARCA: Récord
+MARCO: Moneda de Bismarck
+MAREA: La negra es de petróleo
+MARES: Siete, según los marinos
+MARTE: Dios de la guerra
+MARZO: Trae la primavera
+MASAS: Las rebeló Ortega
+MASON: Hermano de mandil
+MATAR: Dar jaque mate
+MAYOR: Calle principal
+MEDIA: Promedio
+MEDIO: Centrocampista
+MEDIR: Tomar la talla
+MEJOR: Más bueno
+MELON: Va con jamón
+MENOR: Sin edad de votar
+MENTE: Magín
+MESAS: Las petitorias son benéficas
+MESES: Nueve dura el embarazo
+METAL: Sección de trompetas
+METRO: Suburbano
+MIEDO: Canguelo
+MIRAR: Echar un ojo
+MISMO: Ni más ni menos que ese
+MITAD: Media naranja
+MOLAR: Gustar, en jerga
+MONOS: Los tres sabios se tapan
+MONTE: De piedad, casa de empeños
+MORAL: La doble es hipocresía
+MOSCA: Detrás de la oreja, sospecha
+MOTOR: De explosión
+MOVER: Menear
+MUCHO: Ni poco ni bastante
+MUELA: La del juicio sale tarde
+MUJER: Fémina
+MUNDO: Orbe
+MUSEO: El Prado
+NACER: Ver la luz
+NADAR: Y guardar la ropa
+NADAS: Flotas y avanzas
+NADIE: Ni un alma
+NARIZ: La de Cyrano era célebre
+NASAL: Como el sonido de la eme
+NATAL: Brasil tiene una ciudad así
+NAVAL: Como la batalla de Lepanto
+NEGRO: Humor macabro
+NIETO: Lo malcría el abuelo
+NIEVE: Blancura de Blanca
+NIVEL: Herramienta con burbuja
+NOBLE: Gas que no reacciona
+NOCHE: La de san Juan es mágica
+NORIA: Saca agua dando vueltas
+NORMA: Ópera de Bellini
+NORTE: Lo señala la brújula
+NOTAS: Apuntes
+NOVIA: La de Frankenstein
+NOVIO: Pretendiente
+NUBES: Cirros y cúmulos
+NUEVE: Musas
+NUEVO: A estrenar
+NUNCA: Ni hoy ni mañana
+OASIS: Banda de los Gallagher
+OBESO: Orondo
+OCASO: Decadencia
+OESTE: Lejano, el del vaquero
+OLERA: Husmeará
+OLIVA: Verde militar
+OLIVO: Su rama es símbolo de paz
+OPERA: Carmen o Aida
+ORDEN: Dórico o jónico
+OREAR: Secar al aire
+OREJA: Trofeo taurino
+ORINA: Análisis de laboratorio
+OSADO: Temerario
+OSERA: Cueva de plantígrado
+OSTRA: Se toma con limón
+OTOÑO: Caída de la hoja
+OVEJA: La negra desentona
+PADRE: Nuestro, oración
+PAGAR: Apoquinar
+PALMA: Isla bonita
+PARED: Tabique
+PARTE: Informe médico
+PASAR: Aprobar
+PASEO: El del Prado
+PASOS: Los llevan los costaleros
+PASTA: Dinero
+PATAS: Arriba, desorden
+PATIO: El de butacas
+PAUSA: Calderón, en música
+PECHO: A lo hecho...
+PEDIR: Mendigar
+PEINE: Cargador de balas
+PELEA: Gresca
+PENAL: Presidio
+PERLA: La cultivan en el mar
+PERRO: Can
+PESAR: Poner en la balanza
+PESCA: De arrastre o de bajura
+PESOS: Los levanta el haltera
+PIANO: De cola, en la sala
+PIEZA: Obra teatral
+PINTA: Medida de cerveza
+PISAR: Hollar
+PISTA: La de tenis | Indicio del detective
+PLATA: Dinero, en América
+PLATO: Cada marcha de la bici
+PLAYA: La Concha
+PLAZA: Coso taurino
+PLOMO: Pelmazo
+PLUMA: Estilográfica
+POBRE: Mendigo
+PODER: El cuarto es la prensa
+POEMA: Soneto
+POETA: Machado o Lorca
+POLEN: Culpable de la alergia
+POLLO: Jovenzuelo presumido
+POLVO: En él nos convertiremos
+PONER: Hacer huevos
+PRADO: Pinacoteca
+PRIMO: Ingenuo
+PRISA: Mala consejera
+PUDOR: Vergüenza
+PULPO: A feira
+PUNTO: Y coma
+QUESO: Cabrales
+RADIO: Mitad del diámetro
+RAMAS: Por ellas se va quien divaga
+RAPAZ: Águila o halcón
+RAROS: Insólitos
+RASAR: Pasar rozando
+RASGO: Trazo
+RATAS: Las ahuyentó el flautista
+RATON: Pérez
+RAZON: La pierde quien grita
+REDES: Las sociales enganchan
+REGLA: Pauta
+REINA: Abeja madre
+REINO: El de Taifas
+RELOJ: De arena o de cuco
+REMAR: Bogar
+RENAL: Como el cólico nefrítico
+RENTA: Declaración de primavera
+RESES: Cabezas de ganado
+RESTA: Devuelve el saque
+RETAR: Lanzar el guante
+REZAR: Pasar las cuentas
+RIADA: Avenida de agua
+RIEGO: Por goteo
+RIMAR: Hacer pareados
+RITMO: Lo lleva el batería
+RIVAL: Antagonista
+ROBAR: Coger carta del mazo
+ROBLE: Madera de barrica
+RODEO: Circunloquio
+ROMAN: Novela medieval francesa
+ROMPE: Y rasga, con desparpajo
+RONDA: La de noche es de Rembrandt
+ROSAL: Trepa por la pérgola
+ROSAS: Golfo de la Costa Brava
+ROSCA: Hacer la... es adular
+RUBIA: Antigua peseta
+RUBIO: Como el trigo
+RUEDA: La de prensa
+RUIDO: Mucho y pocas nueces
+RUMBO: Derrotero
+RURAL: Casa de turismo
+SABER: Erudición
+SABIO: Alfonso X lo fue
+SABOR: Umami, por ejemplo
+SACAR: Poner el balón en juego
+SALAR: Curar en salmuera
+SALAS: Naves del museo
+SALES: Las de baño
+SALIR: Tener novio
+SALON: El del automóvil
+SALSA: Mayonesa
+SALTO: El del ángel, en Venezuela
+SALUD: Deseo al estornudo
+SANAR: Reponerse
+SANTO: Onomástica
+SECAR: Enjugar
+SEDAS: Las traía la ruta
+SELVA: La negra es alemana
+SENDA: Vereda
+SERES: Criaturas
+SERIE: Mundial, la del béisbol
+SERIO: Adusto
+SIETE: Pecados capitales
+SIGLO: El de Oro
+SIGNO: Piscis o Libra
+SILLA: La eléctrica
+SITIO: Asedio
+SOBRE: Acerca de
+SOCIO: Compinche
+SOLAR: Parcela
+SOLAS: Sin testigos
+SOLOS: Momentos del guitarrista
+SONAR: Radar submarino
+SONES: Aires musicales
+SOPLA: Chiva la respuesta
+SORDO: Goya, en la Quinta
+SUAVE: Como el terciopelo
+SUBIR: Colgar en la red
+SUCIO: Juego sin deportividad
+SUDOR: Lo cuesta el pan
+SUELO: Lo besa quien cae
+SUEÑO: El americano
+SUMAR: Dos y dos
+SUSTO: O muerte
+TABLA: La del surf
+TALAR: Hábito hasta los pies
+TALLA: Escultura en madera
+TALLO: Renuevo
+TANGO: Gardel
+TAPAR: Encubrir
+TARDE: Más vale que nunca
+TAREA: Faena
+TARTA: La nupcial tiene pisos
+TASAR: Valorar
+TECHO: Tope
+TECLA: Hay que dar con ella
+TEJER: Tricotar
+TELAR: Lo de Penélope
+TEMAS: Los del temario
+TEMOR: Recelo
+TENER: Y no..., novela de Hemingway
+TENIS: Zapatillas
+TENOR: Pavarotti
+TERSO: Sin arrugas
+TESIS: La defiende el doctorando
+TEXTO: Libro del alumno
+TIBIA: Ni fría ni caliente
+TIGRE: El de Bengala
+TIRAR: Derrochar
+TOCAR: Corresponder en el reparto
+TOMAR: Conquistar
+TONOS: Los del móvil
+TONTO: Payaso augusto
+TOROS: Los de Guisando
+TORRE: La de Babel
+TORTA: Ni..., nada
+TOSER: Carraspear
+TOTAL: En resumen
+TRAER: Acarrear
+TRAJE: El de luces
+TRAMA: Red de corrupción
+TRATO: Hecho, al cerrar el negocio
+TRECE: Martes y..., mal día
+TRENA: Trullo
+TRIGO: Candeal
+TRIOS: Ternas
+TROPA: Soldadesca
+TROZO: Cacho
+TRUCO: Juego de naipes argentino
+TUMBA: La de Tutankamón
+TURNO: De noche o de mañana
+UNICO: Sin par
+UNION: Hace la fuerza
+UNTAR: Sobornar
+USADO: De segunda mano
+USARA: Se sirviera de
+USTED: Vuecencia, más o menos
+UTERO: Claustro materno
+VACIO: Sin aire, al envasar
+VAGON: El de cola
+VALLE: El de los Caídos
+VALOR: Arrojo
+VAPOR: Barco del Misisipi
+VASOS: Los comunicantes
+VECES: A..., de cuando en cuando
+VELAR: Cuidar de noche
+VELAS: Trapo del velero
+VENIR: Acudir
+VENTA: Mesón del Quijote
+VERAS: De..., en serio
+VERBO: En el principio era
+VERDE: Chiste picante
+VERSO: Alejandrino
+VIAJE: Odisea
+VIEJO: El de Hemingway iba al mar
+VILLA: Y corte, Madrid
+VIRUS: Infecta ordenadores
+VISTA: Audiencia judicial
+VIUDA: La alegre es una opereta
+VIVIR: Para ver
+VOLAR: Dinamitar
+VUELO: Amplitud de la falda
+YEGUA: Potra crecida
+YERNO: Hijo político
+ZARPA: Leva anclas
+ZONAS: Sectores
+ZORRO: Don Diego de la Vega
+ZURDO: Nadal, con la raqueta

@@ -1,0 +1,582 @@
+ABRE: Inaugura
+ACRE: Picante al gusto
+ACTA: La levanta el secretario
+ACTO: Seguido, a continuación
+AFAN: Anhelo vehemente
+AGIL: De movimientos sueltos
+AGUA: Bendita, en la pila
+AIRE: Garbo | Corriente
+AJOS: Van en ristra
+ALAS: Las perdió Ícaro
+ALBA: Duquesa pintada por Goya
+ALEA: Funde dos metales
+ALGA: Nori o wakame
+ALGO: Un poco
+ALMA: Se vende al diablo
+ALTA: Permiso del médico para volver
+ALTO: Voz del centinela
+AMAN: Adoran
+AMAR: Verbo de la primera conjugación
+AMAS: Adoras
+AMEN: Final de la oración
+AMOR: Lo dispara Cupido
+AMOS: Señores
+ANCA: Grupa
+ANDA: ¡Vaya!
+ANDE: Recorra a pie
+ANDO: Voy a pie
+ANIS: Chinchón, por ejemplo
+ANTE: En presencia de
+APIO: Verdura del bloody mary
+APTO: Aprobado, en ciertos exámenes
+ARAN: Valle leridano
+ARAR: Abrir surcos
+ARAS: En ... de, en honor de
+ARCA: La de la Alianza
+ARCO: El del triunfo, en París
+ARDE: Está en llamas
+ARDO: Estoy que quemo
+AREA: Cien metros cuadrados
+ARMA: De doble filo, a veces
+ARMO: Ensamblo
+AROS: Cinco en la bandera olímpica
+ARPA: La tocan los ángeles
+ARTE: Maña | El séptimo es el cine
+ASAN: Hacen churrasco
+ASAR: Poner en el espetón
+ASAS: Dos tiene el ánfora
+ASCO: Náusea
+ASEN: Pongan a la parrilla
+ASEO: Higiene
+ASES: Hay cuatro en la baraja
+ASIA: Allí está el Everest
+ASIR: Coger con la mano
+ASNO: Platero
+ASTA: A media, en señal de luto
+ATAN: Amarran
+ATAR: Poner ligaduras
+ATAS: Amarras
+ATEA: Niega la divinidad
+ATEN: Amarren
+ATEO: No tiene dios
+ATOS: Hatillos
+ATUN: Bonito pariente
+AULA: La Magna, en la universidad
+AUNA: Unifica
+AUTO: Resolución del juez
+AVAL: Firma que garantiza
+AVES: Marías, en el rosario
+AVIA: Dispone, arregla
+AYER: Canción de los Beatles, traducida
+AZAR: Lo que decide el dado
+AZUL: Príncipe de cuento
+AÑIL: Entre el azul y el violeta
+AÑOS: Luz, en astronomía
+BABA: Rastro del caracol
+BAJA: Permiso por enfermedad
+BAJO: Voz de sótano
+BALA: Va en el cargador | Hace la oveja
+BASE: Lo contrario de ácido
+BATA: La blanca es del médico
+BAÑO: María, en la cocina
+BEBE: Empina el codo
+BESO: El de Judas fue traidor
+BIEN: Patrimonio
+BOCA: Desembocadura
+BODA: De plata a los veinticinco
+BOLA: Embuste
+BOTA: Italia tiene su forma
+BOTE: Premio acumulado
+BUEY: Marisco de pinzas grandes
+BUHO: Sabio del bosque
+CABO: Hilo | El de Buena Esperanza
+CACO: Amigo de lo ajeno
+CADA: Reparte por unidades
+CAEN: Van al suelo
+CAER: Sucumbir
+CAES: Vas al suelo
+CAFE: Solo o cortado
+CAJA: La negra del avión
+CALA: Flor blanca | Cata del melón
+CALO: Habla romaní
+CAMA: Lecho
+CANA: Hebra de plata
+CAOS: Lo que había antes del orden
+CAPA: La del torero
+CARA: Lo contrario de cruz
+CARO: De precio subido
+CASA: Estirpe | Une en matrimonio
+CASI: Por un pelo
+CASO: Lo resuelve el detective
+CAVA: Brut nature
+CAZA: Avión de combate
+CAÑA: La de pescar
+CEBO: Señuelo
+CEDE: Se rinde
+CEJA: Traste móvil de la guitarra
+CELO: Época de apareamiento
+CENA: La última la pintó Leonardo
+CERA: La del oído
+CERO: Punto de partida
+CESA: Deja el cargo
+CHIP: Corazón del ordenador
+CIEN: Los años de soledad
+CIMA: Lo más alto
+CINE: Sala oscura
+CITA: Palabras ajenas entre comillas
+CLAN: Tribu escocesa
+CLIC: Sonido del ratón
+CLUB: Equipo
+COCO: Asusta a los niños
+CODO: Tubo en ángulo
+COLA: Pegamento | Refresco
+COMA: Separa sin cerrar
+COME: En ajedrez, captura
+COMO: A la manera de
+COPA: Sombrero alto la tiene
+CORO: El griego comentaba la tragedia
+COSA: Algo sin nombre
+CREO: Primera palabra del credo
+CRIA: Camada
+CRUZ: Reverso de la moneda
+CUBO: El de Rubik
+CUNA: Lugar de origen
+CURA: Párroco
+DABA: Regalaba
+DADO: Seis caras con puntos
+DAMA: La de Elche
+DARA: Regalará
+DARE: Regalaré
+DATO: Cifra del informe
+DAÑO: Avería
+DEAN: Preside el cabildo
+DEBE: Columna contable
+DEDO: Índice o anular
+DEJA: Lega en testamento
+DIAS: Los cuenta el calendario
+DICE: Asegura
+DIEZ: Sobresaliente
+DIME: ... con quién andas
+DIOS: Zeus o Thor
+DIRA: Contará
+DOCE: Apóstoles
+DOLO: Mala fe jurídica
+DOMA: Arte del picador
+DOTA: Equipa
+DOTE: Cualidad apreciable
+DUDA: La tenía Hamlet
+DUNA: Montículo del Sáhara
+DURA: Aguanta
+DURO: Antigua moneda de plata
+ECHA: Despide
+ECHE: Expulse
+ECHO: Expulso
+ECOS: Sección de sociedad
+EDAD: La de piedra, por ejemplo
+EDEN: De allí echaron a Adán
+ELLA: Tercera persona
+ELLO: Para Freud, lo inconsciente
+EMIR: Manda en Catar
+ENEA: Espadaña
+ENTE: Entidad
+ERAL: Res de dos años
+ERAN: Existieron
+ERAS: Fuiste
+ERES: Tú, del verbo ser
+ESAS: Las de ahí
+ESOS: Los de ahí
+ESTA: La de aquí
+ESTE: Levante
+ESTO: Lo de aquí
+ETNA: Humea en Sicilia
+EURO: Jubiló a la peseta
+FACA: Navaja de grandes dimensiones
+FAMA: Notoriedad
+FARO: El de Alejandría fue maravilla
+FASE: Cuarto creciente, por ejemplo
+FEAS: Nada bonitas
+FEOS: Desaires
+FIEL: Aguja de la balanza
+FILA: India, de uno en uno
+FINO: Jerez pálido
+FLOR: Y nata, lo mejor
+FOCA: Aplaude con las aletas
+FOCO: Centro de la epidemia
+FOSA: La de las Marianas
+FOTO: Instantánea
+FRIO: Lo trae el cierzo
+GAFA: Grapa
+GALA: Musa de Dalí
+GANA: Apetito
+GATA: Sierra extremeña
+GATO: Con botas, en el cuento
+GIRA: Tournée
+GIRO: Envío postal de dinero
+GOMA: Neumático
+GOTA: Enfermedad de reyes
+GOZO: Júbilo
+GRIS: Día nublado
+GULA: Sucedáneo de la angula
+HACE: Tiempo atrás
+HADA: Campanilla
+HAGA: Ejecute
+HAGO: Ejecuto
+HALO: Corona de santo
+HIEL: Amargura
+HIJA: La del rey es infanta
+HIJO: Vástago
+HILO: El de Ariadna
+HOJA: Filo de la espada
+HOLA: Revista del corazón
+HORA: La punta, con atasco
+HOYO: Hay dieciocho en el campo
+HUIR: Poner pies en polvorosa
+HUMO: Señal india
+IBAN: Código de la cuenta
+IBAS: Acudías
+IDAS: Venidas las acompañan
+IDEA: Bombilla sobre la cabeza
+IDEM: Igual que lo anterior
+IDOS: Lunáticos
+IMAN: Guía de la mezquita
+INCA: Atahualpa lo era
+IRAN: Antigua Persia
+IRAS: Accesos de cólera
+IRIA: Acudiría
+IRIS: Diosa mensajera
+ISLA: La del tesoro
+JEFE: Capo
+JOTA: Sota inglesa
+JOYA: Persona que vale mucho
+JUEZ: Árbitro, en algunos deportes
+LADO: Tres tiene el triángulo
+LAGO: El de los cisnes
+LANA: Merina
+LATA: Tostón
+LAVA: Río de fuego
+LAZO: Trampa | Del vaquero
+LEAL: Que no traiciona
+LEAN: Repasen el texto
+LEAS: Repases el texto
+LEEN: Hojean
+LEER: Interpretar el pentagrama
+LEES: Hojeas
+LEIA: Princesa de las galaxias
+LEMA: Entrada del diccionario
+LEON: Ciudad de la Pulchra Leonina
+LEVE: Venial
+LEÑA: Castigo
+LIAN: Embrollan
+LIAR: Hacer un cigarrillo
+LIEN: Embrollen
+LIES: Embrolles
+LILA: Tonto, coloquialmente
+LIMA: Desgasta el metal
+LIOS: Aventuras
+LISO: Sin estampado
+LOAS: Elogios
+LOBO: El de mar es marinero
+LOCO: El sombrerero del té
+LODO: Fango
+LOMA: Otero
+LOMO: Canto del libro
+LORO: Radio, en jerga
+LOSA: Tapa del sepulcro
+LOTE: Parte de la herencia
+LUNA: Espejo del armario
+LUPA: La de Sherlock
+MAGO: Merlín
+MAIZ: Grano de los mayas
+MALA: Racha, a veces
+MALO: El lobo del cuento
+MAMA: Glándula del pecho
+MANO: Capa de pintura
+MAPA: El del tesoro
+MASA: La del pan | Muchedumbre
+MATA: Planta de poca alzada
+MAYO: Mes de las comuniones
+MAZO: Lo usa el juez
+MESA: Redonda, la de Arturo
+META: Portería
+MIAS: Maúllas
+MIEL: Luna de recién casados
+MINA: Explosivo enterrado
+MIRA: Punto del fusil
+MIRE: Contemple
+MIRO: Joan, pintor
+MISA: La del gallo
+MITO: Narración de dioses
+MODA: Valor más repetido
+MODO: Indicativo o subjuntivo
+MONO: Bonito | Síndrome de abstinencia
+MORA: Retraso en el pago
+MOTO: Vespa
+MUDA: Ropa interior limpia
+MUDO: Cine de Chaplin
+MULA: Terca proverbial
+MURO: El de Berlín cayó
+MUSA: Calíope o Talía
+NABO: Su grelo va al caldo gallego
+NACE: Brota
+NADA: Novela de Carmen Laforet
+NANA: Arrullo
+NAOS: Carabelas mayores
+NASA: Lanzó el Apolo
+NATA: Flor y...
+NAVE: Parte central de la iglesia
+NENE: Crío
+NEON: Luz de Las Vegas
+NIDO: El del cuco es ajeno
+NILO: Baña Luxor
+NIÑA: La del ojo
+NIÑO: Fenómeno climático del Pacífico
+NOEL: Trae regalos por la chimenea
+NOTA: Corchea, por ejemplo
+NUBE: Almacén en internet
+NUCA: Cogote
+NUDO: Milla marina por hora
+OBRA: Buena, la del boy scout
+OCAS: Gansos domésticos
+OCIO: Padre de todos los vicios
+ODAS: Las de Píndaro
+ODIO: Rencor profundo
+OIAN: Percibían sonidos
+OIAS: Percibías sonidos
+OIDO: Yunque y martillo están en él
+OIGA: Fórmula para llamar la atención
+OIRA: Percibirá sonidos
+OIRE: Percibiré sonidos
+OJOS: Luceros
+OLAS: Marejada
+OLEO: Santo, el de la unción
+OLER: Sospechar
+OLES: Jaleos
+OLIA: Despedía aroma
+OLLA: Podrida, guiso castellano
+OLMO: Negrillo
+OLOR: Lo deja el perfume
+ONCE: Vende cupones
+ONDA: Media, corta o larga
+OPTA: Se decanta
+ORAL: Sin papel ni pluma
+ORAN: Ciudad argelina
+ORAR: Hablar con Dios
+ORAS: Elevas plegarias
+ORCA: Ballena asesina
+OREA: Airea
+OREN: Eleven plegarias
+OREO: Aireo
+ORES: Eleves plegarias
+OROS: Monedas de la baraja
+OSAR: Tener valor
+OSAS: Mayor y Menor
+OSEA: Como la médula
+OSEN: Se arriesguen
+OSOS: Pardos, en Asturias
+OTAN: Tiene sede en Bruselas
+OTEA: Escudriña el horizonte
+OTRA: Una más
+OTRO: Uno más
+OVNI: Objeto de Roswell
+PACO: Hipocorístico de Francisco
+PAGA: La extra de Navidad
+PAGO: Finca rústica
+PAIS: Territorio
+PAJA: Lo que sobra en un texto
+PALA: La del pelotari
+PALO: Mayor, mástil
+PAPA: Francisco lo fue
+PARA: Con destino a
+PARO: Lo cobra el desempleado
+PASA: Cruza
+PASE: Capotazo
+PASO: Desfiladero
+PATA: Mala, gafe
+PATO: Lo paga el inocente
+PAVO: Real, de cola vistosa
+PECA: Comete falta
+PELO: Vello
+PENA: La capital es la máxima
+PEON: Jornalero
+PERA: Interruptor colgante
+PESA: Agobia
+PESO: Categoría de boxeo
+PIAR: Trinar
+PICO: Herramienta del minero
+PIEL: Epidermis
+PIES: Unidades del verso
+PILA: La bautismal
+PINO: El carrasco es mediterráneo
+PIPA: La fumaba Sherlock
+PISO: Suela
+PIÑA: Grupo muy unido
+PLAN: Ligue | Dieta
+POCO: Apenas
+PODA: Tarea del jardinero
+POLO: Deporte a caballo
+POMO: Frasco de perfume
+PONE: Hace la gallina
+POSO: Madre del vino
+POZO: De los deseos
+PURA: Casta
+PURO: Habano
+RABO: Parte final del toro
+RAEN: Raspan
+RAER: Rascar una superficie
+RAMA: División de la ciencia
+RAMO: Lo lanza la novia
+RANA: Príncipe encantado
+RARO: Como un perro verde
+RATA: Tacaño
+RATO: Momento
+RAYA: Guion largo
+RAYO: Arma de Zeus
+RAZA: Pedigrí
+REAL: Moneda antigua
+REAS: Procesadas
+REIA: Se carcajeaba
+REIR: Lo contrario de llorar
+REMO: Fundó Roma con su hermano
+RENO: Rodolfo
+REOS: Esperan veredicto
+RETO: Duelo
+REUS: Cuna de Gaudí
+REZA: Dice, expresa un escrito
+RICA: Costa centroamericana
+RICO: Epulón
+RIEL: Raíl
+RIES: Te carcajeas
+RIMA: Consonante o asonante
+RIOS: Afluentes
+RISA: La de la hiena
+RITO: Liturgia
+ROBO: Atraco
+ROCA: Peñasco
+ROEN: Desgastan con los dientes
+ROER: Tarea del castor
+ROES: Desgastas con los dientes
+ROJO: Señal de parar
+ROMA: A ella llevan los caminos
+ROPA: Va al tendedero
+ROSA: Flor de la novela de Eco
+ROTO: Para un descosido
+RUBI: Gema del color de la sangre
+RUDA: Planta medicinal
+RUDO: Sin pulir
+RUGE: Suena el motor
+RUIN: Vil
+RUTA: La de la seda
+SABE: Tiene gusto
+SACA: Costal grande
+SACO: Chaqueta americana
+SAGA: Epopeya nórdica
+SALA: Echa condimento
+SALE: Sirve, vale
+SALI: Partí
+SANA: Recupera la salud
+SANO: Que no hace daño
+SAPO: Batracio
+SEAN: Existan
+SEAS: Existas
+SECA: Sin jugo
+SECO: Brut
+SEDA: Ruta de Marco Polo
+SEDE: La santa está en Roma
+SEIS: Cuerdas de la guitarra
+SENA: Lo cruza el Pont Neuf
+SENO: Función trigonométrica
+SERA: Espuerta grande
+SERE: Futuro de ser
+SETA: Níscalo
+SEÑA: Santo y...
+SIDA: Lo causa el VIH
+SIEN: Donde late la vena
+SIGA: Prosiga
+SIGO: Persigo
+SILO: Depósito de misiles
+SODA: Sifón
+SOFA: Tresillo
+SOGA: Maroma
+SOIS: Existís
+SOLA: Sin nadie
+SOLO: Pasaje para un único músico
+SOPA: Boba, la del convento
+SOTA: Vale diez en el tute
+SUBE: Encarece
+SUDA: Trabaja duro
+SUMA: Total
+TACO: Bastón del billar
+TALA: Deforestación
+TAPA: Pincho
+TARA: Lacra
+TAXI: Coche con bandera
+TAZA: Recipiente del inodoro
+TEAS: Hachones
+TELA: Asunto, materia
+TEMA: Melodía principal
+TEME: Recela
+TEMO: Recelo
+TIAS: Hermanas de papá
+TIOS: Los de América eran ricos
+TIRA: Historieta breve
+TOCA: Prenda de monja
+TODO: Ni más ni menos
+TOMA: Conquista | Enchufe
+TOME: Conquiste
+TOMO: Parte de la enciclopedia
+TONO: Señal del teléfono
+TOPO: Animal casi ciego
+TORO: Signo de Tauro
+TOSE: Carraspea fuerte
+TRAE: Porta hasta aquí
+TREN: Ritmo de vida
+TRES: Mosqueteros
+TRIO: Los Panchos lo eran
+TUBO: Canuto
+TUNA: Capas y bandurrias
+TUYO: Lo que te pertenece
+UNAS: Ciertas
+UNEN: Enlazan
+UNES: Enlazas
+UNIA: Enlazaba
+UNIR: Casar
+UNOS: Aproximadamente
+URNA: Guarda cenizas
+URSS: Lanzó el Sputnik
+USAN: Se sirven de
+USAR: Gastar
+USAS: Te sirves de
+USEN: Se sirvan de
+USOS: Modas
+UTIL: Herramienta
+UVAS: Las de la ira, de Steinbeck
+UÑAS: Las afila el gato
+VACA: Sagrada en la India
+VAIS: Acudís
+VASO: Conducto de la sangre
+VEAN: Contemplen
+VEAS: Contemples
+VEIA: Contemplaba
+VEIS: Contempláis
+VELA: No duerme
+VENA: Inspiración
+VERA: Comarca cacereña
+VERE: Contemplaré
+VIAS: Conductos
+VIDA: Siete tiene el gato
+VINE: Acudí
+VINO: Tinto o clarete
+VIRA: Cambia de rumbo
+VISA: Tarjeta de crédito
+VIVA: Vítor
+VIVO: Listo, despierto
+VOLO: Desapareció
+VOTO: El de pobreza es de fraile
+YATE: Velero de recreo
+YEMA: Punta del dedo
+YESO: Sulfato de cal
+YOGA: Posturas y respiración
+YUGO: Opresión
+ZETA: La marca del Zorro
+ZONA: Defensa en baloncesto
+ZUMO: Exprimido

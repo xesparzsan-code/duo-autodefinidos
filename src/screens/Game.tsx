@@ -4,7 +4,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import * as Haptics from 'expo-haptics';
 import { Grid } from '../Grid';
 import { derive, formatTime, type Derived } from '../logic';
-import { puzzleForDate, prettyDate, today, type Puzzle } from '../puzzles';
+import { gamePuzzle, prettyDate, rawForDate, today, usePuzzle, type Puzzle } from '../puzzles';
 import { GameSession, now, sendSignal, setPresence, type GameState } from '../sync';
 import { ntfy } from '../notify';
 import { POINTS } from '../config';
@@ -29,9 +29,10 @@ export function GameScreen({ date }: { date: string }) {
   const { theme, profile, partner } = app;
   const insets = useSafeAreaInsets();
   const dims = useWindowDimensions();
-  const puzzle = useMemo(() => puzzleForDate(date), [date]);
-
-  const [state, setState] = useState<GameState>({ cells: {}, hints: {}, startedAt: null, finishedAt: null, loaded: false });
+  const [state, setState] = useState<GameState>({ cells: {}, hints: {}, startedAt: null, finishedAt: null, loaded: false, puzzle: null });
+  const latest = usePuzzle(date);
+  // si la sala ya fijó el autodefinido de esta partida, manda ese
+  const puzzle = useMemo(() => gamePuzzle(date, state.puzzle), [date, state.puzzle, latest]); // eslint-disable-line react-hooks/exhaustive-deps
   const [sel, setSel] = useState<Sel | null>(null);
   const [flash, setFlash] = useState<Set<string>>(new Set());
   const [showEmojis, setShowEmojis] = useState(false);
@@ -63,7 +64,12 @@ export function GameScreen({ date }: { date: string }) {
       const k = w.cells.find((c) => !state.cells[c]) ?? w.cells[0];
       setSel({ k, dir: w.dir });
     }
-  }, [state.loaded]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [state.loaded, sel === null]); // eslint-disable-line react-hooks/exhaustive-deps
+
+  // si cambia la rejilla (llega la de la sala), la selección puede dejar de valer
+  useEffect(() => {
+    if (sel && puzzle.solution[sel.k] === undefined) setSel(null);
+  }, [puzzle]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // --- presencia (dónde estoy escribiendo)
   useEffect(() => {
@@ -164,6 +170,7 @@ export function GameScreen({ date }: { date: string }) {
     let changed = false;
     if (!derived.confirmed.has(sel.k) && state.cells[sel.k]?.l !== letter) {
       const first = !Object.values(state.cells).some((c) => c.by === profile.uid);
+      if (!state.puzzle) s.sharePuzzle(JSON.stringify(rawForDate(date)));
       s.setCell(sel.k, letter);
       changed = true;
       if (first) notifyStart();

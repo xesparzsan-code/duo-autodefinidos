@@ -6,8 +6,8 @@ dos personas lo resuelven a la vez, cada una desde su móvil, viendo en directo 
 ## Qué incluye
 
 - **Autodefinidos de verdad**: definiciones dentro de las casillas, con flechas hacia la palabra.
-- **150 autodefinidos originales** en castellano (uno por día, unos cinco meses). Una misma palabra
-  larga no vuelve a salir hasta pasados 30-40 días.
+- **150 autodefinidos originales** en castellano (uno por día, unos cinco meses), guardados en
+  GitHub y editables sin recompilar. Una misma palabra larga no vuelve a salir hasta pasados 30-40 días.
 - **Tiempo real para dos**: letras al instante, cursor de la otra persona en su color, y
   funcionamiento sin conexión (lo escrito se guarda y se envía al volver la cobertura).
 - **Puntuación**: no se sabe si una palabra está bien hasta comprobarla o terminar. Al completar el
@@ -67,18 +67,21 @@ npx expo start          # probar con Expo Go o en el navegador (tecla w)
 npm run typecheck
 ```
 
-## Más autodefinidos
+## Autodefinidos
 
-Las palabras y definiciones están en `generador/lexico/*.txt` (formato `PALABRA: definición | otra`).
-Para añadir palabras o regenerar el banco hace falta Python 3:
+Están en la carpeta `autodefinidos/`, un archivo por día, y **se pueden editar en cualquier momento
+desde GitHub**: la app los descarga de ahí (el repositorio tiene que ser público) y guarda una copia
+dentro por si no hay conexión. En `autodefinidos/LEEME.md` se explica cómo cambiar una definición.
+
+Para generar un banco nuevo a partir del léxico de `generador/lexico/` hace falta Python 3:
 
 ```bash
-npm run generar -- 150 2026   # cantidad y semilla
+npm run generar -- 150 2027 4   # cantidad, semilla y primer número que se regenera
 npm run validar
 ```
 
-El primer autodefinido corresponde al día `START_DATE` de `src/config.ts`. Al acabarse el banco
-vuelve a empezar por el n.º 1.
+Las definiciones exigentes están en `generador/lexico/dificil-*.txt` y tienen prioridad sobre las
+sencillas. El primer autodefinido corresponde al día `START_DATE` de `src/config.ts`.
 
 ## Estructura
 

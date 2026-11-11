@@ -25,6 +25,8 @@ jobs:
           distribution: temurin
           java-version: 17
       - run: npm ci
+      - name: Meter los autodefinidos en la app
+        run: python3 generador/validar.py && python3 generador/empaquetar.py
       - name: Generar proyecto nativo
         run: npx expo prebuild --platform android --no-install
       - name: Compilar APK
@@ -47,6 +49,8 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+      - name: Meter los autodefinidos en la app
+        run: python3 generador/validar.py && python3 generador/empaquetar.py
       - name: Generar proyecto nativo
         run: npx expo prebuild --platform ios
       - name: Compilar sin firma

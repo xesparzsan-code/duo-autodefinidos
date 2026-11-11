@@ -3,7 +3,7 @@ import { Linking, Pressable, ScrollView, Switch, Text, TextInput, View } from 'r
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import * as Clipboard from 'expo-clipboard';
 import { computeStats, derive, formatTime } from '../logic';
-import { addDays, availableDates, prettyDate, puzzleForDate, puzzleNumber, today } from '../puzzles';
+import { addDays, availableDates, gamePuzzle, prettyDate, puzzleNumber, today } from '../puzzles';
 import { cachedProgress, updatePlayer } from '../sync';
 import { ntfy, ntfySubscribeLink, scheduleDailyReminder } from '../notify';
 import { colorHex, fonts, radius, space } from '../theme';
@@ -27,7 +27,7 @@ export function ArchiveScreen() {
         if (app.results[d]) continue;
         const c = await cachedProgress(profile.room, d);
         if (c && Object.keys(c.cells).length) {
-          const p = puzzleForDate(d);
+          const p = gamePuzzle(d, c.puzzle);
           res[d] = derive(p, c.cells).filled / p.whiteCount;
         }
       }

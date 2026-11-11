@@ -3,7 +3,7 @@ import { Pressable, ScrollView, Text, View } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { firebaseEnabled } from '../config';
 import { computeStats, derive, formatTime, type Cells } from '../logic';
-import { addDays, key, prettyDate, puzzleForDate, today, type Puzzle } from '../puzzles';
+import { addDays, gamePuzzle, key, prettyDate, today, usePuzzle, type Puzzle } from '../puzzles';
 import { GameSession, sendSignal, type GameState } from '../sync';
 import { ntfy } from '../notify';
 import { alpha, colorHex, fonts, radius, space, type Theme } from '../theme';
@@ -85,8 +85,9 @@ export function HomeScreen() {
   const { theme, profile, partner } = app;
   const insets = useSafeAreaInsets();
   const date = today();
-  const puzzle = useMemo(() => puzzleForDate(date), [date]);
   const [state, setState] = useState<GameState | null>(null);
+  const latest = usePuzzle(date);
+  const puzzle = useMemo(() => gamePuzzle(date, state?.puzzle), [date, state?.puzzle, latest]); // eslint-disable-line react-hooks/exhaustive-deps
   const [poked, setPoked] = useState(false);
 
   useEffect(() => {

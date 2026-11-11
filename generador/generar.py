@@ -17,10 +17,11 @@ from pathlib import Path
 
 RAIZ = Path(__file__).resolve().parent
 SALIDA = RAIZ.parent / "src" / "data" / "puzzles.json"
+CARPETA = RAIZ.parent / "autodefinidos"
 
 W, H = 8, 11
 MAXLEN = 8
-MAX_DOS_LETRAS = 5
+MAX_DOS_LETRAS = 4
 # Nº mínimo de autodefinidos que deben pasar antes de repetir una palabra, según su longitud
 SEPARACION = {2: 2, 3: 5, 4: 12, 5: 30, 6: 40, 7: 40, 8: 40}
 MAX_TEXTO = 34
@@ -28,26 +29,39 @@ MAX_TEXTO = 34
 VALIDA = re.compile(r"^[A-ZÑ]+$")
 
 
+def leer_archivo(f):
+    for linea in f.read_text(encoding="utf-8").splitlines():
+        linea = linea.strip()
+        if not linea or linea.startswith("#") or "(no)" in linea or ":" not in linea:
+            continue
+        palabra, resto = linea.split(":", 1)
+        palabra = palabra.strip().upper()
+        pistas = [p.strip() for p in resto.split("|") if p.strip()]
+        if not VALIDA.match(palabra) or not (2 <= len(palabra) <= MAXLEN) or not pistas:
+            continue
+        for p in pistas:
+            if len(p) > MAX_TEXTO:
+                raise SystemExit(f"Definición demasiado larga ({len(p)}): {palabra}: {p}")
+            if len(palabra) > 3 and palabra.lower() in re.findall(r"[a-zñ]+", quitar_tildes(p.lower())):
+                raise SystemExit(f"La definición contiene la respuesta: {palabra}: {p}")
+        yield palabra, pistas
+
+
 def cargar_lexico():
+    """Léxico base y, encima, las definiciones exigentes de dificil-*.txt (tienen prioridad)."""
     lex = {}
-    for f in sorted((RAIZ / "lexico").glob("*.txt")):
-        for linea in f.read_text(encoding="utf-8").splitlines():
-            linea = linea.strip()
-            if not linea or linea.startswith("#") or "(no)" in linea or ":" not in linea:
-                continue
-            palabra, resto = linea.split(":", 1)
-            palabra = palabra.strip().upper()
-            pistas = [p.strip() for p in resto.split("|") if p.strip()]
-            if not VALIDA.match(palabra) or not (2 <= len(palabra) <= MAXLEN) or not pistas:
-                continue
+    archivos = sorted((RAIZ / "lexico").glob("*.txt"))
+    for f in archivos:
+        if f.name.startswith("dificil"):
+            continue
+        for palabra, pistas in leer_archivo(f):
+            lex.setdefault(palabra, pistas)
+    for f in archivos:
+        if not f.name.startswith("dificil"):
+            continue
+        for palabra, pistas in leer_archivo(f):
             if palabra in lex:
-                continue
-            for p in pistas:
-                if len(p) > MAX_TEXTO:
-                    raise SystemExit(f"Definición demasiado larga ({len(p)}): {palabra}: {p}")
-                if len(palabra) > 3 and palabra.lower() in quitar_tildes(p.lower()).split():
-                    raise SystemExit(f"La definición contiene la respuesta: {palabra}: {p}")
-            lex[palabra] = pistas
+                lex[palabra] = pistas
     return lex
 
 
@@ -244,8 +258,8 @@ def puede_bloquear(g, r, c, pareja=True):
 def generar_patron(rng):
     for _ in range(4000):
         g = patron_base()
-        lim_a = rng.choice((5, 6, 6, 7))
-        lim_d = rng.choice((5, 6, 6, 7))
+        lim_a = rng.choice((6, 7, 7, 7))
+        lim_d = rng.choice((6, 7, 7, 8))
         fallo = False
         for _paso in range(60):
             largos = [t for t in tramos(g) if t[3] > (lim_a if t[0] == "A" else lim_d)]
@@ -401,11 +415,46 @@ def elegir_textos(lex, palabras, usos):
     return res
 
 
-def generar(cantidad, semilla):
+def palabra_de(filas, p):
+    return "".join(filas[p["r"]][p["c"] + k] if p["dir"] == "A" else filas[p["r"] + k][p["c"]] for k in range(p["len"]))
+
+
+def escribir_autodefinido(pz):
+    """Un archivo por autodefinido, legible y fácil de editar a mano."""
+    lineas = ["{", f'  "n": {pz["n"]},', '  "filas": [']
+    lineas += [f'    "{f}"' + ("," if i < len(pz["filas"]) - 1 else "") for i, f in enumerate(pz["filas"])]
+    lineas += ["  ],", '  "pistas": [']
+    for i, p in enumerate(pz["pistas"]):
+        d = {"palabra": palabra_de(pz["filas"], p), "texto": p["texto"], "dir": p["dir"], "r": p["r"], "c": p["c"],
+             "cr": p["cr"], "cc": p["cc"], "flecha": p["flecha"]}
+        lineas.append("    " + json.dumps(d, ensure_ascii=False) + ("," if i < len(pz["pistas"]) - 1 else ""))
+    lineas += ["  ]", "}", ""]
+    (CARPETA / f'{pz["n"]:04d}.json').write_text("\n".join(lineas), encoding="utf-8")
+
+
+def leer_carpeta():
+    """Lee autodefinidos/NNNN.json y devuelve la lista en el formato interno."""
+    res = []
+    for f in sorted(CARPETA.glob("[0-9]*.json")):
+        d = json.loads(f.read_text(encoding="utf-8"))
+        filas = d["filas"]
+        pistas = [{"cr": p["cr"], "cc": p["cc"], "flecha": p["flecha"], "texto": p["texto"], "r": p["r"], "c": p["c"],
+                   "dir": p["dir"], "len": len(p["palabra"])} for p in d["pistas"]]
+        res.append({"n": d["n"], "w": len(filas[0]), "h": len(filas), "filas": filas, "pistas": pistas, "_palabras": [p["palabra"] for p in d["pistas"]]})
+    return res
+
+
+def generar(cantidad, semilla, previos=()):
     lex = cargar_lexico()
     rng = random.Random(semilla)
     ultimo_uso, usos = {}, defaultdict(int)
     puzzles = []
+    for pz in previos:
+        for p in pz["pistas"]:
+            w = palabra_de(pz["filas"], p)
+            ultimo_uso[w] = len(puzzles)
+            usos[w] += 1
+        puzzles.append(pz)
     t0 = time.time()
     while len(puzzles) < cantidad:
         indice = len(puzzles)
@@ -434,11 +483,25 @@ def generar(cantidad, semilla):
     return puzzles, lex, usos
 
 
-if __name__ == "__main__":
-    cantidad = int(sys.argv[1]) if len(sys.argv) > 1 else 120
-    semilla = int(sys.argv[2]) if len(sys.argv) > 2 else 2026
-    puzzles, lex, usos = generar(cantidad, semilla)
+def empaquetar(puzzles):
+    """Escribe la copia que va dentro de la app (reserva sin conexión) y el índice."""
+    limpio = [{k: v for k, v in pz.items() if not k.startswith("_")} for pz in puzzles]
     SALIDA.parent.mkdir(parents=True, exist_ok=True)
-    SALIDA.write_text(json.dumps(puzzles, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    print(f"{len(puzzles)} autodefinidos -> {SALIDA}")
+    SALIDA.write_text(json.dumps(limpio, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
+    (CARPETA / "indice.json").write_text(json.dumps({"total": len(limpio)}) + "\n", encoding="utf-8")
+
+
+if __name__ == "__main__":
+    # Uso: generar.py [cantidad] [semilla] [desde]
+    #   desde = primer número que se vuelve a generar; los anteriores se conservan tal cual.
+    cantidad = int(sys.argv[1]) if len(sys.argv) > 1 else 150
+    semilla = int(sys.argv[2]) if len(sys.argv) > 2 else 2026
+    desde = int(sys.argv[3]) if len(sys.argv) > 3 else 1
+    CARPETA.mkdir(exist_ok=True)
+    previos = [p for p in leer_carpeta() if p["n"] < desde]
+    puzzles, lex, usos = generar(cantidad, semilla, previos)
+    for pz in puzzles[len(previos):]:
+        escribir_autodefinido(pz)
+    empaquetar(puzzles)
+    print(f"{len(puzzles)} autodefinidos en {CARPETA} (nuevos: {len(puzzles) - len(previos)})")
     print(f"Léxico: {len(lex)} palabras; usadas alguna vez: {len(usos)}")

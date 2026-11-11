@@ -35,7 +35,8 @@
     "web": "expo start --web",
     "typecheck": "tsc --noEmit",
     "generar": "python3 generador/generar.py",
-    "validar": "python3 generador/validar.py"
+    "validar": "python3 generador/validar.py",
+    "empaquetar": "python3 generador/empaquetar.py"
   },
   "private": true
 }
